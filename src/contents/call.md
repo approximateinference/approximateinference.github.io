@@ -15,7 +15,7 @@ We are delighted to continue the archival AABI proceedings track, where full res
 
 **Proceedings and Workshop Tracks**
 
-- **[Extended]** Submission deadline (Proceedings, Workshop): 14 February 2025 (11:59pm AoE)
+- <s>**[Extended]** Submission deadline (Proceedings, Workshop): 14 February 2025 (11:59pm AoE)</s>
 - Reviews released (Proceedings Track): 28 February 2025
 - Author rebuttal due (Proceedings Track): 7 March 2025 (11:59pm AoE)
 - Acceptance notification (Proceedings, Workshop): 18 March 2025
@@ -24,7 +24,7 @@ We are delighted to continue the archival AABI proceedings track, where full res
 
 **Fast Track**
 
-- Submission deadline ('Early' Fast Track): 14 February 2025 (11:59pm AoE)
+- <s>Submission deadline ('Early' Fast Track): 14 February 2025 (11:59pm AoE)</s>
 - Acceptance notification ('Early' Fast Track): 18 February 2025
 - Submission deadline ('Late' Fast Track): 14 March 2025 (11:59pm AoE)
 - Acceptance notification ('Late' Fast Track): 18 March 2025
