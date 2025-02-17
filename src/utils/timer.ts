@@ -7,7 +7,7 @@ export function calculateTimeLeft(targetDate: TZDate): {
   minutes: number;
   seconds: number;
 } {
-  const now = TZDate.tz("-12"); // AoE is UTC-12
+  const now = new TZDate(Date.now(), "-12"); // AoE is UTC-12
   const timeDifference = differenceInMilliseconds(targetDate, now);
 
   if (timeDifference <= 0) {
