@@ -25,7 +25,7 @@ We are delighted to continue the archival AABI proceedings track, where full res
 **Fast Track**
 
 - <s>Submission deadline ('Early' Fast Track): 14 February 2025 (11:59pm AoE)</s>
-- Acceptance notification ('Early' Fast Track): 18 February 2025
+- <s>Acceptance notification ('Early' Fast Track): 18 February 2025</s>
 - Submission deadline ('Late' Fast Track): 14 March 2025 (11:59pm AoE)
 - Acceptance notification ('Late' Fast Track): 18 March 2025
 
@@ -86,7 +86,7 @@ To submit fast track papers, please use [this submission link](https://docs.goog
 
 Please note that we have two Fast Track deadlines:
 
-- **'Early'** --- 14 February 2025 (11:59pm AoE)
+- <s>**'Early'** --- 14 February 2025 (11:59pm AoE)</s>
 - **'Late'** --- 14 March 2025 (11:59pm AoE)
 
 Papers submitted before the 'early' deadline will receive acceptance notifications on 18 February 2025. Papers submitted after this deadline but before the 'late' deadline will receive acceptance notifications on 18 March 2025.
