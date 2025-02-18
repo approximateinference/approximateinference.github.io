@@ -1,7 +1,4 @@
 ---
-import { calculateTimeLeft } from "@/utils";
-import { TZDate } from "@date-fns/tz";
-
 interface Props {
   year: number;
   month: number;
@@ -23,9 +20,9 @@ const { year, month, day } = Astro.props;
     constructor() {
       super();
 
-      const year = parseInt(this.dataset.year);
-      const month = parseInt(this.dataset.month);
-      const day = parseInt(this.dataset.day);
+      const year = parseInt(this.dataset.year == null ? "2025" : this.dataset.year);
+      const month = parseInt(this.dataset.month == null ? "4" : this.dataset.month);
+      const day = parseInt(this.dataset.day == null ? "29" : this.dataset.day);
 
       const elemDays = this.querySelector(".days");
       const elemHours = this.querySelector(".hours");
@@ -34,9 +31,17 @@ const { year, month, day } = Astro.props;
       function updateCountdown() {
         const timeLeft = calculateTimeLeft(year, month, day);
 
-        elemDays.textContent = timeLeft.days.toString();
-        elemHours.textContent = timeLeft.hours.toString().padStart(2, "0");
-        elemMinutes.textContent = timeLeft.minutes.toString().padStart(2, "0");
+        if (elemDays != null) {
+          elemDays.textContent = timeLeft.days.toString();
+        }
+
+        if (elemHours != null) {
+          elemHours.textContent = timeLeft.hours.toString().padStart(2, "0");
+        }
+
+        if (elemMinutes != null) {
+          elemMinutes.textContent = timeLeft.minutes.toString().padStart(2, "0");
+        }
       }
 
       // Populate then update every minute
