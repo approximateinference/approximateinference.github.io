@@ -7,13 +7,43 @@ interface Props {
   month: number;
   day: number;
 }
-
 const { year, month, day } = Astro.props;
-
-const targetDate = new TZDate(year, month - 1, day, "-12"); // AoE is UTC-12
-const timeLeft = calculateTimeLeft(targetDate);
 ---
 
-{timeLeft.days.toString()}d
-{timeLeft.hours.toString().padStart(2, "0")}h
-{timeLeft.minutes.toString().padStart(2, "0")}m
+<astro-countdown data-year={year} data-month={month} data-day={day}>
+  <span class='days'></span>d
+  <span class='hours'></span>h
+  <span class='minutes'></span>m
+</astro-countdown>
+
+<script>
+  import { calculateTimeLeft } from "@/utils";
+
+  class AstroCountdown extends HTMLElement {
+    constructor() {
+      super();
+
+      const year = parseInt(this.dataset.year);
+      const month = parseInt(this.dataset.month);
+      const day = parseInt(this.dataset.day);
+
+      const elemDays = this.querySelector(".days");
+      const elemHours = this.querySelector(".hours");
+      const elemMinutes = this.querySelector(".minutes");
+
+      function updateCountdown() {
+        const timeLeft = calculateTimeLeft(year, month, day);
+
+        elemDays.textContent = timeLeft.days.toString();
+        elemHours.textContent = timeLeft.hours.toString().padStart(2, "0");
+        elemMinutes.textContent = timeLeft.minutes.toString().padStart(2, "0");
+      }
+
+      // Populate then update every minute
+      updateCountdown();
+      setInterval(updateCountdown, 60 * 1000);
+    }
+  }
+
+  customElements.define("astro-countdown", AstroCountdown);
+</script>
