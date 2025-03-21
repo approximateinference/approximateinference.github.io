@@ -1,0 +1,297 @@
+[
+    {
+        "title": "Approximate Posteriors in Neural Networks: A Sampling Perspective",
+        "authors": [
+            "Julius Kobialka",
+            "Emanuel Sommer",
+            "Juntae Kwon",
+            "Daniel Dold",
+            "David R\u00fcgamer"
+        ]
+    },
+    {
+        "title": "Variational diffusion transformers for conditional sampling of supernovae spectra",
+        "authors": [
+            "Yunyi Shen",
+            "Alexander Thomas Gagliano"
+        ]
+    },
+    {
+        "title": "Post-Hoc Uncertainty Quantification in Pre-Trained Neural Networks via Activation-Level Gaussian\u00a0Processes",
+        "authors": [
+            "Richard Bergna",
+            "Stefan Depeweg",
+            "Sergio Calvo Ordo\u00f1ez",
+            "Jonathan Plenk",
+            "Alvaro Cartea",
+            "Jos\u00e9 Miguel Hern\u00e1ndez-Lobato"
+        ]
+    },
+    {
+        "title": "Inclusive KL Minimization: A Wasserstein-Fisher-Rao Gradient Flow Perspective",
+        "authors": [
+            "Jia-Jie Zhu"
+        ]
+    },
+    {
+        "title": "Variational Learning Induces Adaptive Label Smoothing",
+        "authors": [
+            "Sin-Han Yang",
+            "Zhedong Liu",
+            "Gian Maria Marconi",
+            "Mohammad Emtiyaz Khan"
+        ]
+    },
+    {
+        "title": "Compact Memory for K-prior Based Continual Learning",
+        "authors": [
+            "Yohan Jung",
+            "Hyungi Lee",
+            "Wenlong Chen",
+            "Thomas M\u00f6llenhoff",
+            "Yingzhen Li",
+            "Juho Lee",
+            "Mohammad Emtiyaz Khan"
+        ]
+    },
+    {
+        "title": "Improving Robustness to Model Misspecification in Bayesian Experimental Design",
+        "authors": [
+            "Alex Forster",
+            "Desi R. Ivanova",
+            "Tom Rainforth"
+        ]
+    },
+    {
+        "title": "SDE Matching: Scalable and Simulation-Free Training of Latent Stochastic Differential Equations",
+        "authors": [
+            "Grigory Bartosh",
+            "Dmitry Vetrov",
+            "Christian A. Naesseth"
+        ]
+    },
+    {
+        "title": "Semantic Calibration of LLMs Through the Lens of Temperature Scaling",
+        "authors": [
+            "Tom A. Lamb",
+            "Desi R. Ivanova",
+            "Philip Torr",
+            "Tim G. J. Rudner"
+        ]
+    },
+    {
+        "title": "JoLT: Joint Probabilistic Predictions on Tabular Data Using LLMs",
+        "authors": [
+            "Aliaksandra Shysheya",
+            "John F Bronskill",
+            "James Requeima",
+            "Shoaib Ahmed Siddiqui",
+            "Javier Gonzalez",
+            "David Duvenaud",
+            "Richard E. Turner"
+        ]
+    },
+    {
+        "title": "Adjustment for Confounding using Pre-Trained Representations",
+        "authors": [
+            "Rickmer Schulte",
+            "David R\u00fcgamer",
+            "Thomas Nagler"
+        ]
+    },
+    {
+        "title": "Uncertainty Quantification for Prior-Fitted Networks using Martingale Posteriors",
+        "authors": [
+            "Thomas Nagler",
+            "David R\u00fcgamer"
+        ]
+    },
+    {
+        "title": "Exploring Pseudo-Token Approaches in Transformer Neural Processes",
+        "authors": [
+            "Jose Miguel Lara Rangel",
+            "Nanze Chen",
+            "Fengzhe Zhang"
+        ]
+    },
+    {
+        "title": "Semi-Supervised Bayesian Active Learning with Task-Driven Representations",
+        "authors": [
+            "Kianoosh Ashouritaklimi",
+            "Tom Rainforth"
+        ]
+    },
+    {
+        "title": "What Actually Matters for Materials Discovery: Pitfalls and Recommendations in Bayesian Optimization",
+        "authors": [
+            "Tristan Cinquin",
+            "Stanley Lo",
+            "Felix Strieth-Kalthoff",
+            "Alan Aspuru-Guzik",
+            "Geoff Pleiss",
+            "Robert Bamler",
+            "Tim G. J. Rudner",
+            "Vincent Fortuin",
+            "Agustinus Kristiadi"
+        ]
+    },
+    {
+        "title": "Learning Likelihood-Free Reference Priors",
+        "authors": [
+            "Nicholas George Bishop",
+            "Joel Dyer",
+            "Daniel Jarne Ornia",
+            "Ani Calinescu",
+            "Michael J. Wooldridge"
+        ]
+    },
+    {
+        "title": "Neural Flow Samplers with Shortcut Models",
+        "authors": [
+            "Wuhao Chen",
+            "Zijing Ou",
+            "Yingzhen Li"
+        ]
+    },
+    {
+        "title": "Inference-Time Prior Adaptation in Simulation Based Inference via Guided Diffusion Models",
+        "authors": [
+            "Paul Edmund Chang",
+            "Severi Rissanen",
+            "Nasrulloh Ratu Bagus Satrio Loka",
+            "Daolang Huang",
+            "Luigi Acerbi"
+        ]
+    },
+    {
+        "title": "Learning Graph Structure for GNNs via Marginal Likelihood",
+        "authors": [
+            "Anita Yang",
+            "Thomas M\u00f6llenhoff",
+            "Ken-Ichi Kawarabayashi",
+            "Mohammad Emtiyaz Khan"
+        ]
+    },
+    {
+        "title": "Variational Bayes Portfolio Construction",
+        "authors": [
+            "Nicolas Nguyen",
+            "James Ridgway",
+            "Claire Vernade"
+        ]
+    },
+    {
+        "title": "Estimating the Data-Influence of Latent Variable Models using Variational Bayes",
+        "authors": [
+            "Dharmesh Tailor",
+            "Mohammad Emtiyaz Khan",
+            "Eric Nalisnick"
+        ]
+    },
+    {
+        "title": "Are Your Continuous Approximations Really Continuous? Reimagining VI with Bitstring Representations",
+        "authors": [
+            "Aleksanteri Sladek",
+            "Martin Trapp",
+            "Arno Solin"
+        ]
+    },
+    {
+        "title": "Simulation-based inference with diffusion models for spatial statistics",
+        "authors": [
+            "Herman Tesso",
+            "Ayush Bharti",
+            "Elizaveta Semenova"
+        ]
+    },
+    {
+        "title": "Tighter sparse variational Gaussian processes",
+        "authors": [
+            "Thang D Bui",
+            "Matthew Ashman",
+            "Richard E. Turner"
+        ]
+    },
+    {
+        "title": "Stacking Variational Bayesian Monte Carlo",
+        "authors": [
+            "Francesco Silvestrin",
+            "Chengkun LI",
+            "Luigi Acerbi"
+        ]
+    },
+    {
+        "title": "Sampling with diffusion models by amortizing posterior inference",
+        "authors": [
+            "Yi Han",
+            "Luhuan Wu",
+            "John Patrick Cunningham"
+        ]
+    },
+    {
+        "title": "Heteroscedastic Variational Last Layers",
+        "authors": [
+            "James Harrison",
+            "John Willes",
+            "Paul Brunzema",
+            "Jasper Snoek"
+        ]
+    },
+    {
+        "title": "Towards One Model for Classical Dimensionality Reduction: A Probabilistic Perspective on UMAP and t-SNE",
+        "authors": [
+            "Aditya Ravuri",
+            "Neil D Lawrence"
+        ]
+    },
+    {
+        "title": "Beyond Schr\u00f6dinger Bridges: A Least-Squares Approach for Learning Stochastic Dynamics with Unknown Volatility",
+        "authors": [
+            "Renato Berlinghieri",
+            "Yunyi Shen",
+            "Tamara Broderick"
+        ]
+    },
+    {
+        "title": "Generative Uncertainty in Diffusion Models",
+        "authors": [
+            "Metod Jazbec",
+            "Eliot Wong-Toi",
+            "Guoxuan Xia",
+            "Dan Zhang",
+            "Eric Nalisnick",
+            "Stephan Mandt"
+        ]
+    },
+    {
+        "title": "Observation Noise and Initialization in Wide Neural Networks",
+        "authors": [
+            "Sergio Calvo Ordo\u00f1ez",
+            "Jonathan Plenk",
+            "Richard Bergna",
+            "Alvaro Cartea",
+            "Jos\u00e9 Miguel Hern\u00e1ndez-Lobato",
+            "Konstantina Palla",
+            "Kamil Ciosek"
+        ]
+    },
+    {
+        "title": "Recurrent Memory for Online Interdomain Gaussian Processes",
+        "authors": [
+            "Wenlong Chen",
+            "Naoki Kiyohara",
+            "Harrison Zhu",
+            "Yingzhen Li"
+        ]
+    },
+    {
+        "title": "Transcending Bayesian Inference: Transformers Extrapolate Rules Compositionally Under Model Misspecification",
+        "authors": [
+            "Szilvia Ujv\u00e1ry",
+            "Anna M\u00e9sz\u00e1ros",
+            "Wieland Brendel",
+            "Patrik Reizinger",
+            "Ferenc Husz\u00e1r"
+        ]
+    }
+]

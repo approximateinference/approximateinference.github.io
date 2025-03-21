@@ -4,8 +4,20 @@ title: "Accepted Papers"
 ---
 
 import PaperList from "@/components/PaperList.astro";
-import accepted_papers from "../assets/accepted_papers.json";
+import accepted_papers_proceedings from "../assets/accepted_proceedings_papers.json";
+import accepted_papers_workshop from "../assets/accepted_workshop_papers.json";
 
-# Accepted Papers
+# List of Papers
 
-<PaperList papers={accepted_papers} />
+Note that only papers in the proceedings track are archieved.
+Links to the PDFs to follow.
+
+## Proceedings Track
+
+<PaperList papers={accepted_papers_proceedings} paperType='Talk + Poster' />
+
+## Workshop Track
+
+Not archieved.
+
+<PaperList papers={accepted_papers_workshop} paperType='Poster' />

@@ -1,8 +1,11 @@
 ---
 import { Content } from "../contents/accepted.mdx";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import ContentLayout from "@/layouts/ContentLayout.astro";
 ---
 
 <BaseLayout title='Accepted Papers'>
-  <Content />
+  <ContentLayout>
+    <Content />
+  </ContentLayout>
 </BaseLayout>

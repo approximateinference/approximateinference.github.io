@@ -1,7 +1,7 @@
 ---
-import type { Paper, Author } from "@/utils";
+import type { Paper } from "@/utils";
 
-const { papers } = Astro.props;
+const { papers, paperType } = Astro.props;
 ---
 
 <div class='overflow-x-auto'>
@@ -18,12 +18,13 @@ const { papers } = Astro.props;
         papers.map((paper: Paper, idx: number) => (
           <tr>
             <td>{idx + 1}</td>
-            <td>{paper.decision}</td>
+            <td>{paperType}</td>
             <td>
               <div>
-                <a href={paper.paper_url}>{paper.title}</a>
+                <!-- <a href={paper.paper_url}>{paper.title}</a> -->
+                <strong>{paper.title}</strong>
               </div>
-              {paper.authors.map((author: Author) => author.name).join(", ")}
+              {paper.authors.map((author: string) => author).join(", ")}
             </td>
           </tr>
         ))

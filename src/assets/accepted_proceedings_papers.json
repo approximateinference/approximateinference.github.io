@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Divide, Conquer, Combine Bayesian Decision Tree Sampling",
+    "authors": ["Jodie Anne Cochrane", "Adrian Wills", "Sarah J Johnson"]
+  },
+  {
+    "title": "U-ensembles: Improved diversity in the small data regime using unlabeled data",
+    "authors": ["Konstantinos Pitas", "Julyan Arbel"]
+  },
+  {
+    "title": "From predictions to confidence intervals: an empirical study of conformal prediction methods for in-context learning",
+    "authors": ["Zhe Huang", "Simone Rossi", "Rui Yuan", "Thomas Hannagan"]
+  },
+  {
+    "title": "Normalizing Flow Regression for Bayesian Inference with Offline Likelihood Evaluations",
+    "authors": ["Chengkun LI", "Bobby Huggins", "Petrus Mikkola", "Luigi Acerbi"]
+  },
+  {
+    "title": "Deep Q-Exponential Processes",
+    "authors": ["Zhi Chang", "Chukwudi Paul Obite", "Shuang Zhou", "Shiwei Lan"]
+  },
+  {
+    "title": "Sparse Gaussian Neural Processes",
+    "authors": ["Tommy Rochussen", "Vincent Fortuin"]
+  },
+  {
+    "title": "Massively Parallel Expectation Maximization For Approximate Posteriors",
+    "authors": ["Thomas Heap", "Sam Bowyer", "Laurence Aitchison"]
+  }
+]
+

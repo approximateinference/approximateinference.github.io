@@ -41,4 +41,12 @@ export const menuLinks: Array<{ title: string; path: string }> = [
     title: "Accepted Papers",
     path: "/accepted/",
   },
+  {
+    title: "Organizers",
+    path: "/organizers/",
+  },
+  {
+    title: "Past Meetings",
+    path: "/past/",
+  },
 ];
