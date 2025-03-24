@@ -113,14 +113,10 @@
 
     <!-- Desktop menu -->
     <div
-      class='hidden items-center justify-start gap-x-10 pt-3 text-sm sm:flex sm:justify-center sm:pt-0 md:text-sm'
+      class='hidden items-center justify-start gap-x-10 pt-3 text-sm sm:flex sm:max-w-[80%] sm:flex-wrap sm:justify-center sm:pt-0 md:text-lg'
     >
       <a href='/dates' class='flex-none font-semibold' aria-label='Nav Menu Item'
         >Key Dates
-      </a>
-
-      <a href='/call' class='flex-none font-semibold' aria-label='Nav Menu Item'
-        >Call for Papers
       </a>
 
       <a href='/accepted' class='flex-none font-semibold' aria-label='Nav Menu Item'
@@ -131,9 +127,37 @@
         >Organizers
       </a>
 
-      <a href='/past' class='flex-none font-semibold' aria-label='Nav Menu Item'
-        >Past Meetings
-      </a>
+      <!-- Dropdown for Call for Papers & Past Meetings -->
+      <div class='group relative'>
+        <button class='flex items-center font-semibold'>
+          More
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            class='ml-1 h-4 w-4'
+            viewBox='0 0 20 20'
+            fill='currentColor'
+          >
+            <path
+              fill-rule='evenodd'
+              d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
+              clip-rule='evenodd'></path>
+          </svg>
+        </button>
+        <div
+          class='absolute right-0 hidden w-48 bg-white pt-5 shadow-lg group-hover:block dark:bg-gray-800'
+        >
+          <a
+            href='/call'
+            class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700'
+            >Call for Papers</a
+          >
+          <a
+            href='/past'
+            class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700'
+            >Past Meetings</a
+          >
+        </div>
+      </div>
 
       <!-- <a href='/sponsors' class='flex-none font-semibold' aria-label='Nav Menu Item' -->
       <!--   >Sponsors -->
@@ -203,9 +227,9 @@
   <!-- Mobile Dropdown Menu -->
   <div id='mobile-menu' class='ml-auto hidden text-right sm:hidden'>
     <a href='/dates' class='block px-4 py-2'>Key Dates</a>
-    <a href='/call' class='block px-4 py-2'>Call for Papers</a>
     <a href='/accepted' class='block px-4 py-2'>Accepted Papers</a>
     <a href='/organizers' class='block px-4 py-2'>Organizers</a>
+    <a href='/call' class='block px-4 py-2'>Call for Papers</a>
     <a href='/past' class='block px-4 py-2'>Past Meetings</a>
     <!-- <a href='/schedule' class='block px-4 py-2'>Schedule</a> -->
     <!-- <a href='/venue' class='block px-4 py-2'>Venue</a> -->
