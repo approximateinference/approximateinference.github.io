@@ -5,6 +5,14 @@ title: "Schedule"
 
 # Attendance Information
 
+## Registration
+
+AABI 2025 is a free event.
+Spots are limited, register [**HERE**](https://lu.ma/5syzr79m).
+
+In case the spots are all taken, you can add yourself to [the waiting list](https://forms.gle/Xzm1a8XNheGDHCZPA).
+We will contact you if new spots opened up.
+
 ## Venue
 
 [NTU School of Computer Science and Engineering](https://www.ntu.edu.sg/computing) --- exact location to follow!
@@ -71,7 +79,7 @@ title: "Schedule"
 | 15:30 -- 15:45 | **Contributed Talk 6**   | _Sparse Gaussian Neural Processes_ <br /> Tommy Rochussen, Vincent Fortuin                                                                                                       |
 | 15:45 -- 16:00 | **Contributed Talk 7**   | _Massively Parallel Expectation Maximization For Approximate Posteriors_ <br /> Thomas Heap, Sam Bowyer, Laurence Aitchison                                                      |
 | 16:00 -- 17:00 | Poster Session 2         |                                                                                                                                                                                  |
-| 17:00 -- 17:45 | **Panel Discussion**     | TBA                                                                                                                                                                              |
+| 17:00 -- 17:45 | **Panel Discussion**     | _Topic TBA_                                                                                                                                                                      |
 | 17:45 -- 18:00 | Closing Remarks          | Tim G. J. Rudner                                                                                                                                                                 |
 
 </div>
