@@ -17,11 +17,11 @@ We will contact you if new spots opened up.
 
 AABI 2025 will be hosted at the NTU School of Computer Science and Engineering.
 
-Lecture Theatre 1 <br />
-76 Nanyang Drive <br />
-Level 2, North Spine Plaza <br />
-Nanyang Technological University <br />
-Singapore 637331
+    Lecture Theatre 1
+    76 Nanyang Drive
+    Level 2, North Spine Plaza
+    Nanyang Technological University
+    Singapore 637331
 
 <https://maps.app.goo.gl/6n3tgWq1K1xXptuo9>
 
