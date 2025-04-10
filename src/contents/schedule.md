@@ -8,7 +8,14 @@ title: "Schedule"
 ## Registration
 
 AABI 2025 is a free event.
-Spots are limited, register [**HERE**](https://lu.ma/5syzr79m).
+Spots are limited, register below!
+
+<a href="https://lu.ma/embed/event/evt-JtIkTVGMG0J8eGF"
+class="luma-checkout--button"
+data-luma-action="checkout"
+data-luma-event-id="evt-JtIkTVGMG0J8eGF">Register for AABI 2025</a>
+
+<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 
 In case the spots are all taken, you can add yourself to [the waiting list](https://forms.gle/Xzm1a8XNheGDHCZPA).
 We will contact you if new spots opened up.
