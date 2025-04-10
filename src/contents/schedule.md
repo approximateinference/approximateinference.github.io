@@ -17,7 +17,7 @@ data-luma-event-id="evt-a43Ub7unw7DznzM">Register for AABI 2025</a>
 
 <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 
-<mark>**Please cancel your registration if you are unable to attend! This will allow others to register.**</mark>
+<mark>**We have limited space, please cancel your registration if you are unable to attend! This will allow others to register.**</mark>
 
 <br />
 
@@ -47,7 +47,9 @@ AABI 2025 will be hosted at the NTU School of Computer Science and Engineering.
     Nanyang Technological University
     Singapore 637331
 
-<https://maps.app.goo.gl/6n3tgWq1K1xXptuo9>
+<br />
+
+<div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Lecture+Theatre+1+76+Nanyang+Drive+Level+2,+North+Spine+Plaza+Nanyang+Technological+University+Singapore+637331&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
 
 ## Schedule
 
