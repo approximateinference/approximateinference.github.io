@@ -10,12 +10,29 @@ title: "Schedule"
 AABI 2025 is a free event.
 Spots are limited, register below!
 
-<a href="https://lu.ma/embed/event/evt-JtIkTVGMG0J8eGF"
+<a href="https://lu.ma/event/evt-a43Ub7unw7DznzM"
 class="luma-checkout--button"
 data-luma-action="checkout"
-data-luma-event-id="evt-JtIkTVGMG0J8eGF">Register for AABI 2025</a>
+data-luma-event-id="evt-a43Ub7unw7DznzM">Register for AABI 2025</a>
 
 <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+
+<mark>**Please cancel your registration if you are unable to attend! This will allow others to register.**</mark>
+
+<br />
+
+<iframe
+  src="https://lu.ma/embed/calendar/cal-JtIkTVGMG0J8eGF/events"
+  width="100%"
+  height="275"
+  frameborder="0"
+  style="border: 0px solid #bfcbda88; border-radius: 4px;"
+  allowfullscreen=""
+  aria-hidden="false"
+  tabindex="0"
+></iframe>
+
+<br />
 
 In case the spots are all taken, you can add yourself to [the waiting list](https://forms.gle/Xzm1a8XNheGDHCZPA).
 We will contact you if new spots opened up.
