@@ -1,7 +1,6 @@
 ---
 import { Content } from "../contents/index.mdx";
 import { Content as ContentDates } from "../contents/dates.mdx";
-// import { Content as ContentSponsor } from "../contents/sponsors.md";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import ContentLayout from "@/layouts/ContentLayout.astro";
 import PeopleList from "@/components/PeopleList.astro";
@@ -14,10 +13,6 @@ import invited_speakers from "../assets/invited_speakers.json";
   </ContentLayout>
 
   <PeopleList title='Invited Speakers' people={invited_speakers} />
-
-  <!-- <ContentLayout> -->
-  <!--   <ContentSponsor /> -->
-  <!-- </ContentLayout> -->
 
   <ContentLayout>
     <ContentDates />

@@ -150,6 +150,9 @@ const config = {
             "li::marker": {
               color: theme("colors.neutral.300"),
             },
+            mark: {
+              color: "black",
+            },
           },
         },
       }),

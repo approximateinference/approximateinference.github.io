@@ -5,6 +5,9 @@ import Header from "@/components/layout/Header.astro";
 import ThemeProvider from "@/components/ThemeProvider.astro";
 import { siteConfig } from "@/site-config";
 
+import ContentLayout from "@/layouts/ContentLayout.astro";
+import { Content as ContentSponsor } from "../contents/sponsors.md";
+
 const { title } = Astro.props;
 ---
 
@@ -34,6 +37,7 @@ const { title } = Astro.props;
           </h2>
           <p class='text-lg'>Co-located with ICLR 2025 in Singapore</p>
           <p class='text-lg'>Tuesday, 29 April 2025</p>
+          <p class='text-lg'>Venue: NTU School of Computer Science and Engineering</p>
         </div>
       </div>
 
@@ -48,6 +52,10 @@ const { title } = Astro.props;
 
       <main class='relative w-full pb-0 pt-10 leading-relaxed'>
         <slot />
+
+        <ContentLayout>
+          <ContentSponsor />
+        </ContentLayout>
       </main>
 
       <Footer />
