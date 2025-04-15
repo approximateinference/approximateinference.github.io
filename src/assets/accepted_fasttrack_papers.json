@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Repulsive Latent Score Distillation for Solving Inverse Problems",
+    "authors": "Nicolas Zilberstein, Morteza Mardani, Santiago Segarra"
+  },
+  {
+    "title": "Amortized Bayesian Experimental Design for Decision-Making",
+    "authors": "Daolang Huang, Yujia Guo, Luigi Acerbi, Samuel Kaski"
+  },
+  {
+    "title": "The Local Learning Coefficient: A Singularity-Aware Complexity Measure",
+    "authors": "Edmund Lau, Zach Furman, George Wang, Daniel Murfet, Susan Wei"
+  },
+  {
+    "title": "Calibrating LLMs with Information-theoretic Evidential Deep Learning",
+    "authors": "Yawei Li, David Rügamer, Bernd Bischl, Mina Rezaei"
+  },
+  {
+    "title": "Microcanonical Langevin Ensembles: Advancing the Sampling of Bayesian Neural Networks",
+    "authors": "Emanuel Sommer, Jakob Robnik, Giorgi Nozadze, Uros Seljak, David Rügamer"
+  },
+  {
+    "title": "Online Student-t Processes with an Overall-local Scale Structure for Modelling Non-stationary Data",
+    "authors": "Taole Sha, Michael Minyi Zhang"
+  },
+  {
+    "title": "How much is a noisy image worth? Data Scaling Laws for Ambient Diffusion",
+    "authors": "Giannis Daras, Yeshwanth Cherapanamjeri, Constantinos Daskalakis"
+  },
+  {
+    "title": "LLM Processes: Numerical Predictive Distributions Conditioned on Natural Language",
+    "authors": "James Requeima, John Bronskill, Dami Choi, Richard E. Turner, David Duvenaud"
+  },
+  {
+    "title": "Differentiation and Specialization of Attention Heads via the Refined Local Learning Coefficient",
+    "authors": "George Wang, Jesse Hoogland, Stan van Wingerden, Zach Furman, Daniel Murfet"
+  },
+  {
+    "title": "Paths and Ambient Spaces in Neural Loss Landscapes",
+    "authors": "Daniel Dold, Julius Kobialka, Nicolai Palm, Emanuel Sommer, David Rügamer, Oliver Dürr"
+  },
+  {
+    "title": "Additive Model Boosting: New Insights and Path(ologie)s",
+    "authors": "Rickmer Schulte, David Rügamer"
+  },
+  {
+    "title": "Multi-marginal Schrödinger Bridges with Iterative Reference Refinement",
+    "authors": "Yunyi Shen, Renato Berlinghieri, Tamara Broderick"
+  },
+  {
+    "title": "Bayesian Optimization Via Continual Variational Last Layer Training",
+    "authors": "Paul Brunzema, Mikkel Jordahn, John Willes, Sebastian Trimpe, Jasper Snoek, James Harrison"
+  },
+  {
+    "title": "Generalization Bounds for Dependent Data using Online-to-Batch Conversion",
+    "authors": "Sagnik Chatterjee,  Manuj Mukherjee, Alhad Sethi"
+  },
+  {
+    "title": "Variational Search Distributions",
+    "authors": "Daniel M. Steinberg, Rafael Oliveira, Cheng Soon Ong, Edwin V. Bonilla"
+  },
+  {
+    "title": "A Meta-Learning Approach to Bayesian Causal Discovery",
+    "authors": "Anish Dhir, Matthew Ashman, James Requeima, Mark van der Wilk"
+  },
+  {
+    "title": "Amortized Probabilistic Conditioning for Optimization, Simulation and Inference",
+    "authors": "Paul E. Chang, Nasrulloh Loka, Daolang Huang, Ulpu Remes, Samuel Kaski, Luigi Acerbi"
+  },
+  {
+    "title": "PABBO: Preferential Amortized Black-Box Optimization",
+    "authors": "Xinyu Zhang, Daolang Huang, Samuel Kaski, Julien Martinelli"
+  },
+  {
+    "title": "Prior-Dependent Allocations for Bayesian Fixed-Budget Best-Arm Identification in Structured Bandits",
+    "authors": "Nicolas Nguyen, Imad Aouali, András György, Claire Vernade"
+  },
+  {
+    "title": "Streamlining Prediction in Bayesian Deep Learning",
+    "authors": "Rui Li, Marcus Klasson, Arno Solin, Martin Trapp"
+  },
+  {
+    "title": "Towards Self-Supervised Covariance Estimation in Deep Heteroscedastic Regression",
+    "authors": "Megh Shukla, Aziz Shameem, Mathieu Salzmann, Alexandre Alahi"
+  },
+  {
+    "title": "Is merging worth it? Securely evaluating the information gain for causal dataset acquisition",
+    "authors": "Jake Fawkes, Lucile Ter-Minassian, Desi Ivanova, Uri Shalit, Chris Holmes"
+  },
+  {
+    "title": "Connecting Federated ADMM to Bayes",
+    "authors": "Siddharth Swaroop, Mohammad Emtiyaz Khan, Finale Doshi-Velez"
+  },
+  {
+    "title": "A Generative Model of Symmetry Transformations",
+    "authors": "James Urquhart Allingham, Bruno Kacper Mlodozeniec, Shreyas Padhy, Javier Antoran, David Krueger, Richard E. Turner, Eric Nalisnick, José Miguel Hernández-Lobato"
+  }
+]

@@ -24,7 +24,7 @@ const { papers, paperType } = Astro.props;
                 <!-- <a href={paper.paper_url}>{paper.title}</a> -->
                 <strong>{paper.title}</strong>
               </div>
-              {paper.authors.map((author: string) => author).join(", ")}
+              { typeof paper.authors === 'string' ? paper.authors : paper.authors.map((author: string) => author).join(", ") }
             </td>
           </tr>
         ))
