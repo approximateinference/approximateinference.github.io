@@ -19,7 +19,7 @@ We are delighted to continue the archival AABI proceedings track, where full res
 - <s>Reviews released (Proceedings Track): 28 February 2025</s>
 - <s>Author rebuttal due (Proceedings Track): 7 March 2025 (11:59pm AoE)</s>
 - <s>Acceptance notification (Proceedings, Workshop): 18 March 2025</s>
-- Camera-ready for accepted submissions: 20 April 2025
+- <s>Camera-ready for accepted submissions: 20 April 2025</s>
 - Symposium date: 29 April 2025
 
 **Fast Track**
