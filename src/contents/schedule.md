@@ -97,7 +97,7 @@ AABI 2025 will be hosted at the NTU School of Computer Science and Engineering.
 | **Time**       | **Event**                | **Note**                                                                                                                                                                         |
 | -------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 08:00 -- 09:00 | Check-In                 |                                                                                                                                                                                  |
-| 09:00 -- 09:15 | Opening Remarks          | Tim G. J. Rudner                                                                                                                                                                 |
+| 09:00 -- 09:15 | Opening Remarks          | Vincent Fortuin & Basis                                                                                                                                                          |
 | 09:15 -- 10:00 | **Invited Talk 1**       | _Adaptive Bayesian Intelligence (ABI)_ <br /> Mohammad Emtiyaz Khan                                                                                                              |
 | 10:00 -- 10:15 | **Contributed Talk 1**   | _U-ensembles: Improved diversity in the small data regime using unlabeled data_ <br /> Konstantinos Pitas, Julyan Arbel                                                          |
 | 10:15 -- 10:30 | **Contributed Talk 2**   | _From predictions to confidence intervals: an empirical study of conformal prediction methods for in-context learning_ <br /> Zhe Huang, Simone Rossi, Rui Yuan, Thomas Hannagan |
@@ -113,6 +113,6 @@ AABI 2025 will be hosted at the NTU School of Computer Science and Engineering.
 | 15:45 -- 16:00 | **Contributed Talk 7**   | _Massively Parallel Expectation Maximization For Approximate Posteriors_ <br /> Thomas Heap, Sam Bowyer, Laurence Aitchison                                                      |
 | 16:00 -- 17:00 | Poster Session 2         |                                                                                                                                                                                  |
 | 17:00 -- 17:45 | **Panel Discussion**     | _Topic TBA_ <br /> Mohammad Emtiyaz Khan, Luhuan Wu, James Requeima                                                                                                              |
-| 17:45 -- 18:00 | Closing Remarks          | Tim G. J. Rudner                                                                                                                                                                 |
+| 17:45 -- 18:00 | Closing Remarks          | Vincent Fortuin                                                                                                                                                                  |
 
 </div>
