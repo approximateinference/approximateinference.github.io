@@ -5,7 +5,7 @@
   },
   {
     "title": "U-ensembles: Improved diversity in the small data regime using unlabeled data",
-    "authors": ["Konstantinos Pitas", "Julyan Arbel"]
+    "authors": ["Konstantinos Pitas", "Hani Anouar Bourrous", "Julyan Arbel"]
   },
   {
     "title": "From predictions to confidence intervals: an empirical study of conformal prediction methods for in-context learning",
@@ -28,4 +28,3 @@
     "authors": ["Thomas Heap", "Sam Bowyer", "Laurence Aitchison"]
   }
 ]
-
