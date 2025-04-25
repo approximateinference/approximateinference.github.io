@@ -38,7 +38,7 @@ We will contact you if new spots opened up.
 
 ## Venue
 
-AABI 2025 will be hosted at the NTU School of Computer Science and Engineering.
+AABI 2025 will be hosted at the NTU College of Computing and Data Science.
 
     Lecture Theatre 1
     76 Nanyang Drive
