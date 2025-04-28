@@ -54,39 +54,39 @@ AABI 2025 will be hosted at the NTU College of Computing and Data Science.
 
 <style>
   .colorized tbody tr:nth-child(1),
-  .colorized tr:nth-child(6),
-  .colorized tr:nth-child(13) { 
+  .colorized tr:nth-child(7),
+  .colorized tr:nth-child(14) { 
     background: #efefef; 
   }
 
-  .colorized tr:nth-child(3),
-  .colorized tr:nth-child(7),
-  .colorized tr:nth-child(11),
-  .colorized tr:nth-child(17) { 
+  .colorized tr:nth-child(4),
+  .colorized tr:nth-child(8),
+  .colorized tr:nth-child(12),
+  .colorized tr:nth-child(18) { 
     background: #c0e8ff; 
   }
 
-  .colorized tr:nth-child(10),
-  .colorized tr:nth-child(16) { 
+  .colorized tr:nth-child(11),
+  .colorized tr:nth-child(17) { 
     background: #b0e0e6; 
   }
 
   @media (prefers-color-scheme: dark) {
     .colorized tbody tr:nth-child(1),
-    .colorized tr:nth-child(6),
-    .colorized tr:nth-child(13) { 
+    .colorized tr:nth-child(7),
+    .colorized tr:nth-child(14) { 
       background: #111; 
     }
 
-    .colorized tr:nth-child(3),
-    .colorized tr:nth-child(7),
-    .colorized tr:nth-child(11), 
-    .colorized tr:nth-child(17) { 
+    .colorized tr:nth-child(4),
+    .colorized tr:nth-child(8),
+    .colorized tr:nth-child(12), 
+    .colorized tr:nth-child(18) { 
       background: #2b6cb0; 
     }
 
-    .colorized tr:nth-child(10),
-    .colorized tr:nth-child(16) { 
+    .colorized tr:nth-child(11),
+    .colorized tr:nth-child(17) { 
       background: #3a5f66; 
     }
   }
