@@ -54,39 +54,39 @@ AABI 2025 will be hosted at the NTU College of Computing and Data Science.
 
 <style>
   .colorized tbody tr:nth-child(1),
-  .colorized tr:nth-child(7),
-  .colorized tr:nth-child(14) { 
+  .colorized tr:nth-child(8),
+  .colorized tr:nth-child(17) { 
     background: #efefef; 
   }
 
-  .colorized tr:nth-child(4),
-  .colorized tr:nth-child(8),
-  .colorized tr:nth-child(12),
-  .colorized tr:nth-child(18) { 
+  .colorized tr:nth-child(5),
+  .colorized tr:nth-child(10),
+  .colorized tr:nth-child(15),
+  .colorized tr:nth-child(21) { 
     background: #c0e8ff; 
   }
 
-  .colorized tr:nth-child(11),
-  .colorized tr:nth-child(17) { 
+  .colorized tr:nth-child(13),
+  .colorized tr:nth-child(20) { 
     background: #b0e0e6; 
   }
 
   @media (prefers-color-scheme: dark) {
-    .colorized tbody tr:nth-child(1),
-    .colorized tr:nth-child(7),
-    .colorized tr:nth-child(14) { 
+  .colorized tbody tr:nth-child(1),
+  .colorized tr:nth-child(8),
+  .colorized tr:nth-child(17) { 
       background: #111; 
     }
 
-    .colorized tr:nth-child(4),
-    .colorized tr:nth-child(8),
-    .colorized tr:nth-child(12), 
-    .colorized tr:nth-child(18) { 
+  .colorized tr:nth-child(5),
+  .colorized tr:nth-child(10),
+  .colorized tr:nth-child(15),
+  .colorized tr:nth-child(21) { 
       background: #2b6cb0; 
     }
 
-    .colorized tr:nth-child(11),
-    .colorized tr:nth-child(17) { 
+  .colorized tr:nth-child(13),
+  .colorized tr:nth-child(20) { 
       background: #3a5f66; 
     }
   }
@@ -99,14 +99,17 @@ AABI 2025 will be hosted at the NTU College of Computing and Data Science.
 | 08:00 -- 09:00 | Check-In                 |                                                                                                                                                                                         |
 | 09:00 -- 09:13 | Opening Remarks          | Tim G. J. Rudner and Vincent Fortuin                                                                                                                                                    |
 | 09:13 -- 09:15 | Sponsor Remarks          | BASIS                                                                                                                                                                                   |
+|                |                          | <br /> **Session 1** --- Chair: Christian Naesseth                                                                                                                                      |
 | 09:15 -- 10:00 | **Invited Talk 1**       | _Adaptive Bayesian Intelligence (ABI)_ <br /> Mohammad Emtiyaz Khan                                                                                                                     |
 | 10:00 -- 10:15 | **Contributed Talk 1**   | _Sparse Gaussian Neural Processes_ <br /> Tommy Rochussen, Vincent Fortuin                                                                                                              |
 | 10:15 -- 10:30 | **Contributed Talk 2**   | _From predictions to confidence intervals: an empirical study of conformal prediction methods for in-context learning_ <br /> Zhe Huang, Simone Rossi, Rui Yuan, Thomas Hannagan        |
 | 10:30 -- 11:00 | Break                    | Refreshments provided                                                                                                                                                                   |
+|                |                          | <br /> **Session 2** --- Chair: Agustinus Kristiadi                                                                                                                                     |
 | 11:00 -- 11:45 | **Invited Talk 2**       | _Bayesian Inference for Invariant Feature Discovery from Multi-Environment Data_ <br /> Luhuan Wu                                                                                       |
 | 11:45 -- 12:00 | **Contributed Talk 3**   | _Deep Q-Exponential Processes_ <br /> Zhi Chang, Chukwudi Paul Obite, Shuang Zhou, Shiwei Lan                                                                                           |
 | 12:00 -- 12:15 | **Contributed Talk 4**   | _Normalizing Flow Regression for Bayesian Inference with Offline Likelihood Evaluations_ <br /> Chengkun LI, Bobby Huggins, Petrus Mikkola, Luigi Acerbi                                |
 | 12:15 -- 14:00 | Lunch & Poster Session 1 | Lunch provided <br /> **Proceedings:** All papers <br /> **Workshop:** Papers 17--33 <br /> **Fast track:** Papers 12--24 <br /> Refer to [the accepted papers list](/accepted)         |
+|                |                          | <br /> **Session 3** --- Chair: James Allingham                                                                                                                                         |
 | 14:00 -- 14:45 | **Invited Talk 3**       | _LLM Predictive Distributions Over Functions_ <br /> James Requeima                                                                                                                     |
 | 14:45 -- 15:00 | **Contributed Talk 5**   | _Divide, Conquer, Combine Bayesian Decision Tree Sampling_ <br /> Jodie Anne Cochrane, Adrian Wills, Sarah J Johnson                                                                    |
 | 15:00 -- 15:30 | Break                    | Refreshments provided                                                                                                                                                                   |
