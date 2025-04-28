@@ -105,14 +105,14 @@ AABI 2025 will be hosted at the NTU College of Computing and Data Science.
 | 11:00 -- 11:45 | **Invited Talk 2**       | _Bayesian Inference for Invariant Feature Discovery from Multi-Environment Data_ <br /> Luhuan Wu                                                                                |
 | 11:45 -- 12:00 | **Contributed Talk 3**   | _Deep Q-Exponential Processes_ <br /> Zhi Chang, Chukwudi Paul Obite, Shuang Zhou, Shiwei Lan                                                                                    |
 | 12:00 -- 12:15 | **Contributed Talk 4**   | _Normalizing Flow Regression for Bayesian Inference with Offline Likelihood Evaluations_ <br /> Chengkun LI, Bobby Huggins, Petrus Mikkola, Luigi Acerbi                         |
-| 12:15 -- 14:00 | Lunch & Poster Session 1 | Lunch provided                                                                                                                                                                   |
+| 12:15 -- 14:00 | Lunch & Poster Session 1 | Lunch provided. **Workshop:** Papers 17--33; **Fast track:** Papers 12--24 --- refer to [here](/accepted).                                                                       |
 | 14:00 -- 14:45 | **Invited Talk 3**       | _LLM Predictive Distributions Over Functions_ <br /> James Requeima                                                                                                              |
 | 14:45 -- 15:00 | **Contributed Talk 5**   | _Divide, Conquer, Combine Bayesian Decision Tree Sampling_ <br /> Jodie Anne Cochrane, Adrian Wills, Sarah J Johnson                                                             |
 | 15:00 -- 15:30 | Break                    | Refreshments provided                                                                                                                                                            |
 | 15:30 -- 15:45 | **Contributed Talk 6**   | _U-ensembles: Improved diversity in the small data regime using unlabeled data_ <br /> Konstantinos Pitas, Hani Anouar Bourrous, Julyan Arbel                                    |
 | 15:45 -- 16:00 | **Contributed Talk 7**   | _Massively Parallel Expectation Maximization For Approximate Posteriors_ <br /> Thomas Heap, Sam Bowyer, Laurence Aitchison                                                      |
-| 16:00 -- 17:00 | Poster Session 2         |                                                                                                                                                                                  |
-| 17:00 -- 17:45 | **Panel Discussion**     | _Topic TBA_ <br /> Mohammad Emtiyaz Khan, Luhuan Wu, James Requeima                                                                                                              |
+| 16:00 -- 17:00 | Poster Session 2         | **Workshop:** Papers 1--16; **Fast track:** Papers 1--11 --- refer to [here](/accepted).                                                                                         |
+| 17:00 -- 17:45 | **Panel Discussion**     | _The Role of Probabilistic Machine Learning in the Age of Foundation Models and Agentic AI_ <br /> Mohammad Emtiyaz Khan, Luhuan Wu, James Requeima                              |
 | 17:45 -- 18:00 | Closing Remarks          | Vincent Fortuin                                                                                                                                                                  |
 
 </div>
