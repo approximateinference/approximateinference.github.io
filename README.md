@@ -43,15 +43,18 @@ bun astro build
 
 The actual build & deploy to <https://approximateinference.org> are automatically handled by the Github action in `.github/workflows/deploy.yml`, as soon as the `master` branch is updated.
 
+> [!IMPORTANT]
+> When starting for a new year, copy the current `src/pages/*` into something like `src/pages/2025/*`. Then, update link to use `/2025/` prefix. Also, update `src/components/layout/Header.astro` to include the archived year `<a href="/2025/">AABI 2025</a>` or so.
+
 ## How-Tos
 
 ### Updating call of papers (CfP)
 
-Simply update [`src/contents/call.md`](https://github.com/approximateinference/approximateinference/blob/2025/src/contents/call.md).
+Simply update `src/contents/call.md`.
 
 ### Updating schedule
 
-1. Go to [`src/contents/schedule.md`](https://github.com/approximateinference/approximateinference/blob/2025/src/contents/schedule.md).
+1. Go to `src/contents/schedule.md`.
 2. Simply write standard markdown tables to create the schedule. E.g. use this website: <https://www.tablesgenerator.com/markdown_tables>.
 
 ### Updating invited-speakers/organizers list
@@ -75,14 +78,14 @@ Simply update [`src/contents/call.md`](https://github.com/approximateinference/a
 ### Displaying list of accepted papers
 
 1. Obtain the accepted papers list from Openreview, using their API.
-2. Store the returned JSON file in `src/assets/accepted_papers.json`.
+2. Store the returned JSON file in `src/assets/accepted_*_papers.json`.
 3. The page `https://approximateinference.org/accepted` will automatically be populated during deployment.
 4. **How does it work?** Go to `src/contents/accepted.mdx` --- the JSON file is loaded there and passed to the `PaperList` component. Note that the object schemas are defined in `src/utils/paper.ts`.
 
 ### Creating/updating contents in general
 
 > [!TIP]
-> Check [`src/pages/index.astro`](https://github.com/approximateinference/approximateinference/blob/2025/src/pages/index.astro) for example.
+> Check `src/pages/index.astro`
 
 1. Create a new page in `src/pages`, e.g. `new_page.astro`. You can copy-paste the exsisting page. Note that, the filename is important since it reflects the site endpoint: `new_page.astro` translates into `https://approximateinference.org/new_page`.
 2. Put the following into `new_page.astro`:
