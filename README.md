@@ -46,6 +46,10 @@ The actual build & deploy to <https://approximateinference.org> are automaticall
 > [!IMPORTANT]
 > When starting for a new year, copy the current `src/pages/*` into something like `src/pages/2025/*`. Then, update link to use `/2025/` prefix. Also, update `src/components/layout/Header.astro` to include the archived year `<a href="/2025/">AABI 2025</a>` or so.
 
+
+> [!IMPORTANT]
+> Make sure to work on a branch first (e.g. `2026`) and test locally. When it's merged or you push to `master`, the website will be published. So, only do so when ready.
+
 ## How-Tos
 
 ### Updating call of papers (CfP)
