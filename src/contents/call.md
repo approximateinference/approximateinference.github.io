@@ -15,19 +15,19 @@ We are delighted to continue the archival AABI proceedings track, where full res
 
 **Proceedings and Workshop Tracks**
 
-- <s>**[Extended]** Submission deadline (Proceedings, Workshop): 14 February 2025 (11:59pm AoE)</s>
-- <s>Reviews released (Proceedings Track): 28 February 2025</s>
-- <s>Author rebuttal due (Proceedings Track): 7 March 2025 (11:59pm AoE)</s>
-- <s>Acceptance notification (Proceedings, Workshop): 18 March 2025</s>
-- <s>Camera-ready for accepted submissions: 20 April 2025</s>
-- <s>Symposium date: 29 April 2025</s>
+- <s>**[Extended]** Submission deadline (Proceedings, Workshop): TBD February 2026 (11:59pm AoE)</s>
+- <s>Reviews released (Proceedings Track): TBD February 2026</s>
+- <s>Author rebuttal due (Proceedings Track): TBD March 2026 (11:59pm AoE)</s>
+- <s>Acceptance notification (Proceedings, Workshop): TBD March 2026</s>
+- <s>Camera-ready for accepted submissions: TBD April 2026</s>
+- <s>Symposium date: TBD April 2026</s>
 
 **Fast Track**
 
-- <s>Submission deadline ('Early' Fast Track): 14 February 2025 (11:59pm AoE)</s>
-- <s>Acceptance notification ('Early' Fast Track): 18 February 2025</s>
-- <s>Submission deadline ('Late' Fast Track): 14 March 2025 (11:59pm AoE)</s>
-- <s>Acceptance notification ('Late' Fast Track): 18 March 2025</s>
+- <s>Submission deadline ('Early' Fast Track): TBD February 2026 (11:59pm AoE)</s>
+- <s>Acceptance notification ('Early' Fast Track): TBD February 2026</s>
+- <s>Submission deadline ('Late' Fast Track): TBD March 2026 (11:59pm AoE)</s>
+- <s>Acceptance notification ('Late' Fast Track): TBD March 2026</s>
 
 <!-- ## Poster Information for Authors -->
 <!---->
@@ -55,7 +55,7 @@ A submission is no longer than 12 pages in PDF format using the AABI PMLR one-co
 
 Author names need to be anonymized and may not contain any information that can break anonymity. References may extend as far as needed beyond the page limit. Submissions may include a supplement, but reviewers are not required to read any supplementary material. Preprints must not be explicitly identified as AABI submissions, and we recommend that authors avoid advertising the material during the review process.
 
-The review process will be a double-blind open review. After the initial reviews are released (28 February 2025), there will be one (1) week of author-reviewer discussion. The final decisions will then be released on 18 March 2025.
+The review process will be a double-blind open review. After the initial reviews are released (28 February 2025), there will be one (1) week of author-reviewer discussion. The final decisions will then be released on TBD March 2026.
 
 Proceedings track papers published at AABI will be indexed in the Proceedings of Machine Learning Research through the Journal of Machine Learning Research under the series name Advances in Approximate Bayesian Inference.
 
@@ -86,7 +86,7 @@ To submit fast track papers, please use [this submission link](https://docs.goog
 
 Please note that we have two Fast Track deadlines:
 
-- <s>**'Early'** --- 14 February 2025 (11:59pm AoE)</s>
-- <s>**'Late'** --- 14 March 2025 (11:59pm AoE)</s>
+- <s>**'Early'** --- TBD February 2026 (11:59pm AoE)</s>
+- <s>**'Late'** --- TBD March 2026  (11:59pm AoE)</s>
 
-Papers submitted before the 'early' deadline will receive acceptance notifications on 18 February 2025. Papers submitted after this deadline but before the 'late' deadline will receive acceptance notifications on 18 March 2025.
+Papers submitted before the 'early' deadline will receive acceptance notifications on TBD February 2026. Papers submitted after this deadline but before the 'late' deadline will receive acceptance notifications on TBD March 2026.
