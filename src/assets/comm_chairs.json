@@ -1,8 +1,20 @@
 [
   {
-    "name": "David Ruegamer",
-    "affiliation": "LMU Munich",
-    "pic": "/images/people/david_r.jpeg",
-    "link": "https://davidruegamer.github.io/"
+    "name": "Yaniv Yacoby",
+    "affiliation": "Wellesley College",
+    "pic": "/images/people/yacoby.jpeg",
+    "link": "https://yanivyacoby.github.io/"
+  },
+  {
+    "name": "Martin Trapp",
+    "affiliation": "KTH Royal Institute of Technology",
+    "pic": "/images/people/trapp.jpeg",
+    "link": "https://trappmartin.github.io/"
+  },
+  {
+    "name": "Kamélia Daudel",
+    "affiliation": "ESSEC Business School.",
+    "pic": "/images/people/daudel.jpeg",
+    "link": "https://kdaudel.github.io/"
   }
 ]

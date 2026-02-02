@@ -1,9 +1,27 @@
 [
   {
+    "name": "Tim G. J. Rudner",
+    "affiliation": "New York University",
+    "pic": "/images/people/timrudner.jpeg",
+    "link": "https://timrudner.com/"
+  },
+  {
     "name": "Vincent Fortuin",
     "affiliation": "Helmholtz AI & TU Munich",
     "pic": "/images/people/vincent.jpeg",
     "link": "https://fortuin.github.io"
+  },
+  {
+    "name": "Christian Naesseth",
+    "affiliation": "University of Amsterdam",
+    "pic": "/images/people/christian.jpeg",
+    "link": "https://naesseth.github.io/"
+  },
+  {
+    "name": "Ruqi Zhang",
+    "affiliation": "Purdue University",
+    "pic": "/images/people/ruqi.jpeg",
+    "link": "https://ruqizhang.github.io/"
   },
   {
     "name": "Yingzhen Li",

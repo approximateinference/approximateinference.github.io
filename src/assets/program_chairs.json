@@ -1,14 +1,14 @@
 [
   {
-    "name": "James Allingham",
-    "affiliation": "Google Deepmind",
-    "pic": "/images/people/james.jpeg",
-    "link": "https://jamesallingham.com/"
+    "name": "Agustinus Kristiadi",
+    "affiliation": "Vector Institute",
+    "pic": "/images/people/agustinus.jpeg",
+    "link": "https://agustinus.kristia.de"
   },
   {
-    "name": "Siddharth Swaroop",
-    "affiliation": "Harvard University",
-    "pic": "/images/people/siddharth.jpeg",
-    "link": "https://siddharthswaroop.github.io/"
+    "name": "David Rügamer",
+    "affiliation": "LMU Munich",
+    "pic": "/images/people/david_r.jpeg",
+    "link": "https://davidruegamer.github.io/"
   }
 ]
