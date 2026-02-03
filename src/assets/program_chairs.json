@@ -1,14 +1,14 @@
 [
-  {
-    "name": "Agustinus Kristiadi",
-    "affiliation": "Vector Institute",
-    "pic": "/images/people/agustinus.jpeg",
-    "link": "https://agustinus.kristia.de"
-  },
-  {
-    "name": "David Rügamer",
-    "affiliation": "LMU Munich",
-    "pic": "/images/people/david_r.jpeg",
-    "link": "https://davidruegamer.github.io/"
-  }
+    {
+        "name": "Agustinus Kristiadi",
+        "affiliation": "Western University, Vector Institute",
+        "pic": "/images/people/agustinus.jpeg",
+        "link": "https://agustinus.kristia.de"
+    },
+    {
+        "name": "David Rügamer",
+        "affiliation": "LMU Munich",
+        "pic": "/images/people/david_r.jpeg",
+        "link": "https://davidruegamer.github.io/"
+    }
 ]

@@ -1,14 +1,14 @@
 [
-  {
-    "name": "Jonathan Wenger",
-    "affiliation": "Columbia University and Zuckerman Institute",
-    "pic": "/images/people/jonathan_w.jpeg",
-    "link": "https://jonathanwenger.github.io/"
-  },
-  {
-    "name": "Patrick Pynadath",
-    "affiliation": "Purdue University",
-    "pic": "/images/people/pynadath.jpeg",
-    "link": "https://patrickpynadath1.github.io/"
-  }
+    {
+        "name": "Jonathan Wenger",
+        "affiliation": "Columbia University",
+        "pic": "/images/people/jonathan_w.jpeg",
+        "link": "https://jonathanwenger.github.io/"
+    },
+    {
+        "name": "Patrick Pynadath",
+        "affiliation": "Purdue University",
+        "pic": "/images/people/pynadath.jpeg",
+        "link": "https://patrickpynadath1.github.io/"
+    }
 ]
