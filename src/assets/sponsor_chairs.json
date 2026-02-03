@@ -1,8 +1,14 @@
 [
   {
-    "name": "Christian Naesseth",
-    "affiliation": "University of Amsterdam",
-    "pic": "/images/people/christian.jpeg",
-    "link": "https://naesseth.github.io/"
+    "name": "James Odgers",
+    "affiliation": "Helmholtz Munich",
+    "pic": "/images/people/james_o.jpeg",
+    "link": "https://jamesacodgers.github.io/"
+  },
+  {
+    "name": "Cristiana Diaconu",
+    "affiliation": "University of Cambridge",
+    "pic": "/images/people/cristiana.jpeg",
+    "link": "https://cddcam.github.io/"
   }
 ]

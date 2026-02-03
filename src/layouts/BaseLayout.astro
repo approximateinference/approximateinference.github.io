@@ -24,38 +24,40 @@ const { title } = Astro.props;
 
       <div class='relative w-full bg-black pb-10 sm:h-[25rem]'>
         <div
-          class="absolute inset-0 h-full bg-[url('/images/singapore_219.jpg')] bg-cover bg-center opacity-80 blur-[0px] dark:opacity-80 md:bg-[url('/images/singapore_219.jpg')]"
+          class="absolute inset-0 h-full bg-[url('/images/singapore_219.jpg')] bg-cover bg-center opacity-80 blur-[0px] dark:opacity-80 md:bg-[url('/images/seoul-sk.jpg')]"
         >
         </div>
 
         <div
           class='text-shadow-sm relative z-10 mx-auto my-5 px-5 pt-0 text-center font-display text-white text-shadow-blur-xl'
         >
-          <h1 class='text-5xl font-bold'><a href='/'>AABI 2025</a></h1>
+          <h1 class='text-5xl font-bold'><a href='/'>ProbML 2026</a></h1>
           <h2 class='text-xl font-semibold'>
-            7th Symposium on Advances of Approximate Bayesian Inference
+            Symposium on Probablistic Machine Learning
           </h2>
-          <p class='text-lg'>Co-located with ICLR 2025 in Singapore</p>
-          <p class='text-lg'>Tuesday, 29 April 2025</p>
-          <p class='text-lg'>Venue: NTU College of Computing and Data Science</p>
+          <p class='text-base italic opacity-75'>(Previously Symposium on Advances in Approximate Bayesian Inference)</p>          
+          <p class='text-lg'>Co-located with ICML 2026 in South Korea</p>
+          <p class='text-lg'>July 5 2026</p>
+          <p class='text-lg'>Venue: Seoul Trade Exhibition & Convention (SETEC)</p>
         </div>
       </div>
 
       <div class='w-[97.5%]'>
         <p class='text-right text-xs text-gray-400 dark:text-gray-500'>
-          Image by <a
-            href='https://www.goodfon.com/city/wallpaper-singapore-marina-bay-sands-3170.html'
-            class='underline'>Jenty</a
-          >
+          Photo by <a
+            href='https://flickr.com/photos/126110866@N08/16995563645'
+            class='underline'>Larry Koester</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, 
+            via Flickr
         </p>
       </div>
 
       <main class='relative w-full pb-0 pt-10 leading-relaxed'>
         <slot />
-
+        <!--
         <ContentLayout>
           <ContentSponsor />
         </ContentLayout>
+        -->
       </main>
 
       <Footer />
