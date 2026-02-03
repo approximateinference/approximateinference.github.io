@@ -11,7 +11,7 @@ For how-tos FAQs specific to the AABI website, please see below.
 
 - [Setup](#setup)
 - [How-Tos](#how-tos)
-  - [Updateing CfP](#updating-call-of-papers-cfp)
+  - [Updating CfP](#updating-call-of-papers-cfp)
   - [Updating schedule](#updating-schedule)
   - [Updating invited speakers/organizers list](#updating-invited-speakersorganizers-list)
   - [Displaying accepted papers list](#displaying-list-of-accepted-papers)
@@ -44,15 +44,15 @@ bun astro build
 The actual build & deploy to <https://approximateinference.github.io> are automatically handled by the Github action in `.github/workflows/deploy.yml`, as soon as the `master` branch is updated.
 
 > [!IMPORTANT]
-> When starting for a new year, copy the current `src/pages/*` into something like `src/pages/2025/*`. Then, update link to use `/2025/` prefix. Also, update `src/components/layout/Header.astro` to include the archived year `<a href="/2025/">AABI 2025</a>` or so.
+> When starting for a new year, copy the current `dist/*` into something like `public/archives/20XX/*`. Check the previous year's folder if something is not working as expected. Then, update the link in `contents/past-meetings.md` to use the `/20XX/` prefix.
 
 
 > [!IMPORTANT]
-> Make sure to work on a branch first (e.g. `2026`) and test locally. When it's merged or you push to `master`, the website will be published. So, only do so when ready.
+> Make sure to work on a branch first (e.g. `20XX`) and test locally. When it's merged or when you push to `master`, the website will be published. So, only do so when ready.
 
 ## How-Tos
 
-### Updating call of papers (CfP)
+### Updating the call for papers (CfP)
 
 Simply update `src/contents/call.md`.
 
@@ -91,7 +91,7 @@ Simply update `src/contents/call.md`.
 > [!TIP]
 > Check `src/pages/index.astro`
 
-1. Create a new page in `src/pages`, e.g. `new_page.astro`. You can copy-paste the exsisting page. Note that, the filename is important since it reflects the site endpoint: `new_page.astro` translates into `https://approximateinference.github.io/new_page`.
+1. Create a new page in `src/pages`, e.g. `new_page.astro`. You can copy-paste the existing page. Note that, the filename is important since it reflects the site endpoint: `new_page.astro` translates into `https://approximateinference.github.io/new_page`.
 2. Put the following into `new_page.astro`:
 
 ```ts

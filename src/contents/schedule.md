@@ -5,7 +5,12 @@ title: "Schedule"
 
 # Attendance Information
 
-<!-- ## Registration -->
+## Registration
+
+Please check back later for registration information and updates!
+
+<!--
+## Registration -->
 <!---->
 <!-- AABI 2025 is a free event. Spots are limited! -->
 <!---->
@@ -36,23 +41,28 @@ title: "Schedule"
 <!-- In case the spots are all taken, you can add yourself to [the waiting list](https://forms.gle/Xzm1a8XNheGDHCZPA). -->
 <!-- We will contact you if new spots opened up. -->
 
+<!--
 AABI 2025 has been concluded.
 See you at AABI 2026 next year!
+-->
+
 
 ## Venue
 
-AABI 2025 will be hosted at the NTU College of Computing and Data Science.
+ProbML 2026 will be hosted at Seoul Trade Exhibition & Convention (SETEC).
 
-    Lecture Theatre 1
-    76 Nanyang Drive
-    Level 2, North Spine Plaza
-    Nanyang Technological University
-    Singapore 637331
-
+    3104 Nambusunhwan-ro
+    Gangnam District
+    Seoul, South Korea
 <br />
 
-<div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Lecture+Theatre+1+76+Nanyang+Drive+Level+2,+North+Spine+Plaza+Nanyang+Technological+University+Singapore+637331&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+<div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.514211315813!2d127.06922057793386!3d37.49578857205689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca43aa91ed44f%3A0xdaf43f8f343e18f9!2sSETEC%20(Seoul%20Trade%20Exhibition%20%26%20Convention)!5e0!3m2!1sen!2sus!4v1770068438507!5m2!1sen!2sus"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
 
+## Schedule
+
+Please check back later for the full schedule and updates!
+
+<!--
 ## Schedule
 
 <style>
@@ -123,3 +133,4 @@ AABI 2025 will be hosted at the NTU College of Computing and Data Science.
 | 17:45 -- 18:00 | Closing Remarks          | Vincent Fortuin                                                                                                                                                                         |
 
 </div>
+-->

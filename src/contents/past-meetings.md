@@ -5,6 +5,7 @@ title: "Sponsors"
 
 # Past Meetings
 
+- [AABI 2025](/archives/2025/index.html)
 - [AABI 2024](/archives/2024/index.html)
 - [AABI 2023](/archives/2023/index.html)
 - [AABI 2022](/archives/2022/index.html)
