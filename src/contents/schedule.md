@@ -46,8 +46,6 @@ AABI 2025 has been concluded.
 See you at AABI 2026 next year!
 -->
 
-## Venue
-
 
 ## Venue
 

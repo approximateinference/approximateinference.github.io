@@ -1,38 +1,38 @@
 [
-  {
-    "name": "Tim G. J. Rudner",
-    "affiliation": "New York University",
-    "pic": "/images/people/timrudner.jpeg",
-    "link": "https://timrudner.com/"
-  },
-  {
-    "name": "Vincent Fortuin",
-    "affiliation": "Helmholtz AI & TU Munich",
-    "pic": "/images/people/vincent.jpeg",
-    "link": "https://fortuin.github.io"
-  },
-  {
-    "name": "Christian Naesseth",
-    "affiliation": "University of Amsterdam",
-    "pic": "/images/people/christian.jpeg",
-    "link": "https://naesseth.github.io/"
-  },
-  {
-    "name": "Ruqi Zhang",
-    "affiliation": "Purdue University",
-    "pic": "/images/people/ruqi.jpeg",
-    "link": "https://ruqizhang.github.io/"
-  },
-  {
-    "name": "Yingzhen Li",
-    "affiliation": "Imperial College London",
-    "pic": "/images/people/yingzhen.jpeg",
-    "link": "http://yingzhenli.net/home/en/"
-  },
-  {
-    "name": "Stephan Mandt",
-    "affiliation": "UC Irvine",
-    "pic": "/images/people/stephan.jpeg",
-    "link": "https://www.stephanmandt.com/"
-  }
+    {
+        "name": "Tim G. J. Rudner",
+        "affiliation": "University of Toronto, Vector Institute",
+        "pic": "/images/people/timrudner.jpeg",
+        "link": "https://timrudner.com/"
+    },
+    {
+        "name": "Vincent Fortuin",
+        "affiliation": "University of Technology Nürnberg, Helmholtz AI",
+        "pic": "/images/people/vincent.jpeg",
+        "link": "https://fortuin.github.io"
+    },
+    {
+        "name": "Christian Naesseth",
+        "affiliation": "University of Amsterdam",
+        "pic": "/images/people/christian.jpeg",
+        "link": "https://naesseth.github.io/"
+    },
+    {
+        "name": "Ruqi Zhang",
+        "affiliation": "Purdue University",
+        "pic": "/images/people/ruqi.jpeg",
+        "link": "https://ruqizhang.github.io/"
+    },
+    {
+        "name": "Yingzhen Li",
+        "affiliation": "Imperial College London",
+        "pic": "/images/people/yingzhen.jpeg",
+        "link": "http://yingzhenli.net/home/en/"
+    },
+    {
+        "name": "Stephan Mandt",
+        "affiliation": "UC Irvine",
+        "pic": "/images/people/stephan.jpeg",
+        "link": "https://www.stephanmandt.com/"
+    }
 ]
