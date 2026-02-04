@@ -136,6 +136,10 @@ const config = {
                 textDecoration: "underline",
               },
             },
+            strong: {
+              fontFamily: theme("fontFamily.display"),
+              fontWeight: "700",
+            },
             "li::marker": {
               color: theme("colors.neutral.950"),
             },
