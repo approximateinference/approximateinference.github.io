@@ -239,16 +239,26 @@
 </script>
 
 <script>
-  function getCurrentTheme() {
-    return localStorage.getItem("theme");
-  }
-  const toggleDarkModeButton = document.getElementById("toggleDarkMode");
+  // Theme management: always follow system
+  const getSystemTheme = () =>
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
-  toggleDarkModeButton?.addEventListener("click", () => {
-    const toggleDarkModeEvent = new CustomEvent("theme-change", {
-      detail: { theme: getCurrentTheme() === "light" ? "dark" : "light" },
-    });
-    document.dispatchEvent(toggleDarkModeEvent);
+  // Sync with system on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    document.dispatchEvent(
+      new CustomEvent("theme-change", {
+        detail: { theme: getSystemTheme() },
+      }),
+    );
+  });
+
+  // Sync with system when it changes
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+    document.dispatchEvent(
+      new CustomEvent("theme-change", {
+        detail: { theme: e.matches ? "dark" : "light" },
+      }),
+    );
   });
 </script>
 
