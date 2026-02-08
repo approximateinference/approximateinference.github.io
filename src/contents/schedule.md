@@ -49,14 +49,16 @@ See you at AABI 2026 next year!
 
 ## Venue
 
-ProbML 2026 will be hosted at Seoul Trade Exhibition & Convention (SETEC).
+To be announced!
+
+<!-- ProbML 2026 will be hosted at Seoul Trade Exhibition & Convention (SETEC).
 
     3104 Nambusunhwan-ro
     Gangnam District
     Seoul, South Korea
 <br />
 
-<div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.514211315813!2d127.06922057793386!3d37.49578857205689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca43aa91ed44f%3A0xdaf43f8f343e18f9!2sSETEC%20(Seoul%20Trade%20Exhibition%20%26%20Convention)!5e0!3m2!1sen!2sus!4v1770068438507!5m2!1sen!2sus"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+<div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.514211315813!2d127.06922057793386!3d37.49578857205689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca43aa91ed44f%3A0xdaf43f8f343e18f9!2sSETEC%20(Seoul%20Trade%20Exhibition%20%26%20Convention)!5e0!3m2!1sen!2sus!4v1770068438507!5m2!1sen!2sus"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div> -->
 
 ## Schedule
 
