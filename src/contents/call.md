@@ -126,7 +126,7 @@ To submit workshop track papers, please use the [OpenReview submission link](htt
 
 ### Fast Track
 
-We also invite researchers to present papers on the development, analysis, or application of probabilistic machine learning that have previously been accepted at major machine learning conferences and journals post AABI 2025 (the former name of ProbML): ICML 2025, NeurIPS 2025, ICLR 2026, AISTATS 2026, UAI 2026, ICML 2026, as well as JMLR and TMLR.
+We also invite researchers to present papers on the development, analysis, or application of probabilistic machine learning that have previously been accepted at major machine learning conferences and journals post AABI 2025 (the former name of ProbML): ICML 2025, UAI 2025, NeurIPS 2025, ICLR 2026, AISTATS 2026, as well as JMLR and TMLR.
 These papers should be formatted according to the camera-ready standards of their respective venues.
 Author names do not need to be anonymized. 
 ProbML Fast Track is non-archival and does not have proceedings to avoid conflict with other venues' double submission policies.
