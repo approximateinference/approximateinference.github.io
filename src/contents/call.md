@@ -42,7 +42,7 @@ ProbML 2026 also welcomes submissions that explore connections between those afo
 - foundation models,
 - lifelong and continual learning
 
-**Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods to Healthcare and Climate Change.** 
+**Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods with a focus on Healthcare and Climate Change.** 
 For this new focus area, we aim to foster stronger communication and collaboration between researchers developing probabilistic/Bayesian machine learning methodology and researchers focused primarily on real-world applications. 
 As such, in this area, novel methodology/theory is **not** an evaluation criterion. 
 Instead, we encourage submissions that:
@@ -164,7 +164,7 @@ Submissions in this area will be evaluated on:
 - **Clarity and reproducibility:** Is the work clearly presented with sufficient detail for reproducibility?
 
 
-### Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods to Healthcare and Climate Change
+### Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods with a focus on Healthcare and Climate Change
 
 For this new focus area, we aim to foster stronger communication and collaboration between researchers developing probabilistic/Bayesian machine learning methodology and researchers focused primarily on real-world applications. As such, in this area, novel methodology/theory is **not** an evaluation criterion (though it is always welcome). Instead, we encourage submissions that:
 - Propose **thoughtful, rigorous** uses of probabilistic/Bayesian models or inference, with clear **empirical and scientific evidence for why** the chosen methodology is well-aligned with the downstream task.
