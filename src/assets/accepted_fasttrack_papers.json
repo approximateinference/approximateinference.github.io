@@ -12,6 +12,10 @@
     "authors": "Anton Baumann, Rui Li, Marcus Klasson, Santeri Mentu, Shyamgopal Karthik, Zeynep Akata, Arno Solin, Martin Trapp"
   },
   {
+    "title": "Federated ADMM from Bayesian Duality", 
+    "authors": "Thomas Moellenhoff, Siddharth Swaroop, Finale Doshi-Velez, Mohammad Emtiyaz Khan"
+  },
+  {
     "title": "Amortising Inference and Meta-Learning Priors in Neural Networks", 
     "authors": "Tommy Rochussen, Vincent Fortuin"
   }, 
