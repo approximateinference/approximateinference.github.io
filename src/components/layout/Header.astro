@@ -113,12 +113,18 @@
 
     <!-- Desktop menu -->
     <div
-      class='hidden items-center justify-start gap-x-10 pt-3 text-sm sm:flex sm:max-w-[80%] sm:flex-wrap sm:justify-center sm:pt-0 md:text-lg'
+      class='hidden items-center justify-start gap-x-6 pt-3 text-sm sm:flex sm:flex-nowrap sm:justify-center sm:pt-0 md:gap-x-8 md:text-lg'
     >
       <a
         href='/call'
         class='flex-none font-semibold'
         >Call for Papers</a
+      >
+      <a
+        href='/accepted'
+        class='flex-none font-semibold'
+        aria-label='Nav Menu Item'
+        >Accepted</a
       >
       <a
         href='/dates'
@@ -220,9 +226,9 @@
 
   <!-- Mobile Dropdown Menu -->
   <div id='mobile-menu' class='ml-auto hidden text-right sm:hidden'>
-    <!-- <a href='/schedule' class='block px-4 py-2'>Attending</a>
-    <a href='/accepted' class='block px-4 py-2'>Accepted Papers</a> -->
+    <!-- <a href='/schedule' class='block px-4 py-2'>Attending</a> -->
     <a href='/call' class='block px-4 py-2'>Call for Papers</a>
+    <a href='/accepted' class='block px-4 py-2'>Accepted</a>
     <a href='/dates' class='block px-4 py-2'>Key Dates</a>
     <a href='/organizers' class='block px-4 py-2'>Organizers</a>
     <a href='/reviewers' class='block px-4 py-2'>Reviewer Guidelines</a>
