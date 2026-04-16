@@ -2,13 +2,12 @@
 layout: ../layouts/ContentLayout.astro
 title: "Call for Papers"
 ---
+
 <style>
   h2, h3 {
     scroll-margin-top: 80px; /* Adjust this value based on your header height */
   }
 </style>
-
-
 
 # Call for Papers
 
@@ -16,7 +15,7 @@ We invite submissions to the Symposium on Probabilistic Machine Learning (ProbML
 
 We are delighted to offer three paper tracks:
 
-1. An **archival proceedings track**, where full research papers will be subjected to a rigorous peer review and published in the proceedings of the symposium under the title Symposium in Probabilistic Machine Learning 2026, hosted by the Proceedings of Machine Learning Research (PMLR). 
+1. An **archival proceedings track**, where full research papers will be subjected to a rigorous peer review and published in the proceedings of the symposium under the title Symposium in Probabilistic Machine Learning 2026, hosted by the Proceedings of Machine Learning Research (PMLR).
 2. A **non-archival workshop track**.
 3. A **fast track** for papers recently accepted elsewhere.
 
@@ -42,22 +41,21 @@ ProbML 2026 also welcomes submissions that explore connections between those afo
 - foundation models,
 - lifelong and continual learning
 
-**Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods with a focus on Healthcare and Climate Change.** 
-For this new focus area, we aim to foster stronger communication and collaboration between researchers developing probabilistic/Bayesian machine learning methodology and researchers focused primarily on real-world applications. 
-As such, in this area, novel methodology/theory is **not** an evaluation criterion. 
+**Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods with a focus on Healthcare and Climate Change.**
+For this new focus area, we aim to foster stronger communication and collaboration between researchers developing probabilistic/Bayesian machine learning methodology and researchers focused primarily on real-world applications.
+As such, in this area, novel methodology/theory is **not** an evaluation criterion.
 Instead, we encourage submissions that:
 
 - Propose **thoughtful, rigorous** uses of probabilistic/Bayesian models or inference, with clear **empirical and scientific evidence for why** the chosen methodology is well-aligned with the downstream task.
 - Use probabilistic/Bayesian methods to **advance scientific understanding**, for example, by **carefully integrating** domain expertise, physical constraints, or mechanistic knowledge into the modeling and inference pipeline.
 - Tackle applications where problems **cannot (or should not) be addressed solely by scaling up data and deep learning models**, such as data-sparse regimes, high-stakes decision making, causal reasoning, or settings with strict interpretability, safety, or governance requirements.
 
-
 ## Key Dates
 
 <h3 id="proceeding-track-dates">Proceedings Track</h3>
 
 - **Submission deadline:** 20 March 2026 (11:59 PM AoE)
-- **Reviews released:** 17 April 2026
+- **Reviews released:** 17 April 2026 (11:59 PM AoE)
 - **Author rebuttal due:** 24 April 2026 (11:59 PM AoE)
 - **Acceptance notification:** 8 May 2026
 - **Camera-ready for accepted submissions:** 19 June 2026
@@ -128,7 +126,7 @@ To submit workshop track papers, please use the [OpenReview submission link](htt
 
 We also invite researchers to present papers on the development, analysis, or application of probabilistic machine learning that have previously been accepted at major machine learning conferences and journals post AABI 2025 (the former name of ProbML): ICML 2025, UAI 2025, NeurIPS 2025, ICLR 2026, AISTATS 2026, as well as JMLR and TMLR.
 These papers should be formatted according to the camera-ready standards of their respective venues.
-Author names do not need to be anonymized. 
+Author names do not need to be anonymized.
 ProbML Fast Track is non-archival and does not have proceedings to avoid conflict with other venues' double submission policies.
 
 Papers accepted within this modality will be presented in person as posters. These papers will not appear on the ProbML website.
@@ -137,14 +135,13 @@ To submit fast-track papers, please use [this submission link](https://forms.gle
 
 Papers must be submitted by 20 March 2026. Acceptance notifications will be sent on 1 April 2026.
 
-
 ## Areas of Focus
 
-Across all three tracks, we encourage contributions in **two primary areas of focus**, described below. 
+Across all three tracks, we encourage contributions in **two primary areas of focus**, described below.
 
-### Area 1: Probabilistic and/or Bayesian ML Methods 
+### Area 1: Probabilistic and/or Bayesian ML Methods
 
-We welcome methodological and theoretical contributions in advancing the foundations of probabilistic machine learning, probabilistic and (approximate) Bayesian inference, Bayesian statistics, and decision-making under uncertainty. 
+We welcome methodological and theoretical contributions in advancing the foundations of probabilistic machine learning, probabilistic and (approximate) Bayesian inference, Bayesian statistics, and decision-making under uncertainty.
 We also encourage work exploring connections between these fields and adjacent areas such as deep learning, natural language processing, active learning, reinforcement learning, compression, AI safety, scientific computing, and causal inference.
 Relevant topics include, but are not limited to:
 
@@ -163,15 +160,16 @@ Submissions in this area will be evaluated on:
 - **Empirical validation:** When applicable, how is the method evaluated? Are experiments well-designed with appropriate baselines, metrics, and datasets?
 - **Clarity and reproducibility:** Is the work clearly presented with sufficient detail for reproducibility?
 
-
 ### Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods with a focus on Healthcare and Climate Change
 
 For this new focus area, we aim to foster stronger communication and collaboration between researchers developing probabilistic/Bayesian machine learning methodology and researchers focused primarily on real-world applications. As such, in this area, novel methodology/theory is **not** an evaluation criterion (though it is always welcome). Instead, we encourage submissions that:
+
 - Propose **thoughtful, rigorous** uses of probabilistic/Bayesian models or inference, with clear **empirical and scientific evidence for why** the chosen methodology is well-aligned with the downstream task.
 - Use probabilistic/Bayesian methods to **advance scientific understanding**, for example, by **carefully integrating** domain expertise, physical constraints, or mechanistic knowledge into the modeling and inference pipeline.
 - Tackle applications where problems **cannot (or should not) be addressed solely by scaling up data and deep learning models**, such as data-sparse regimes, high-stakes decision making, causal reasoning, or settings with strict interpretability, safety, or governance requirements.
 
 We welcome a broad range of application-driven contributions in this track, including but not limited to:
+
 - **Clinical and public health applications**, such as diagnosis and prognosis under uncertainty, individualized treatment recommendations, clinical trial design and monitoring, health policy evaluation, infectious disease modeling, and resource allocation in healthcare systems.
 - **Climate and environmental applications**, such as climate model calibration and emulation, extreme event modeling, uncertainty quantification in climate and weather projections, climate-informed decision support, environmental risk assessment, and integration of physical and data-driven models.
 - **Decision-making under uncertainty**, including Bayesian decision analysis, optimal experimental design, adaptive policies, and decision support tools for practitioners and policymakers.
