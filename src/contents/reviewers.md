@@ -11,17 +11,16 @@ Please use the commenting function on OpenReview and make sure the authors are n
 ## Important Dates
 
 - **Review period begins:** 21 March 2026
-- **Review period ends:** 14 April 2026
-- **Reviews released to authors:** 17 April 2026
+- **Reviews released to authors:** 17 April 2026 (11:59 PM AoE)
 - **Author rebuttal due:** 24 April 2026 (11:59 PM AoE)
-- **Author-reviewer discussion (including private reviewer-AC discussion):**  24 April–1 May 2026
+- **Author-reviewer discussion (including private reviewer-AC discussion):** 24 April–1 May 2026
 - **AC metareview due:** 3 May 2026 (11:59 PM AoE)
 
 ## Guidelines
 
-### Area 1: Probabilistic and/or Bayesian ML Methods 
+### Area 1: Probabilistic and/or Bayesian ML Methods
 
-We welcome methodological and theoretical contributions in advancing the foundations of probabilistic machine learning, Bayesian statistics, and decision-making under uncertainty. 
+We welcome methodological and theoretical contributions in advancing the foundations of probabilistic machine learning, Bayesian statistics, and decision-making under uncertainty.
 We also encourage work exploring connections between these fields and adjacent areas such as deep learning, natural language processing, active learning, reinforcement learning, compression, AI safety, scientific computing, and causal inference.
 Relevant topics include, but are not limited to:
 
@@ -43,11 +42,13 @@ Submissions in this area will be evaluated on:
 ### Area 2 (New!): Applications of Probabilistic and/or Bayesian Methods to Healthcare and Climate Change
 
 For this new focus area, we aim to foster stronger communication and collaboration between researchers developing probabilistic/Bayesian machine learning methodology and researchers focused primarily on real-world applications. As such, in this area, novel methodology/theory is **not** an evaluation criterion (though it is always welcome). Instead, we encourage submissions that:
+
 - Propose **thoughtful, rigorous** uses of probabilistic/Bayesian models or inference, with clear **empirical and scientific evidence for why** the chosen methodology is well-aligned with the downstream task.
 - Use probabilistic/Bayesian methods to **advance scientific understanding**, for example, by **carefully integrating** domain expertise, physical constraints, or mechanistic knowledge into the modeling and inference pipeline.
 - Tackle applications where problems **cannot (or should not) be addressed solely by scaling up data and deep learning models**, such as data-sparse regimes, high-stakes decision making, causal reasoning, or settings with strict interpretability, safety, or governance requirements.
 
 We welcome a broad range of application-driven contributions in this track, including but not limited to:
+
 - **Clinical and public health applications**, such as diagnosis and prognosis under uncertainty, individualized treatment recommendations, clinical trial design and monitoring, health policy evaluation, infectious disease modeling, and resource allocation in healthcare systems.
 - **Climate and environmental applications**, such as climate model calibration and emulation, extreme event modeling, uncertainty quantification in climate projections, climate-informed decision support, environmental risk assessment, and integration of physical and data-driven models.
 - **Decision-making under uncertainty**, including Bayesian decision analysis, optimal experimental design, adaptive policies, and decision support tools for practitioners and policymakers.
@@ -60,3 +61,4 @@ Submissions in this area will be evaluated on:
 - **Empirical and scientific validation:** How is the proposed approach evaluated (e.g., predictive performance, calibration, decision quality, robustness, interpretability)?
 - What **evidence** is provided that the method improves understanding, decisions, or outcomes relative to existing practice?
 - When applicable, **practical considerations and deployment**: how does the work engage with real data, real users, or real systems? What are the limitations, assumptions, and open challenges for practical deployment?
+
