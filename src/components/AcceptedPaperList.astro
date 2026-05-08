@@ -2,9 +2,6 @@
 interface AcceptedPaper {
   title: string;
   authors: Array<string | { name?: string; fullname?: string; id?: string }> | string;
-  metadata?: {
-    number?: number;
-  };
 }
 
 interface Props {
@@ -35,6 +32,7 @@ const formatAuthors = (authors: AcceptedPaper["authors"]) => {
 
   return names.length > 0 ? names.join(", ") : "TBA";
 };
+
 ---
 
 <div class='overflow-x-auto'>
@@ -50,7 +48,7 @@ const formatAuthors = (authors: AcceptedPaper["authors"]) => {
       {
         papers.map((paper: AcceptedPaper, idx: number) => (
           <tr>
-            <td>{paper.metadata?.number ?? idx + 1}</td>
+            <td>{idx + 1}</td>
             <td>{paperType}</td>
             <td>
               <div>
