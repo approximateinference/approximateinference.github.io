@@ -1,0 +1,960 @@
+[
+  {
+    "id": "paper3",
+    "title": "Anchor-Based Heteroscedastic Noise for Preferential Bayesian Optimization",
+    "authors": [
+      {
+        "id": "~Marshal_Arijona_Sinaga2",
+        "name": "Marshal Arijona Sinaga",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Julien_Martinelli1",
+        "name": "Julien Martinelli",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Samuel_Kaski1",
+        "name": "Samuel Kaski",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Preferential Bayesian optimization (PBO) learns latent utilities from pairwise comparisons, but most existing methods assume homoscedastic comparison noise. This is inadequate in human-in-the-loop settings, where a user may compare some designs reliably and others only hesitantly. We propose a heteroscedastic noise model for PBO: before optimization, the user provides a small set of reliable examples, called _anchors_, and a kernel density estimator (KDE) turns these anchors into an input-dependent map of user uncertainty. We incorporate this map into preferential GP surrogates and derive risk-averse acquisition functions that trade off utility and ease of comparison. We further show that a risk-adjusted variant of the popular expected utility of the best option (EUBO) preserves the one-step Bayes-optimality guarantee up to an additive constant, and that under an idealized i.i.d.\\ anchor model the KDE estimator enjoys standard consistency and concentration rates. Experiments on synthetic problems and human-preference datasets show improved risk-adjusted performance and clarify how anchor placement affects the method.",
+    "keywords": [
+      "Preferential Bayesian Optimization",
+      "Heteroscedastic Noise",
+      "Gaussian Process"
+    ],
+    "paper_url": "https://openreview.net/forum?id=GZGf6dx6GA",
+    "pdf_url": "https://openreview.net/pdf?id=GZGf6dx6GA",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:09:19.036000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "eEXgfp84vl",
+      "content": "This paper tackles a well-motivated and practically relevant extension of preferential Bayesian optimization by introducing heteroscedastic comparison noise modeled through anchor-based KDE, with risk-averse acquisition functions that balance utility and comparison reliability. The framework is sound, the theoretical analysis is a genuine attempt to provide guarantees, and the empirical evaluation across synthetic and real preference datasets is reasonable. However, reviewers raise substantive concerns that should be addressed. Most critically, there is a disagreement about whether the risk-adjusted objective is the right target: if the goal of BO is to find the true optimum, penalizing candidates in uncertain regions may actively harm optimization, and the paper does not fully resolve this tension. Additional weaknesses include unclear exposition of key algorithmic details such as duel construction and approximate posterior treatment, insufficiently motivated theoretical results, and limited discussion of experimental findings beyond restating figures. The paper has clear merit and addresses a genuine gap, but would benefit significantly from incorporating the raised reviewer concerns.",
+      "date": "2026-05-01T16:09:19.036000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-12T14:07:19.924000Z",
+      "updated_at": "2026-03-23T21:47:24.886000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "GZGf6dx6GA",
+      "note_id": "GZGf6dx6GA",
+      "number": 3
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper4",
+    "title": "Wavelet Conditional Neural Processes",
+    "authors": [
+      {
+        "id": "~Junyu_Xuan1",
+        "name": "Junyu Xuan",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Mengjing_Wu1",
+        "name": "Mengjing Wu",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Conditional neural processes (CNPs) are a new family of stochastic processes defined by deep neural networks, characterized by the necessary properties of marginal consistency and exchangeability. Thanks to their generalization capabilities across tasks, popular applications of CNPs include meta-learning and multi-task learning. The existing CNPs map a context set to a vector or function space where all samples are considered homogeneously, which limits their representational power. In this paper, we introduce a Wavelet Conditional Neural Process (WaveCNP) as a new member of the CNP family, based on wavelet transform theory. We propose mapping the context set into a nested multiresolution function space sequence rather than a singular space, achieved through the efficient and adaptive discrete wavelet transform. We demonstrate that our WaveCNP can outperform existing CNPs in terms of conditional predictive distribution modeling and multiresolution prediction.",
+    "keywords": [
+      "Neural Processes",
+      "Bayesian deep learning"
+    ],
+    "paper_url": "https://openreview.net/forum?id=5Ll9ZQbyV7",
+    "pdf_url": "https://openreview.net/pdf?id=5Ll9ZQbyV7",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:16:17.051000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "JM76WQN7zo",
+      "content": "The paper proposes WaveCNP / WaveDeepSet, which inserts a wavelet-based multiresolution representation into a ConvCNP-style architecture to better capture long-range and multiscale structure while retaining key symmetry properties.\n\nThe reviewers liked the core idea a lot: using multiresolution representations to address ConvCNP limitations in modeling long-range dependencies without huge computational cost. They also praised the theoretical properties and thought the empirical results on multiresolution tasks were promising.\nHowever, they also raise several concerns.\nThese include that the wavelet motivation was underexplained, theorem provenance / numbering / proofs were unclear, diagrams were not very helpful, key properties were presented too informally, ConvCNP may have been unfairly undertrained, the experiments were data-starved and partly contrived, and the research questions were not explicitly answered.\n\nThe authors' rebuttals gave concrete revision plans: better justification for wavelets, proper theorem attribution, corrected numbering, improved diagrams, formalized properties, more rigorous proofs, clearer framing of low-data experiments as data-efficiency tests, more discussion of fairness / realism of the benchmarks, and explicit answers to the research questions.\nThis has largely addressed the reviewers criticisms.\n\nTherefore, we have decided to accept the paper for publication at ProbML. We would still recommend that the authors take the reviewers' feedback into account when preparing the camera-ready version.",
+      "date": "2026-05-01T15:16:17.051000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-13T01:33:27.135000Z",
+      "updated_at": "2026-03-23T21:47:24.841000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "5Ll9ZQbyV7",
+      "note_id": "5Ll9ZQbyV7",
+      "number": 4
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper6",
+    "title": "Universality of Singular Complexity for Hyvärinen Generalized Bayes: Exact Transfer in Gaussian Factor Analysis",
+    "authors": [
+      {
+        "id": "~Manoj_Saravanan1",
+        "name": "Manoj Saravanan",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Rohit_Kumar_Salla1",
+        "name": "Rohit Kumar Salla",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Singular statistical models are asymptotically governed by local birational invariants such as the real log canonical threshold (RLCT), rather than by ambient parameter dimension. We study this singular complexity under generalized Bayes updates based on the Hyvärinen loss. We first prove a local comparison theorem: nonnegative analytic excess-loss germs that are locally comparable near a common zero set have the same local RLCT pair. As a corollary, losses that share an analytic minimizer map and have a nondegenerate quadratic germ lie in the same singular universality class. We then show that in analytic zero-mean Gaussian covariance models, both the population excess Gaussian log-loss and the excess Hyvärinen loss are locally equivalent to $\\lVert \\Sigma(\\theta)-\\Sigma_0 \\rVert_{\\mathrm{F}}^2$. Consequently, ordinary Gaussian Bayes and Hyvärinen generalized Bayes have identical local RLCT pairs at every covariance fiber. Applying this transfer principle to Gaussian factor analysis yields exact transfer of known local learning-coefficient results from ordinary Gaussian Bayes. In the one-factor model, the Hyvärinen posterior therefore has coefficients $p$, $(2p-1)/2$, and $3p/4$ on the corresponding covariance strata. Numerical experiments confirm the predicted local quadratic equivalence and the cancellation of the shared $\\lambda \\log n$ term in paired free-energy differences.",
+    "keywords": [
+      "singular learning theory",
+      "real log canonical threshold",
+      "generalized Bayes",
+      "Hyvärinen score",
+      "score matching",
+      "Bayesian asymptotics",
+      "Gaussian covariance models",
+      "Gaussian factor analysis"
+    ],
+    "paper_url": "https://openreview.net/forum?id=m151hNCuqx",
+    "pdf_url": "https://openreview.net/pdf?id=m151hNCuqx",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:54:59.835000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "GgYHDECMpI",
+      "content": "The paper proves a local transfer principle for learning coefficients and uses it to show that ordinary Gaussian Bayes and Hyvärinen generalized Bayes share the same local learning coefficients in Gaussian covariance models. As a consequence, known factor-analysis RLCT results transfer directly to the Hyvärinen posterior.\n\nStrengths converged on by the reviewers:\n- A clean and useful abstract mechanism (local comparison plus quadratic-germ universality), accompanied by a matching sharpness result.\n- Proofs are standard but carefully executed within the singular-learning-theory framework.\n- Numerical design directly targets the theorem-level predictions, with a sensible paired-difference protocol.\n- Authors are appropriately precise about the locality of the claim and its limits.\n\nRemaining concerns, mostly about presentation rather than substance:\n- Framing should more clearly distinguish the new transfer theorem from the Bayes-side factor-analysis values imported from Drton et al. (2025).\n- Background on RLCTs and the role of the multiplicity should be added, together with a brief related-work paragraph.\n- The general geometric mechanism should be more sharply separated from the Gaussian-specific matrix identities.\n- Scope clarifications would help.\n\nThe authors have credibly committed to these revisions in their responses, and all three reviewers lean toward acceptance. Conditional on acceptance, the authors are asked to fully incorporate the promised changes especially to improve the readability for the ProbML community in the camera-ready version.",
+      "date": "2026-05-01T15:54:59.835000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-14T18:13:24.649000Z",
+      "updated_at": "2026-03-23T21:47:24.644000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "m151hNCuqx",
+      "note_id": "m151hNCuqx",
+      "number": 6
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper9",
+    "title": "An Isotropic Approach to Efficient Uncertainty Quantification with Gradient Norms",
+    "authors": [
+      {
+        "id": "~Nils_Grünefeld1",
+        "name": "Nils Grünefeld",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Jes_Frellsen1",
+        "name": "Jes Frellsen",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Christian_Hardmeier1",
+        "name": "Christian Hardmeier",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Existing methods for quantifying predictive uncertainty in neural networks are either computationally intractable for large language models or require access to training data that is typically unavailable.\nWe derive a lightweight alternative through two approximations: a first-order Taylor expansion that expresses uncertainty in terms of the gradient of the prediction and the parameter covariance, and an isotropy assumption on the parameter covariance.\nTogether, these yield epistemic uncertainty as the squared gradient norm and aleatoric uncertainty as the Bernoulli variance of the point prediction, from a single forward-backward pass through an unmodified pretrained model.\nWe justify the isotropy assumption by showing that covariance estimates built from non-training data introduce structured distortions that isotropic covariance avoids, and that theoretical results on the spectral properties of large networks support the approximation at scale.\nValidation against reference Markov Chain Monte Carlo estimates on synthetic problems shows strong correspondence that improves with model size.\nWe then use the estimates to investigate when each uncertainty type carries useful signal for predicting answer correctness in question answering with large language models, revealing a benchmark-dependent divergence: the combined estimate achieves the highest mean AUROC on TruthfulQA, where questions involve genuine conflict between plausible answers, but falls to near chance on TriviaQA's factual recall, suggesting that parameter-level uncertainty captures a fundamentally different signal than self-assessment methods.",
+    "keywords": [
+      "uncertainty quantification",
+      "epistemic uncertainty",
+      "aleatoric uncertainty",
+      "large language models",
+      "Bayesian deep learning",
+      "delta method",
+      "gradient norm",
+      "Taylor expansion",
+      "isotropic covariance",
+      "hallucination detection",
+      "question answering",
+      "predictive uncertainty"
+    ],
+    "paper_url": "https://openreview.net/forum?id=UwhU8weZf2",
+    "pdf_url": "https://openreview.net/pdf?id=UwhU8weZf2",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:23:33.130000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "u5PcfpOBYL",
+      "content": "This paper makes a useful and well-motivated contribution by deriving a lightweight uncertainty quantification method for large pretrained language models that requires only a single forward-backward pass and no access to training data. The reviewers found the core ideas theoretically grounded and practically appealing, with strong computational efficiency gains over sampling-based baselines. Reviewers appreciate the observed differences between benchmarks TruthfulQA versus TriviaQA, and the honest discussion of limitations. Key concerns to address in revision include: better justification for the isotropy assumption beyond its tautological avoidance of data-dependent bias; sensitivity analysis on the diagonal covariance component; clarification of the U-shaped scaling trajectory; more explicit comparison against Monte Carlo dropout and other lightweight baselines; and promotion of the speedup results to a more prominent position in the main text. Overall, the paper is a solid contribution and is recommended for acceptance.",
+      "date": "2026-05-01T15:23:33.130000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-19T15:39:53.546000Z",
+      "updated_at": "2026-03-23T21:47:24.556000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "UwhU8weZf2",
+      "note_id": "UwhU8weZf2",
+      "number": 9
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper11",
+    "title": "Causal Temporal Graphs for Counterfactual Validation of Temporal Link Prediction",
+    "authors": [
+      {
+        "id": "~Aniq_Ur_Rahman1",
+        "name": "Aniq Ur Rahman",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Justin_Coon1",
+        "name": "Justin Coon",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Temporal link prediction (TLP) models are commonly evaluated based on predictive accuracy, yet such evaluations do not assess whether these models capture the causal mechanisms that govern temporal interactions. In this work, we propose a framework for counterfactual validation of TLP models by generating causal temporal interaction graphs (CTIGs) with known ground-truth causal structure. We first introduce a structural equation model for continuous-time event sequences that supports both excitatory and inhibitory effects, and then extend this mechanism to temporal interaction graphs. To compare causal models, we propose a divergence metric based on cross-model predictive error, and empirically validate the hypothesis that predictors trained on one causal model degrade when evaluated on sufficiently distant models. Finally, we instantiate counterfactual evaluation under (i) controlled causal shifts between generating models and (ii) timestamp shuffling as a stochastic distortion with measurable causal divergence. Our framework provides a foundation for causality-aware benchmarking.",
+    "keywords": [
+      "temporal interaction graphs",
+      "temporal link prediction",
+      "counterfactual analysis"
+    ],
+    "paper_url": "https://openreview.net/forum?id=0dQ5hO371i",
+    "pdf_url": "https://openreview.net/pdf?id=0dQ5hO371i",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:24:18.445000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "e1mRMov7Nv",
+      "content": "The article proposes a new evaluation/benchmarking framework for temporal link prediction (TLP) models that goes beyond predictive accuracy. The main novelty is a mechanism for generating event data with a known ground-truth causal structure, along with an appropriate divergence measure for model assessment and comparison. \n\n**Pros**\n- The paper makes a valuable contribution to the principled assessment of TLP models.\n- The new mechanism and measure are novel and appropriate for the task.\n- The paper is somewhat dense, but generally well written and precise in notation.\n\n**Cons**\n- Only two modern methods are actually benchmarked in experiments.\n- Both reviewers would appreciate more discussion about how this framework could be \"applied\" to a real data set or concrete prediction problem. Of course, the true causal mechanism is not known in such situations, but I would recommend that the authors put some thought into how the simulation design could be tailored or adapted to a specific problem.",
+      "date": "2026-05-01T15:24:18.445000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T04:06:21.705000Z",
+      "updated_at": "2026-03-23T21:47:24.574000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "0dQ5hO371i",
+      "note_id": "0dQ5hO371i",
+      "number": 11
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper12",
+    "title": "Neural Stochastic Differential Equations on Compact State Spaces: Theory, Methods, and Application to Suicide Risk Modeling",
+    "authors": [
+      {
+        "id": "~Malinda_Lu1",
+        "name": "Malinda Lu",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Yue-Jane_Liu1",
+        "name": "Yue-Jane Liu",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Matthew_K._Nock1",
+        "name": "Matthew K. Nock",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Yaniv_Yacoby1",
+        "name": "Yaniv Yacoby",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Ecological Momentary Assessment (EMA) studies enable the collection of high-frequency self-reports of suicidal thoughts and behaviors (STBs) via smartphones. Latent stochastic differential equations (SDE) are a promising model class for EMA data, as it is irregularly sampled, noisy, and partially observed. But SDE-based models suffer from two key limitations. (a) These models often violate domain constraints, undermining scientific validity and clinical trust of the model. (b) Training is numerically unstable without ad-hoc fixes (e.g. oversimplified dynamics) that are ill-suited for high-stakes applications. Here, we develop a novel class of expressive SDEs whose solutions are provably confined to a prescribed compact polyhedral state space, matching the domains of EMA data. (1) We show why chain‑rule–based constructions of SDEs on compact domains fail, theoretically and empirically; (2) we derive constraints on drift and diffusion for non-stationary/stationary SDEs so their solutions remain on the desired state space; and (3), we introduce a parameterization that maps arbitrary (neural or expert-given) dynamics into constraint‑satisfying SDEs. On several real EMA datasets, including a large suicide-risk study, our parameterization improves inductive bias, training dynamics, and predictive performance over standard latent neural SDE baselines. These contributions pave way for principled, trustworthy continuous-time models of suicide risk and other clinical time series; they also extend the application of SDE-based methods (e.g. diffusion models) to domains with hard state constraints.",
+    "keywords": [
+      "Stochastic Differential Equations",
+      "Compact Spaces",
+      "Latent SDEs",
+      "Mental Health",
+      "Suicide Prevention",
+      "Time Series"
+    ],
+    "paper_url": "https://openreview.net/forum?id=Wm6qb2EyCc",
+    "pdf_url": "https://openreview.net/pdf?id=Wm6qb2EyCc",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:25:05.277000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "2H3SEW9VZW",
+      "content": "The paper develops a parameterization for neural / latent SDEs whose trajectories remain in compact polyhedral state spaces, explains why common chain-rule-based compact-domain constructions fail, derives viable drift/diffusion constraints, and applies the method to EMA suicide-risk forecasting.\n\nThe reviewers praise the methodological contribution, seeing it as a useful and broadly applicable way to constrain neural SDEs while preserving expressivity. Reviewers also valued the real EMA datasets, the practical importance of respecting bounded domains, and the overall theoretical grounding.\nHowever, they also raise several concerns.\nThese include that novelty and positioning versus prior work were unclear, that empirical claims were too broad for the evidence provided, and that evaluation on the suicide-risk application lacked stronger baselines, ablations, code, and more decision-relevant metrics. Other concerns included a weak theory-to-implementation bridge in the main paper, solver / clipping limitations, and the fact that the method is not itself a simulation-free training contribution.\n\nThe authors' rebuttals clarified the target audience and methodological scope, promised stronger related-work positioning, tightened empirical claims, explained compatibility with simulation-free methods, added more main-text implementation detail, and directly addressed the clipping criticism with a new `Vanilla+Clip` baseline showing clipping alone does not explain the gains. They also discussed the Chebyshev-center design choice, code release, and future work on viable solvers.\nThis has largely addressed the reviewers criticisms.\n\nTherefore, we have decided to accept the paper for publication at ProbML. We would still recommend that the authors take the reviewers' feedback into account when preparing the camera-ready version.",
+      "date": "2026-05-01T15:25:05.277000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T04:22:11.418000Z",
+      "updated_at": "2026-03-23T21:47:24.535000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "Wm6qb2EyCc",
+      "note_id": "Wm6qb2EyCc",
+      "number": 12
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper15",
+    "title": "Conditionally Identifiable Latent Representation for Multivariate Time Series with Structural Dynamics",
+    "authors": [
+      {
+        "id": "~Minkey_Chang1",
+        "name": "Minkey Chang",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Jae-Young_Kim1",
+        "name": "Jae-Young Kim",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "We propose the Identifiable Variational Dynamic Factor Model (iVDFM) for multivariate time series. The model combines variational inference with \\emph{partial} identifiability guarantees up to a known ambiguity class. Innovations follow a conditional exponential-family prior over observed auxiliary context and regime embeddings. Linear diagonal dynamics map innovations to factors and preserve that class, so factors are partially identifiable up to permutation and component-wise affine maps. We train by maximizing the ELBO and estimate uncertainty in both latent trajectories and forecasts. Under explicit assumptions, we prove partial identifiability up to the stated class and provide the full proof in the appendix. We evaluate factor recovery on synthetic DGPs, intervention behavior on synthetic SCMs, and forecasting on real benchmarks with CRPS and MSE.",
+    "keywords": [
+      "time series",
+      "representation learning",
+      "variational inference",
+      "baysian forecasting",
+      "probabilistic forecasting",
+      "latent factor",
+      "dynamic factor model",
+      "multivariate time series"
+    ],
+    "paper_url": "https://openreview.net/forum?id=B5oKK6SpF2",
+    "pdf_url": "https://openreview.net/pdf?id=B5oKK6SpF2",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:27:23.160000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "wuNBZemoWl",
+      "content": "The paper proposes a multivariate time-series model that, via variational inference, provably allows partial identification of causal dynamic factors.\n\n**Pros**\n- The paper is clearly structured and well-written.\n- The paper combines and touches on several aspects highly relevant to the ProbML community.\n- The approach and proposed model is new, carefully balancing model flexibility and identifiabilty considerations.\n- The empirical evaluations are adequate, especially given the additional results discussed during the rebuttal period.\n\n**Cons**\n- The paper relies on some simplifying assumptions, whose role should be communicated and discussed more clearly.\n\nFollowing the rebuttal, all reviewers recommend acceptance, and I agree. This is a fine paper, provided the additional clarifications and experimental results make it into the final version.",
+      "date": "2026-05-01T15:27:23.160000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T17:18:14.311000Z",
+      "updated_at": "2026-03-23T21:47:24.486000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "B5oKK6SpF2",
+      "note_id": "B5oKK6SpF2",
+      "number": 15
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper17",
+    "title": "When Individually Calibrated Models Become Collectively Miscalibrated",
+    "authors": [
+      {
+        "id": "~Zhaohui_Geoffrey_Wang1",
+        "name": "Zhaohui Geoffrey Wang",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Probabilistic prediction systems often aggregate probability estimates from multiple models into a single decision. A natural assumption is that if each model is individually calibrated, the aggregate prediction will also be well calibrated. We show that this assumption fails in multi-agent settings: individually calibrated predictors can become collectively miscalibrated when their predictions interact strategically. This phenomenon arises in settings where predictions originate from multiple independent agents, including federated healthcare, multi-vendor intrusion detection, and crowdsourced forecasting, where agents optimize their own objectives.\n\nSpecifically, we prove that under Brier-score-based aggregation with correlated beliefs, each agent’s individually optimal report systematically underestimates the positive-class probability, producing a Price of Anarchy (PoA) of 7.25× (mean aggregate bias −0.375). In contrast, VCG-based aggregation, which rewards each agent’s marginal contribution to aggregate accuracy, achieves the lowest PoA among all mechanisms studied (PoA ≈ 1.0× under dominant-strategy equilibrium).\n\nOn three real-world datasets (NSL-KDD, UNSW-NB15, Credit Card Fraud) with feature-partitioned agents, VCG provides the strongest robustness guarantees among the aggregation methods we evaluate, while maintaining comparable accuracy. In data-sparse regimes (n ≤ 500), VCG consistently outperforms stacking and majority voting; under adversarial agents, VCG maintains substantially lower false-negative rates than robust aggregation baselines. Adaptive weight updates further reduce false negatives by 20–22% under distribution shift, with O(√T) online regret guarantees.\n\nThese results establish that how probabilistic predictions are aggregated matters as much as how well individual models are calibrated.",
+    "keywords": [
+      "probabilistic prediction",
+      "calibration",
+      "prediction aggregation",
+      "proper scoring rules",
+      "multi-agent systems",
+      "strategic interaction",
+      "mechanism design",
+      "price of anarchy",
+      "robustness"
+    ],
+    "paper_url": "https://openreview.net/forum?id=0qesLNiWcQ",
+    "pdf_url": "https://openreview.net/pdf?id=0qesLNiWcQ",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:29:14.931000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "8m6mlGs6rJ",
+      "content": "This paper addresses an interesting and underexplored failure mode: individually calibrated predictors can become collectively miscalibrated under strategic multi-agent aggregation, and the proposed VCG-based mechanism offers a principled remedy. Reviewers liked the theoretical contributions, which are novel and the empirical evaluation. While reviewers raise valid concerns about the realism of certain modeling assumptions, claims centered on the PoA bound, and some inconsistencies in reported results, these are addressable and do not undermine the core contribution.",
+      "date": "2026-05-01T15:29:14.931000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T20:56:25.502000Z",
+      "updated_at": "2026-05-06T23:09:20.780000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "0qesLNiWcQ",
+      "note_id": "0qesLNiWcQ",
+      "number": 17
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper20",
+    "title": "Characterizing the Representational Capacity of Neural Processes",
+    "authors": [
+      {
+        "id": "~Robin_Young1",
+        "name": "Robin Young",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "What functions can Neural Processes represent? We characterize the representational capacity of the major NP architectures: Conditional Neural Processes (CNPs), Attentive Neural Processes (ANPs), Transformer Neural Processes (TNPs), and their latent variants. We prove these architectures form a strict hierarchy. CNP-representable functions are exactly those depending on finitely many expected features of the context distribution. ANPs strictly generalize CNPs via query-dependent reweighting, enabling kernel smoothers. ConvCNPs and ANPs are incomparable; each contains functions outside the other, separated by stationarity versus translation equivariance. TNPs with $L$ self-attention layers capture $L$-hop context interactions. For latent NPs, we show finite-dimensional latents provide coherent sampling but do not circumvent encoder limitations; matching GP posterior distributions requires latent dimension scaling with context size. These results provide a theoretical foundation for architecture selection based on task structure.",
+    "keywords": [
+      "Neural Processes",
+      "representational capacity",
+      "expressiveness hierarchy",
+      "Gaussian Processes",
+      "meta-learning",
+      "attention mechanisms"
+    ],
+    "paper_url": "https://openreview.net/forum?id=u1StCZpoIO",
+    "pdf_url": "https://openreview.net/pdf?id=u1StCZpoIO",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:32:22.809000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "GPPNfWvfEF",
+      "content": "The paper provides a detailed theoretical analysis of the type of functions four types of neural processes can represent. \n\n**Pros**\n- The question of representational capacity for the various NP types is highly relevant.\n- Mathematical arguments are nontrivial, executed with care, and appear technically sound.\n- The analysis is very broad and enlightening, providing multiple strong results on four NP types and their interrelations.\n\n**Weaknesses**\n- The discussion brought up a few smaller issues regarding limitations of the study and notation.\n\nOverall, this is a very nice paper and should be accepted. The authors should nevertheless clarify the aspects and notational issues raised by the reviewers in the final manuscript.",
+      "date": "2026-05-01T15:32:22.809000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T23:10:39.876000Z",
+      "updated_at": "2026-03-23T21:47:24.298000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "u1StCZpoIO",
+      "note_id": "u1StCZpoIO",
+      "number": 20
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper25",
+    "title": "CogFormer: Learn All Your Models Once",
+    "authors": [
+      {
+        "id": "~Jerry_M._Huang1",
+        "name": "Jerry M. Huang",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Lukas_Schumacher1",
+        "name": "Lukas Schumacher",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Niek_Stevenson1",
+        "name": "Niek Stevenson",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Stefan_T._Radev1",
+        "name": "Stefan T. Radev",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Simulation-based inference (SBI) with neural networks has accelerated and transformed cognitive modeling workflows. SBI enables modelers to fit complex models that were previously difficult or impossible to estimate, while also allowing rapid estimation across large numbers of datasets. However, the utility of SBI for iterating over varying modeling assumptions remains limited: changing parameterizations, generative functions, priors, and design variables all necessitate model retraining and hence diminish the benefits of amortization. To address these issues, we pilot a meta-amortized framework for cognitive modeling which we nickname the CogFormer. Our framework trains a transformer-based architecture that remains valid across a combinatorial number of structurally similar models, allowing for changing data types, parameters, design matrices, and sample sizes. We present promising quantitative results across families of decision-making models for binary, multi-alternative, and continuous responses. Our evaluation suggests that CogFormer can accurately estimate parameters across model families with a minimal amortization offset, making it a potentially powerful engine that catalyzes cognitive modeling workflows.",
+    "keywords": [
+      "Simulation-based inference",
+      "amortized Bayesian inference",
+      "meta-amortized inference",
+      "transformer",
+      "cognitive modeling"
+    ],
+    "paper_url": "https://openreview.net/forum?id=MBomiANMWl",
+    "pdf_url": "https://openreview.net/pdf?id=MBomiANMWl",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:36:13.605000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "hzQB1NuuJh",
+      "content": "The paper proposes CogFormer, a transformer-based simulation-based inference pipeline that amortizes across an entire family of cognitive models rather than a single model. Reviewers agree the problem is timely and the empirical demonstration of large-scale meta-amortization is interesting. The rebuttal addresses the main concerns by adding baselines, a hyperparameter sweep, an ablation table, and code, and by clarifying the notation and figures raised by eDZd. ngs6 confirmed acceptance after the rebuttal.\n\nThe contribution is mainly empirical and combines existing components, and the scope is restricted to exchangeable models. The most in-depth review (eDZd) initially leaned reject primarily because of clarity, framing, and notation issues that made the contribution hard to access for readers outside the cognitive modeling community. After the rebuttal, eDZd indicated they would now recommend acceptance conditional on the promised clarity revisions being executed, which means all reviewers now lean accept.\n\nThe empirical scale of generalization is a meaningful contribution. The paper in its current form still needs substantial work to be fully accessible to the ProbML audience, but the path to that has been laid out in the rebuttal. Conditional on acceptance, the authors are asked to **incorporate the major framing and clarity revisions** discussed in the rebuttal in the camera-ready version. The new experiments added during the rebuttal (additional baselines, hyperparameter sweep, ablation) are a nice addition and should also be included.\n\nOne additional concern: the anonymized code repository link provided in the rebuttal deanonymizes the authors. The authors are asked to be more careful about preserving anonymity in future submissions.",
+      "date": "2026-05-01T15:36:13.605000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T04:55:34.201000Z",
+      "updated_at": "2026-03-23T21:47:23.828000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "MBomiANMWl",
+      "note_id": "MBomiANMWl",
+      "number": 25
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper27",
+    "title": "Identifiability, Fisher Information, and Amortized Inference for Heterogeneous Diffusion from Discrete-Time Noisy Observations",
+    "authors": [
+      {
+        "id": "~Zhen_Yuan_Yeo1",
+        "name": "Zhen Yuan Yeo",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Estimating diffusion coefficients from discrete-time noisy particle trajectories is a core problem in single-particle tracking, yet its statistical foundations remain incomplete. We establish exact identifiability structure for single-species and heterogeneous-population models, derive closed-form Fisher information bounds, and show how these results jointly define a feasibility phase diagram over the normalized diffusion scale $\\alpha = 2D\\Delta t/\\sigma^2$ and effective particle occupancy $\\beta = \\rho\\sigma^2$. A key finding is that one-step increment distributions alone cannot separate the diffusion coefficient from localization noise, but temporal autocorrelation structure resolves this ambiguity without additional calibration. For heterogeneous populations, identifiability holds under a variance separation condition, and Fisher information for rare components degrades quadratically with mixture weight, setting a fundamental limit on what unlabeled trajectory data can recover. We use these theoretical results to derive an amortized inference architecture: the time-averaging aggregation, factored posterior parameterization, and pretraining objective each follow directly from the theory.",
+    "keywords": [
+      "single-particle tracking",
+      "diffusion estimation",
+      "Fisher information",
+      "identifiability",
+      "amortized inference",
+      "localization noise"
+    ],
+    "paper_url": "https://openreview.net/forum?id=Yu24ivWMYv",
+    "pdf_url": "https://openreview.net/pdf?id=Yu24ivWMYv",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:38:47.884000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "6WeIdhsg54",
+      "content": "The paper has generally received positive reviews with mentions of a clear, well-articulated, and insightful identifiability analysis, the central goal of the work. Further, reviewers found the Fisher information calculation & penalty to provide useful insights. In general, the theoretical analysis was well received. Some key limitations raised by the reviewers have concerned the limited empirical assessment and the clarity/density of the writing. \n\nI believe the positives outweigh the negatives for this submission and recommend its acceptance.",
+      "date": "2026-05-01T15:38:47.884000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T10:21:03.730000Z",
+      "updated_at": "2026-03-23T21:47:24.140000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "Yu24ivWMYv",
+      "note_id": "Yu24ivWMYv",
+      "number": 27
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper28",
+    "title": "Heterogeneous Coupled Diffusion for Graph Generation with α-Stable Node Feature Noise",
+    "authors": [
+      {
+        "id": "~Tang_Chenyu1",
+        "name": "Tang Chenyu",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Ercan_Engin_KURUOGLU2",
+        "name": "Ercan Engin Kuruoglu",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Graph generation requires jointly modeling node semantics and graph structure. Existing coupled graph diffusion models mostly use light-tailed perturbations throughout the graph state, which may be too conservative for node features that encode rare semantic roles or long-tailed attribute patterns. We propose a heterogeneous coupled graph diffusion model that applies discrete-time symmetric $\\alpha$-stable noise to node features and Gaussian DDPM noise to adjacency, while keeping reverse denoising joint over the full graph state. Using a Gaussian scale-mixture representation, we derive an exact augmented variational objective for the stable feature branch and a same-marginal coupled deterministic sampler. On a controlled benchmark, stable feature diffusion improves rare-role recall and joint generation quality, while Gaussian adjacency provides the more reliable structural bias. On molecular and generic graph benchmarks, keeping adjacency Gaussian and varying only the feature tail index often improves over both a GDSS baseline retrained under our setup and a Gaussian-limit variant, though the best tail index remains dataset-dependent. These results support stable diffusion on features in coupled graph diffusion, while the case for Gaussian adjacency is primarily established by the controlled probe.",
+    "keywords": [
+      "graph generation",
+      "diffusion models",
+      "alpha-stable distributions",
+      "heavy-tailed noise",
+      "joint node-edge modeling"
+    ],
+    "paper_url": "https://openreview.net/forum?id=J83dFB2DsY",
+    "pdf_url": "https://openreview.net/pdf?id=J83dFB2DsY",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:30:39.764000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "uDezurs1e8",
+      "content": "This paper presents a well-motivated and technically interesting extension of coupled graph diffusion by applying α-stable noise to node features while retaining Gaussian DDPM noise for adjacency, with joint reverse denoising over the full graph state. The heterogeneous treatment is principled, the Gaussian scale-mixture derivation is technically thoughtful, and the controlled synthetic benchmark provides useful insight into the separate contributions of each branch. Results on molecular and generic graph benchmarks show promising improvements over the GDSS baseline. However, reviewers share several concerns: the real-data results are mixed and dataset-dependent, with no principled guidance for selecting the tail index α; the baseline comparisons are narrow, relying heavily on GDSS with few external competitors; experiments are limited to small graphs with no scalability analysis; and the presentation quality is uneven, with undefined symbols and compressed derivations in the main text obscuring the relationship between the theoretical objective and the deployed loss. Addressing some of the raised concerns (baseline breadth, practical guidance on α selection, scalability discussion, and presentation clarity) would strengthen the paper.",
+      "date": "2026-05-01T16:30:39.764000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T10:37:03.851000Z",
+      "updated_at": "2026-03-23T21:47:24.226000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "J83dFB2DsY",
+      "note_id": "J83dFB2DsY",
+      "number": 28
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper29",
+    "title": "Uncertainty Propagation Through Green's Kernels and Gaussian Process Inference Dynamics",
+    "authors": [
+      {
+        "id": "~Chi-Jen_Roger_Lo1",
+        "name": "Chi-Jen Roger Lo",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Joan_Lasenby1",
+        "name": "Joan Lasenby",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "We study uncertainty propagation under Gaussian process priors whose covariance is\ninduced by Green or resolvent operators associated with latent generators.\nRather than specifying non-stationary dependence through input warping or other\ncoordinate deformations, we construct covariance from discounted propagation under\nan underlying semigroup.\nThis yields a separation between covariance geometry and transport:\nthe self-adjoint dissipative part of the generator provides the operator from\nwhich prior covariance is constructed, while the skew-adjoint part contributes\ntransport within the full propagation without being encoded directly as\ncovariance.\nWe derive observation, posterior, and propagation identities in operator form, and\ncompare this framework with pullback, stationary, and Mat\\'ern baselines.\nExperiments are organised as a four-stage ladder ascending from three-dimensional\nelectrostatics through a frequency-domain Helmholtz proxy and time-domain\nsemigroup propagation to an operator-mismatch ablation.\nAt each stage, the Green prior is realised as a Gaussian Markov random field\n(GMRF) whose precision is the discretised PDE operator; after assembly, the\nposterior mean is obtained by a single sparse linear solve.\nAcross the reported experiments, Green's kernel priors often outperform tuned\nMat\\'ern-$3/2$ and RBF baselines on boundary-aware and PDE-residual\nmetrics, with larger gains under heterogeneous material coefficients and\nsemigroup propagation.\nIn the late-time propagation setting the normalised RMSE gap exceeds\n$4{\\times}$.\nThe central claim is that, when an informative governing operator is\navailable, covariance induced by that operator yields boundary-respecting and\ndynamically interpretable uncertainty---especially on operator-sensitive\ndiagnostics---under the reported synthetic conditions.",
+    "keywords": [
+      "uncertainty propagation",
+      "Green's kernels",
+      "Gaussian processes",
+      "inference",
+      "electromagnetism"
+    ],
+    "paper_url": "https://openreview.net/forum?id=bTGc1CkRqK",
+    "pdf_url": "https://openreview.net/pdf?id=bTGc1CkRqK",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:41:17.906000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "tlRdNuwR5Q",
+      "content": "This paper presents a theoretically rigorous framework for constructing Gaussian process priors from Green's and resolvent operators of latent generators, offering a principled alternative to standard stationary kernels and input warping. The reviewers appreciate the clean separation between covariance geometry (dissipative self-adjoint component) and transport (skew-adjoint component), and the GMRF realization via sparse PDE operator precision matrices provides both physical interpretability and computational tractability. Reviewers consistently praise the theoretical foundations and the systematic four-stage experimental design. However, they share three concerns: the evaluation is entirely synthetic; the baselines are structurally asymmetric and lack physics-awareness, so comparisons against methods like deep kernel learning, SPDE-based Matérn, or latent force models are needed to isolate the contribution; and scalability beyond the current coarse grid is unaddressed. Adressing these raised points would strengthen the paper.",
+      "date": "2026-05-01T15:41:17.906000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T11:06:19.742000Z",
+      "updated_at": "2026-03-23T21:47:24.233000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "bTGc1CkRqK",
+      "note_id": "bTGc1CkRqK",
+      "number": 29
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper31",
+    "title": "RAMP: Recognition parametrisation by Amortised Message Passing",
+    "authors": [
+      {
+        "id": "~Lior_Fox1",
+        "name": "Lior Fox",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Kai_Biegun1",
+        "name": "Kai Biegun",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~James_Heald1",
+        "name": "James Heald",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Samo_Hromadka1",
+        "name": "Samo Hromadka",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Arielle_Rosinski1",
+        "name": "Arielle Rosinski",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Maneesh_Sahani1",
+        "name": "Maneesh Sahani",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "A central aim of unsupervised learning is to uncover latent factors that explain dependencies\n  among observations.  Probabilistic models typically achieve this by introducing multiple latent\n  variables linked through a graph of conditional relationships, with distributional parameters\n  and their dependence learnt from data.  Learning relies either on distributional choices that\n  allow tractable belief propagation, or on approximations that scale poorly with model size and\n  complexity. We build on the recently developed recognition-parametrised modelling paradigm to\n  propose an alternative approach: RAMP, a method that implicitly defines latent structure by\n  learning a flexible, nonlinear, amortised message-passing framework.  We show that RAMP enables\n  efficient likelihood-based recovery of latent-variable distributions within expressive nonlinear\n  models acting on complex high-dimensional data.",
+    "keywords": [
+      "Unsupervised learning",
+      "probabilistic methods",
+      "graphical models"
+    ],
+    "paper_url": "https://openreview.net/forum?id=y7Rp5ERfEV",
+    "pdf_url": "https://openreview.net/pdf?id=y7Rp5ERfEV",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:43:56.434000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "OC2F04AKV5",
+      "content": "This paper proposes a theoretical framework and algorithm for inference in complex latent variable models, replacing belief propagation with an amortized message-pasting system (RAMP).\n\n**Pros**\n- The paper is well written and the method well motivated, which was appreciated by several reviewers.\n- The framework and methodology builds on existing idea from the literature, but is quite creative and certainly new. \n- The authors provided several useful clarifications during the rebuttal.\n\n**Cons**\n- Although this is clearly not the paper’s focus, the empirical evaluation is somewhat weak, missing potentially relevant competitors/baselines.\n\nProvided that the authors include missing references (see Reviewer 8Rig) to related work and clarifications provided in their rebuttals, this will be a nice paper.",
+      "date": "2026-05-01T15:43:56.434000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T11:35:29.350000Z",
+      "updated_at": "2026-03-23T21:47:24.232000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "y7Rp5ERfEV",
+      "note_id": "y7Rp5ERfEV",
+      "number": 31
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper32",
+    "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+    "authors": [
+      {
+        "id": "~Kival_Mahadew1",
+        "name": "Kival Mahadew",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Jonathan_P._Shock1",
+        "name": "Jonathan P. Shock",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "In noisy social dilemmas, intended actions are stochastically corrupted before execution, so an observed defection may reflect hostile intent or action error. Standard Markov Decision Process (MDP) formulations treat executed actions as states, structurally precluding this distinction and causing systematic over retaliation. We introduce a Partially Observable MDP (POMDP) formulation encoding opponent intentions as latent states and executed actions as noisy observations, solved within the active inference (AIF) framework with a cost function that decomposes into epistemic and pragmatic components that jointly address inferring current intent and learning how intent evolves. In the Iterated Prisoner’s Dilemma with symmetric noise, we derive a critical noise threshold governing cooperation collapse, connecting it to a fixed-point condition on learned priors. Experiments reveal that the value of intention inference is context-dependent: the POMDP provides consistent advantages against conditionally cooperative opponents, but mutual intention inference under sufficient noise produces correlated belief-driven collapse. The advantage is specific to games where intent attribution is decision-relevant.",
+    "keywords": [
+      "active inference",
+      "POMDP",
+      "iterated prisoner's dilemma",
+      "intention inference",
+      "execution noise",
+      "opponent modelling"
+    ],
+    "paper_url": "https://openreview.net/forum?id=KHgz1Sp0JL",
+    "pdf_url": "https://openreview.net/pdf?id=KHgz1Sp0JL",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:45:03.168000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "w0iyCKmaEb",
+      "content": "The paper models noisy social dilemmas with a POMDP in which intentions are latent states and noisy executed actions are observations, then solves the problem with active inference. It derives a critical noise threshold for cooperation collapse and empirically studies when intention inference helps or hurts.\n\nWhile the reviewers praise the clarity, the conceptual cleanliness of separating intent from execution noise, the theoretical insights around the threshold phenomenon, and the controlled experiments, they also raise several concerns.\nThese include limited experimental scope, missing stronger baselines such as noise-aware RL / MDP variants, dense AIF exposition and threshold derivations, and uncertainty about how the method scales to unknown noise or non-stationary opponents.\n\nThe authors gave a comprehensive response, correcting the Dirichlet-posterior point, promising clearer AIF signposting and notation, adding more derivation detail, surfacing appendix ablations more prominently, expanding hyperparameter reporting, outlining prior-sensitivity analysis, and explaining why stronger baseline work is deferred to follow-up studies. They also clarified the intended scope of the claims.\nThis has largely addressed the reviewers criticisms.\n\nTherefore, we have decided to accept the paper for publication at ProbML. We would still recommend that the authors take the reviewers' feedback into account when preparing the camera-ready version.",
+      "date": "2026-05-01T15:45:03.168000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T11:52:46.810000Z",
+      "updated_at": "2026-03-23T21:47:23.955000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "KHgz1Sp0JL",
+      "note_id": "KHgz1Sp0JL",
+      "number": 32
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper33",
+    "title": "Latent Semantic Regularization: Enhancing Semantic Integrity in Tabular Data Synthesis",
+    "authors": [
+      {
+        "id": "~Saba_Amiri1",
+        "name": "Saba Amiri",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Carlijn_Nijhuis2",
+        "name": "Carlijn Nijhuis",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Eric_Nalisnick1",
+        "name": "Eric Nalisnick",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Adam_Belloum1",
+        "name": "Adam Belloum",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Sander_Klous1",
+        "name": "Sander Klous",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Leon_Gommans1",
+        "name": "Leon Gommans",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Generative models trained on finite data could potentially assign non-negligible probability mass to\nregions that are statistically plausible but semantically invalid as a\nstructural consequence of distribution estimation from samples. We propose Latent Semantic Regularization (LSR), which learns implicit\nsemantic constraints directly from data and uses them to regularize a generative\nmodel, requiring no explicit constraint definitions, feasibility oracles, or\nnegative examples. We instantiate LSR with a Conditional VAE using a tail-\nadaptive normalizing flow prior as the validator and a WGAN-GP as the synthesizer. We\nalso introduce Exploration Factor metric measuring exploration/exploitation, and a controlled semantic integrity protocol based on injected zero-probability\nconstraints with known ground truth. Across five benchmark datasets and against GAN-\nbased, diffusion-based, and LLM-based baselines, LSR reduces semantic violation rates\nconsistently while remaining competitive on statistical fidelity and downstream utility.",
+    "keywords": [
+      "probabilistic generative models",
+      "constrained optimization",
+      "latent space regularization",
+      "unsupervised constraint learning",
+      "semantic integrity"
+    ],
+    "paper_url": "https://openreview.net/forum?id=5sJ40O4mGc",
+    "pdf_url": "https://openreview.net/pdf?id=5sJ40O4mGc",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T15:45:56.969000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "5LQO7IZeJL",
+      "content": "The paper proposes a new method to make generators of tabular data comply with (unknown) semantic constraints of the data. The main idea is to train and freeze a probabilistic model for a latent space that captures semantic constraints and use it to penalize subsequent training of the main generator.\n\n**Strengths**\n- The paper is very well written and easy to follow.\n- The problem under study is challenging and relevant. The ideas behind the proposed method are reasonable and well-articulated.\n- The empirical study shows good results, improving over several baselines.\n\n**Cons**\n- All in all, the method is a heuristic without any guarantees. The caveats and limitations resulting from this need to be discussed in more detail.\n\n\nAll reviewers are overall positive about the paper and offer some minor suggestions for improvement, which the authors addressed convincingly. I concur with the reviewers and recommend accepting the paper.",
+      "date": "2026-05-01T15:45:56.969000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T11:57:05.669000Z",
+      "updated_at": "2026-03-23T21:47:24.045000Z",
+      "submission_type": "Proceedings Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Proceedings_Track",
+      "track_group_id": "ProbML.cc/2026/Proceedings_Track",
+      "forum_id": "5sJ40O4mGc",
+      "note_id": "5sJ40O4mGc",
+      "number": 33
+    },
+    "citations": [],
+    "comments": []
+  }
+]

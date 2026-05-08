@@ -1,0 +1,1627 @@
+[
+  {
+    "id": "paper1",
+    "title": "Conformal Calibration from Unlabelled Pools",
+    "authors": [
+      {
+        "id": "~Kianoosh_Ashouritaklimi1",
+        "name": "Kianoosh Ashouritaklimi",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "We consider the problem of conformalising a fixed, pretrained predictor for deployment: conformal prediction can provide finite--sample marginal coverage, but only if we have a labelled calibration set that is exchangeable with the test distribution. In many applications, labels are expensive, so calibration labels must be acquired selectively from a large unlabelled pool. This creates a fundamental tension: adaptive curation policies typically induce dependencies that violate exchangeability, while naive random sampling is only appropriate when the pool matches the test distribution and can be highly inefficient (or even miscalibrated) under real--world scenarios such as covariate shift. We study calibration--set acquisition under a fixed label budget and propose a simple strategy based on density--ratio rejection sampling. Using only unlabelled covariates, we estimate the target--to--pool density ratio and accept pool points for labelling with probability proportional to this ratio, yielding labelled calibration pairs that are i.i.d. from the target distribution. This allows for the use of standard conformal prediction while avoiding the loss of effective--sample--size that can arise when correcting shift via weighted conformal methods. Synthetic regression experiments under covariate--shifted pools demonstrate valid coverage and substantially tighter prediction intervals across a range of labelling budgets.",
+    "keywords": [
+      "conformal prediction",
+      "uncertainty quantification",
+      "data curation"
+    ],
+    "paper_url": "https://openreview.net/forum?id=zdT05993fC",
+    "pdf_url": "https://openreview.net/pdf?id=zdT05993fC",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T17:39:48.528000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "J9uY2EKh68",
+      "content": "The paper proposes a new way to leverage unlabeled data in conformal prediction. Both reviewers found the paper to be well-written, enjoyable to read and clearly presented. Reviewers raised concerns about the small scale and dry nature of the experiments section, and gave various feedback for improvement.  I recommend acceptance, and encourage the authors to take the feedback of the reviewers into account when preparing a final version/poster.",
+      "date": "2026-05-01T17:39:48.528000Z"
+    },
+    "metadata": {
+      "created_at": "2026-02-15T13:58:23.345000Z",
+      "updated_at": "2026-03-23T21:47:35.343000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "zdT05993fC",
+      "note_id": "zdT05993fC",
+      "number": 1
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper2",
+    "title": "Uniform Trajectory Bounds for Heavy-Tailed Stochastic Gradient Langevin Dynamics",
+    "authors": [
+      {
+        "id": "~Rameez_Raja1",
+        "name": "Rameez Raja",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Two recent lines of work have made complementary progress on the\ngeneralisation theory of noisy stochastic optimisers, but a critical\ngap remains at their intersection. Dupuis et al. (2024) proved the\nfirst uniform high-probability bounds over entire Stochastic Gradient\nLangevin Dynamics (SGLD) trajectories --- guaranteeing that worst-case\ngeneralisation error over all iterates is controlled simultaneously\n--- but only for Gaussian noise. Dupuis and Simsekli (2024) subsequently\nproved high-probability bounds for heavy-tailed stochastic differential\nequations via the fractional Fokker-Planck equation, but their bounds\nare for continuous-time SDEs, grow with time horizon $T$, and are not\nuniform over discrete SGLD trajectories, as the authors themselves\nacknowledge. The combination --- uniform trajectory bounds for\nheavy-tailed discrete SGLD --- remains an open problem. We propose\nbridging this gap by extending the PAC-Bayesian random set framework\nof Dupuis et al. (2024) to $\\alpha$-stable Lévy noise. The central\nchallenge is that the KL divergence used as the information-theoretic\npenalty in the existing framework is infinite for $\\alpha$-stable\nposteriors when $\\alpha < 2$. We propose replacing it with Rényi\ndivergences, which remain finite in the heavy-tailed regime and recover\nKL when $\\alpha \\to 2$. I present a three-step proof strategy, identify\nthe key technical obstacles, and conjecture the form of the resulting\nbound --- showing it reduces to the Gaussian result in the limit\n$\\alpha \\to 2^-$.",
+    "keywords": [
+      "PAC-Bayesian theory",
+      "generalization bounds",
+      "heavy-tailed distributions",
+      "stochastic gradient Langevin dynamics",
+      "alpha-stable processes",
+      "Rényi divergence",
+      "uniform bounds",
+      "learning theory"
+    ],
+    "paper_url": "https://openreview.net/forum?id=YHt95y7QRC",
+    "pdf_url": "https://openreview.net/pdf?id=YHt95y7QRC",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:10:55.968000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "I2GxKwCxya",
+      "content": "This submission proposes extending the PAC-Bayesian random set framework of Dupuis et al. (2024a) to α-stable Lévy noise, motivating Rényi divergence as a replacement for KL and outlining a three-step proof strategy with a conjectured bound. The gap identified in the literature is real and clearly described, and the motivation for Rényi divergence is clearly stated. However, this work is primarily a theoretical proposal, with a conjecture and a plan for proving this conjecture. \n\nAs there are no proven theoretical results, I recommend rejection on procedural grounds -- if there were at least one new proven result, I would do otherwise. Even though this is a workshop, there should be at least one firm contribution, rather than only a proposal for a potential approach.",
+      "date": "2026-05-01T16:10:55.968000Z"
+    },
+    "metadata": {
+      "created_at": "2026-02-28T23:13:23.640000Z",
+      "updated_at": "2026-03-23T21:47:35.291000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "YHt95y7QRC",
+      "note_id": "YHt95y7QRC",
+      "number": 2
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper6",
+    "title": "Ab-L3BO: Bayesian Optimization of Antibody Sequence Design with Large Language Models",
+    "authors": [
+      {
+        "id": "~Eunna_Huh1",
+        "name": "Eunna Huh",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Seungjin_Choi1",
+        "name": "Seungjin Choi",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Hyunjin_Shin2",
+        "name": "Hyunjin Shin",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Enhancing the properties of therapeutic antibodies requires modifying amino acid sequences, typically through iterative engineering and experimental validation such as binding assays, which are time- and resource-intensive. To address these challenges, we introduce Ab-L3BO, a Bayesian optimization (BO) framework that integrates an antibody-specific large language model (LLM) with Bayesian fine-tuning. Ab-L3BO leverages prior knowledge embedded in an antibody-specific LLM and efficiently updates its parameters using Bayesian Low-Rank Adaptation (LoRA) with a Laplace approximation (LA). The fine-tuned LLM serves as a surrogate model within the BO framework. Our results show that Ab-L3BO achieves superior sample efficiency compared to conventional BO methods based on Gaussian process regression. Integrating LLMs into the BO framework offers three key advantages: (1) rapid adaptation to new domains; (2) warm-starting optimization with pretrained knowledge; and (3) bypassing the complexities of kernel design, kernel computation, and sequence alignment required to handle variable-length sequences. Overall, our study demonstrates that incorporating LLMs into BO substantially improves the efficiency of antibody sequence design, potentially reducing both time and resource requirements in therapeutic antibody development.",
+    "keywords": [
+      "Antibody Design",
+      "Antibody-specific LLM",
+      "LoRA",
+      "Bayesian Optimization",
+      "Laplace Approximation"
+    ],
+    "paper_url": "https://openreview.net/forum?id=mK3vLuh3af",
+    "pdf_url": "https://openreview.net/pdf?id=mK3vLuh3af",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T20:31:02.473000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "0vquxJZ0uU",
+      "content": "The reviewers agree that this paper has produced a practical method for performing BO on antibody sequences.\n\n\n**Pros:**\n- The reviewers tend to agree that the paper is well written, does a good job of motivating the problem and empirically evaluating the results.\n- The reviewers agree that the method seems technically sound and is a simple, well-applied baseline.\n\n**Cons:**\n- Several reviewers mentioned that the paper currently applies the Laplace approximation but does not examine how good this uncertainty estimate is, and as a result the probabilistic ML contribution is weaker than it could be.\n- The reviewers also highlighted several potential further experiments and formatting changes that could strengthen the paper.\n\n\nOverall, I recommend acceptance, as sequence modelling is an interesting area for applying BO and other probabilistic machine learning techniques and the paper was well executed.",
+      "date": "2026-05-01T20:31:02.473000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-17T23:33:43.474000Z",
+      "updated_at": "2026-03-23T21:47:35.216000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "mK3vLuh3af",
+      "note_id": "mK3vLuh3af",
+      "number": 6
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper8",
+    "title": "Gradient Flow Sampler-based Distributionally Robust Optimization",
+    "authors": [
+      {
+        "id": "~Zusen_Xu1",
+        "name": "Zusen Xu",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Jia-Jie_Zhu1",
+        "name": "Jia-Jie Zhu",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "We propose a mathematically principled PDE gradient flow framework for distributionally robust optimization (DRO). Exploiting the recent advances in the intersection of Monte Carlo sampling and statistical optimal transport, we show that our theoretical framework can be implemented as practical algorithms for sampling from worst-case distributions and, consequently, DRO.\nWhile numerous previous works have relied on dual reformulation techniques, we contribute a sound and complete gradient flow view based on SDEs or PDEs that can be used to construct new algorithms for general, potentially non-convex, losses.\nAs an application, we solve the entropy-regularized Wasserstein DRO problem using the different gradient flows. Notably, we also show some simple reductions of our framework recover exactly previously proposed popular DRO methods, and provide new insights into their theoretical limits and optimization dynamics of DRO. Numerical studies based on stochastic gradient descent on machine learning tasks provide empirical backing for our theoretical findings.",
+    "keywords": [
+      "Gradient Flow",
+      "Distributionally Robust Optimization",
+      "Optimal Transport"
+    ],
+    "paper_url": "https://openreview.net/forum?id=zdoOVAPYOk",
+    "pdf_url": "https://openreview.net/pdf?id=zdoOVAPYOk",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T17:32:19.812000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "PX0WpBtvMh",
+      "content": "The paper presents a new framework for distributionally robust optimization (DRO) using gradient-flows over probability measures. Both reviewers found the theoretical formulation to be novel and elegant, and the work will make a nice contribution to the ProbML workshop.",
+      "date": "2026-05-01T17:32:19.812000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-18T14:39:33.280000Z",
+      "updated_at": "2026-03-23T21:47:35.162000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "zdoOVAPYOk",
+      "note_id": "zdoOVAPYOk",
+      "number": 8
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper9",
+    "title": "Unifying Diffusion Identities via Tweedie's Formula",
+    "authors": [
+      {
+        "id": "~Jiayi_Lin3",
+        "name": "Jiayi Lin",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Thang_D_Bui1",
+        "name": "Thang D Bui",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "This paper consolidates several standard diffusion-model identities under a single Tweedie-style normaliser-differentiation viewpoint, making existing formulas easier to compare, reuse, and extend.\n \nUnder Gaussian forward corruption, posterior moments such as means and covariances can be expressed in terms of derivatives of the log-marginal density, yielding unified expressions for intermediate-time conditionals, Gaussian bridge moments, and inverse-problem guidance terms. The resulting presentation is intended as a concise reference for theoretical derivations and implementation checks in diffusion modelling.",
+    "keywords": [
+      "Diffusion models; Tweedie's formula"
+    ],
+    "paper_url": "https://openreview.net/forum?id=aLDGDq2dSs",
+    "pdf_url": "https://openreview.net/pdf?id=aLDGDq2dSs",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T17:32:30.204000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "TZlCyAsxp5",
+      "content": "This paper consolidates several standard diffusion-model identities under a single Tweedie-style normaliser-differentiation viewpoint. The framework is set up cleanly in Section 3.2 and applied to derive four classes of identities (the $X_0| X_t$, $X_s | X_t$, $X_s | X_t, X_0$, and conditional / guidance forms), with Table 1 serving as a useful dictionary linking them. The prior-tilting extension in Section 3.6, expressing posterior moment shifts as derivatives of a density-ratio normaliser, connects naturally to the Doob h-transform literature. I recommend acceptance. The only weakness is that these identities are not new, but the main aim of this work is organizational and providing a unified view towards them. The paper does what it claims, the unification is non-trivial, and the workshop track is the right venue for a reference-style contribution of this kind.",
+      "date": "2026-05-01T17:32:30.204000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-18T21:32:36.167000Z",
+      "updated_at": "2026-03-23T21:47:34.990000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "aLDGDq2dSs",
+      "note_id": "aLDGDq2dSs",
+      "number": 9
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper11",
+    "title": "Denoising Uncertainty via Gaussian Distributional Diffusion Models",
+    "authors": [
+      {
+        "id": "~Noa_Margeta1",
+        "name": "Noa Margeta",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Jes_Frellsen1",
+        "name": "Jes Frellsen",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Ignacio_Peis1",
+        "name": "Ignacio Peis",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Diffusion-based generative models achieve state-of-the-art performance across domains such as image synthesis, molecular design, and protein structure modeling. In the infinitesimal-step limit, learning the first moment of the clean-data posterior is equivalent to learning the score and is theoretically sufficient for exact sampling. In practice, however, discretization of the reverse process induces a mismatch that underestimates posterior uncertainty.\tWhereas prior work has proposed accurate implicit formulations primarily to accelerate sampling, we instead introduce a simpler yet effective Gaussian approximation of the clean-data posterior with a focus on uncertainty quantification. Despite its parametric form, this choice enables closed-form expressions for all relevant distributions, yielding a training procedure nearly identical to standard diffusion models while efficiently capturing uncertainty. We show that this posterior modeling enhances distributional fidelity and enables competitive outlier detection at substantially lower computational cost than existing approaches.",
+    "keywords": [
+      "uncertainty quantification",
+      "out-of-distribution detection",
+      "diffusion models",
+      "generative modelling"
+    ],
+    "paper_url": "https://openreview.net/forum?id=L3nn7FGB6n",
+    "pdf_url": "https://openreview.net/pdf?id=L3nn7FGB6n",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T20:32:36.616000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "DeLrFdy7uY",
+      "content": "This paper introduces Gaussian Distributional Diffusion Models (GDDM), which approximate the clean-data posterior p(x_0 | x_t) as a diagonal Gaussian. The Gaussian choice yields closed-form expressions for the marginalized reverse transition and per-step KL, giving a training procedure close to standard noise prediction. The authors evaluate on CIFAR-10 likelihood, FID, and OOD detection.\n\nThe Gaussian restriction of the distributional view is a sensible simplification that preserves explicit posterior modeling while avoiding implicit generators or scoring-rule objectives. Furthermore, the OOD application is a creative use of the learned variance, and the reduction in computational cost is a meaningful contribution.\n\nThe novelty in the method is narrow, as the proposed method can be seen as the Gaussian special case of the method proposed in in Distributional Diffusion Models (De Bortoli et al., 2025). However, the application towards uncertainty quantification is novel to the best of my knowledge. Reviewers also raised concerns about exposition, particularly the absence of a precise definition of OOD detection and limited setup around the posterior-marginalization identity. Addressing these would improve the quality of the submission.\n\nOn balance, I recommend accept.",
+      "date": "2026-05-01T20:32:36.616000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-19T11:15:44.809000Z",
+      "updated_at": "2026-03-23T21:47:34.397000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "L3nn7FGB6n",
+      "note_id": "L3nn7FGB6n",
+      "number": 11
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper12",
+    "title": "Latent Diffusion for Missing Data",
+    "authors": [
+      {
+        "id": "~Alberte_Heering_Estad1",
+        "name": "Alberte Heering Estad",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Ignacio_Peis1",
+        "name": "Ignacio Peis",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Jes_Frellsen1",
+        "name": "Jes Frellsen",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Diffusion models have emerged as powerful generative approaches for missing-data imputation, yet most existing methods operate directly in data space and degrade when training data are heavily incomplete. We investigate whether shifting diffusion to a learned latent representation improves robustness under missing-completely-at-random (MCAR) corruption. To this end, we propose a two-stage framework: a robust VAE-based imputer first learns compact semantic features from incomplete observations, and a diffusion model is then trained in the resulting latent space. Across training missing rates, we perform a controlled comparison against pixel-space diffusion models under the same incomplete-data setting. The latent diffusion model maintains high sample quality and remains stable up to 50\\% missingness, while pixel-space diffusion degrades progressively as missingness increases. For downstream imputation, latent diffusion also achieves consistently better performance than pixel-space diffusion. These findings indicate that latent-space modeling mitigates artifact amplification from zero-imputed inputs and provides a more robust generative prior for incomplete-data learning. Overall, our results support latent diffusion as a strong and practically useful alternative to pixel-space diffusion for missing-data problems.",
+    "keywords": [
+      "diffusion models",
+      "latent diffusion",
+      "missing data",
+      "imputation",
+      "score-based generative models"
+    ],
+    "paper_url": "https://openreview.net/forum?id=j0ranT3CyF",
+    "pdf_url": "https://openreview.net/pdf?id=j0ranT3CyF",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T20:33:11.025000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "vYYrRIuaLP",
+      "content": "This paper examines whether shifting diffusion to a latent space improves performance when the training data is corrupted at random. They propose a two stage method, where they first train a $\\beta$ VAE on the corrupted data and then train a latent diffusion model on the latent space of the VAE. They demonstrate that their framework provides superior robustness under high corruption compared to baselines that work in the pixel space. While the idea of LDM is not novel, the specific application of LDM towards robust generation under MCAR is new to the best of my knowledge. \n\nThe main weakness being that MNIST is a bit simplistic as a benchmark, since zero-imputation is arguably benign on MNIST, where zeroed pixels blend into the already-black background. On natural images, zero-imputed regions would be visually disruptive and likely degrade the pixel-space baseline more severely, so it is unclear whether the gap between LDMiss and DDPM would widen or narrow on more realistic data. \n\nAdditionally, the primary motivation and mechanism for why working in a latent space could have been better emphasized. In particular, it would be nice to have seen analysis experiments that studied the VAE latents and examined whether the VAE ends up imputing the missing features implicitly.",
+      "date": "2026-05-01T20:33:11.025000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-19T20:17:32.388000Z",
+      "updated_at": "2026-03-23T21:47:34.269000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "j0ranT3CyF",
+      "note_id": "j0ranT3CyF",
+      "number": 12
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper13",
+    "title": "Gaussian Process Latent Factor Regression for Low-Data, High-Dimensional Output Problems",
+    "authors": [
+      {
+        "id": "~Edward_T_Stevenson1",
+        "name": "Edward T Stevenson",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Mei_Ting_Mak1",
+        "name": "Mei Ting Mak",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~N._J._Mayne1",
+        "name": "N. J. Mayne",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Eric_Wolf1",
+        "name": "Eric Wolf",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Miles_Cranmer2",
+        "name": "Miles Cranmer",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "In the sciences, regression tasks often require predicting high-dimensional outputs from few training examples. Multi-output Gaussian processes excel in low-data regimes but typically struggle with high-dimensional outputs. Compress-then-predict pipelines such as PCA-GP (principal component analysis plus Gaussian process regression) handle high dimensionality, but rely on bases optimized for reconstruction rather than prediction. To address this gap, we propose a model that represents each output as a linear-Gaussian decoding of a low-dimensional latent state drawn from a Gaussian process prior. By analytically marginalizing the decoder weights, we couple compression and prediction in a single objective that scales to high-dimensional outputs. We refer to this model as Gaussian process latent factor regression (GPLFR). We validate the method on a synthetic benchmark and demonstrate its potential by constructing the first spatially resolved emulator of global climate models for rocky exoplanets.",
+    "keywords": [
+      "Gaussian processes",
+      "latent factor regression",
+      "high-dimensional outputs",
+      "low-data learning",
+      "emulation",
+      "exoplanets",
+      "climate modeling"
+    ],
+    "paper_url": "https://openreview.net/forum?id=al9BDhYErH",
+    "pdf_url": "https://openreview.net/pdf?id=al9BDhYErH",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T17:33:45.434000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "JpVXCFh7sX",
+      "content": "The paper presents a model for Multi-Output GP regression.\n\n**Pros:**\n- The work is well written with clear derivations and applications. \n\n**Cons:**\n- A weakness of this paper which was highlighted by several reviewers is that the paper does not clarify how it relates to existing literature sufficiently well and did not benchmark against the LMC, which is the obvious competitor model. I agree with the reviewers on this point - there has been a significant amount of work on linear combinations of GPs, and the authors should consider describing some of these alternatives in more detail and benchmarking against them. \n\nAll the reviewers agree on acceptance for the recommendation, and I am happy to pass on this recommendation.",
+      "date": "2026-05-01T17:33:45.434000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T00:44:55.012000Z",
+      "updated_at": "2026-03-23T21:47:34.917000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "al9BDhYErH",
+      "note_id": "al9BDhYErH",
+      "number": 13
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper14",
+    "title": "Best-of-Both-Worlds Multi-Dueling Bandits: Unified Algorithms for Stochastic and Adversarial Preferences under Condorcet and Borda Objectives",
+    "authors": [
+      {
+        "id": "~S_Akash1",
+        "name": "S Akash",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Pratik_Gajane1",
+        "name": "Pratik Gajane",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Jawar_Singh1",
+        "name": "Jawar Singh",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Multi-dueling bandits, where a learner selects $m \\geq 2$ arms per round and observes only the winner, arise naturally in many applications including ranking and recommendation systems, yet a fundamental question has remained open: can a single algorithm perform optimally in both stochastic and adversarial environments, without knowing which regime it faces? We answer this affirmatively, providing the first best-of-both-worlds algorithms for multi-dueling bandits under both Condorcet and Borda objectives. For the Condorcet setting, we propose $\\texttt{MetaDueling}$, a black-box \nreduction that converts any dueling bandit algorithm into a multi-dueling \nbandit algorithm by transforming multi-way winner feedback into an unbiased \npairwise signal. Instantiating our reduction with $\\texttt{Versatile-DB}$ yields \nthe first best-of-both-worlds algorithm for multi-dueling bandits: it achieves \n$O(\\sqrt{KT})$ pseudo-regret against adversarial preferences and the \ninstance-optimal $O\\left(\\sum_{i \\neq a^\\star} \\frac{\\log T}{\\Delta_i}\\right)$ \npseudo-regret under stochastic preferences, both simultaneously and without \nprior knowledge of the regime. For the Borda setting, we propose $\\texttt{SA-MiDEX}$, a stochastic-and-adversarial  algorithm that achieves $O\\left(K^2 \\log KT + K \\log^2 T + \\sum_{i: \\Delta_i^{\\mathrm{B}} > 0} \\frac{K\\log KT}{(\\Delta_i^{\\mathrm{B}})^2}\\right)$ regret in stochastic environments and  $O\\left(K \\sqrt{T \\log KT} + K^{1/3} T^{2/3} (\\log K)^{1/3}\\right)$ regret against  adversaries, again without prior knowledge of the regime.\nWe complement our upper bounds with matching lower bounds for the Condorcet setting. For the Borda setting, our upper bounds are near-optimal with respect to the lower bounds (within a factor of $K$) and match the best-known results in the literature.",
+    "keywords": [
+      "Multi-armed bandits",
+      "Dueling bandits",
+      "best-of-both-worlds"
+    ],
+    "paper_url": "https://openreview.net/forum?id=iJFpoqujjE",
+    "pdf_url": "https://openreview.net/pdf?id=iJFpoqujjE",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T17:35:18.734000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "MGK9wVnTVL",
+      "content": "The authors provide a theoretical analysis of the duelling bandit setting. \n\n**Pros:**\n- The reviewers agree that the theoretical results are meaningful and technically sound\n- The authors tend to agree that the paper is well written\n\n**Cons:**\n- Some of the reviewers highlighted that there was no empirical evaluation\n\nOverall, this appears to be a strong theoretical paper which I am happy to recommend for acceptance.",
+      "date": "2026-05-01T17:35:18.734000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T09:59:39.643000Z",
+      "updated_at": "2026-03-23T21:47:34.851000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "iJFpoqujjE",
+      "note_id": "iJFpoqujjE",
+      "number": 14
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper14",
+    "title": "Uncertainty quantification in neural network-based glucose prediction for diabetes",
+    "authors": [
+      {
+        "id": "~Hai_Siong_Tan1",
+        "name": "Hai Siong Tan",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Rafe_McBeth1",
+        "name": "Rafe McBeth",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "In this work, we investigate uncertainty-aware neural network models for blood glucose prediction and adverse glycemic event identification in Type 1 diabetes. We consider three families of sequence models based on LSTM, GRU, and Transformer architectures, with uncertainty quantification enabled by either Monte Carlo dropout or through evidential output layers compatible with Deep Evidential Regression. Using the HUPA-UCM diabetes dataset for validation, we find that Transformer-based models equipped with evidential output heads provide the most effective uncertainty-aware framework, achieving consistently higher predictive accuracies and better-calibrated uncertainty estimates whose magnitudes significantly correlate with prediction errors. We further evaluate the clinical risk of each model using the recently proposed Diabetes Technology Society error grid, with risk categories defined by international expert consensus. Our results demonstrate the value of integrating principled uncertainty quantification into real-time machine-learning-based blood glucose prediction systems.",
+    "keywords": [
+      "uncertainty quantification",
+      "glucose prediction",
+      "evidential regression"
+    ],
+    "paper_url": "https://openreview.net/forum?id=zOqhiEAXt1",
+    "pdf_url": "https://openreview.net/pdf?id=zOqhiEAXt1",
+    "reviewers": [],
+    "decision": "Workshop",
+    "decision_date": "2026-05-01T16:18:48.179000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "OhECxYraeR",
+      "content": "The paper provides an empirical assessment of the calibration of neural-network models for blood glucose prediction on a benchmark data set.\n\nBased on the reviewers' assessment and my own reading of the paper, I see the following pros and cons:\n\n**Pros**\n- Uncertainty quantification for glucose level predictions is a relevant problem in medicine, and several neural-network approaches have been proposed. A systematic study provides a useful synthesis of the proposal.\n- The models are evaluated carefully using a variety of sensible measures.\n\n**Cons**\n- There is not much new; no new methods are proposed or tailored to the application problem. This is, in principle, fine for a benchmark study if it is extensive/thorough enough to give a rather complete picture of the landscape. \n- Only a single data set of 25 patients is used to compare the models.\n- The implemented model architectures (LSTM, GRU, Transformer) are rather small and it's unclear how they compare in terms of complexity. No ablation with respect to architecture sizes are made.\n- The UQ layers added to the models (MC dropout and evidential) are very simple; many obvious competing approaches (ensembles, conformal,  Bayes) are lacking from the study. \n\nGiven the lack of novelty and severe limitations of the empirical study, the paper does not seem to be of broad interest to the ProbML community. I recommend the authors expand the scope of their study substantially before submitting to another venue.",
+      "date": "2026-05-01T16:18:48.179000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T09:24:13.391000Z",
+      "updated_at": "2026-03-23T21:47:24.491000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "zOqhiEAXt1",
+      "note_id": "zOqhiEAXt1",
+      "number": 14
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper15",
+    "title": "Joint Model and Data Sparsification via the Marginal Likelihood",
+    "authors": [
+      {
+        "id": "~Alexander_Timans1",
+        "name": "Alexander Timans",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Thomas_Möllenhoff1",
+        "name": "Thomas Möllenhoff",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Christian_A._Naesseth1",
+        "name": "Christian A. Naesseth",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Mohammad_Emtiyaz_Khan1",
+        "name": "Mohammad Emtiyaz Khan",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Eric_Nalisnick1",
+        "name": "Eric Nalisnick",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Sparse recovery in linear systems underpins applications from signal processing to high-dimensional regression. Sparse Bayesian Learning, grounded in the principle of automatic relevance determination (ARD), offers a practical Bayesian mechanism for feature sparsity via marginal likelihood optimization. Yet, its reliance on a homoscedastic noise model renders it sensitive to data contaminations such as outliers or misspecified noise, harming model fit and predictions. Instead, we propose jointly learning individual feature and sample relevancies, enabling simultaneous model and data sparsification via a single Bayesian objective. This symmetric pruning of model and data offers a natural extension that preserves conjugacy, admits closed-form updates for standard optimization procedures, and aligns with perspectives from robust regression and influence functions. Empirical results across diverse regression tasks affirm that a joint ARD approach consistently yields both sparse and robust prediction models.",
+    "keywords": [
+      "sparsity",
+      "marginal likelihood",
+      "sparse bayesian learning"
+    ],
+    "paper_url": "https://openreview.net/forum?id=PC08G4RW36",
+    "pdf_url": "https://openreview.net/pdf?id=PC08G4RW36",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T22:27:48.864000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "eibFQyyqBQ",
+      "content": "The submission proposes an interesting extension of sparse Bayesian learning with per-sample noise variances, enabling joint feature and data sparsification within a single marginal likelihood objective with closed-form updates. The reviewers unequivocally recommend acceptance, emphasizing the conceptual and technical soundness of treating model and data pruning in a unified manner. As a slight reservation, the contribution’s novelty is moderate, and its applicability is restricted to simple model classes with linear-in-weights parameterizations. Overall, the submission presents an interesting and cleanly motivated contribution to sparse Bayesian learning. Thus, I recommend acceptance.",
+      "date": "2026-05-01T22:27:48.864000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T15:02:20.262000Z",
+      "updated_at": "2026-03-23T21:47:34.935000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "PC08G4RW36",
+      "note_id": "PC08G4RW36",
+      "number": 15
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper17",
+    "title": "A Bayesian perspective on learning to grok in-context examples",
+    "authors": [
+      {
+        "id": "~Abdessamed_Qchohi1",
+        "name": "Abdessamed Qchohi",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Simone_Rossi1",
+        "name": "Simone Rossi",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Learning when a model generalizes — rather than memorizes — is a core problem in AI. In-Context Learning (ICL) lets transformers adapt to new tasks at inference time from a handful of examples, yet what drives this generalization remains unclear. We study grokking in ICL through a Bayesian lens, working in a modular arithmetic setting where the model must infer a hidden linear function from in-context examples alone.\nWe show that epistemic uncertainty collapses at the same moment the model groks, providing a label-free signal of the generalization transition that accuracy alone cannot give. We compare two approximate inference methods — IVON and Last-Layer Laplace — and track how their uncertainty estimates evolve across training, task diversity, context length, and context noise. Our results show that uncertainty quantification is a practical diagnostic for understanding how transformers learn.",
+    "keywords": [
+      "Grokking",
+      "In-Context Learning",
+      "Bayesian Inference",
+      "Probabilistic Machine Learning"
+    ],
+    "paper_url": "https://openreview.net/forum?id=QgejrP6DkE",
+    "pdf_url": "https://openreview.net/pdf?id=QgejrP6DkE",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:47:13.647000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "bMbvJsd0BT",
+      "content": "**Summary**\n\nThis paper investigates the phenomenon of grokking in in-context learning through the lens of uncertainty quantification. Focusing on a modular arithmetic setting, the authors utilise approximate Bayesian inference to compare epistemic and aleatoric uncertainty, providing empirical evidence that connects the moment when epistemic uncertainty collapses with the moment when the models groks.\n\n**Strengths**\n\nThe reviewers and the Area Chair agree that this is a relevant submission. The approach of using epistemic uncertainty to diagnose generalisation versus memorisation in this context is novel and interesting. Furthermore, the experimental setup is neat, the paper is well-written, and the visualisations effectively support the core findings. The ablation studies across multiple dimensions (number of tasks, context length, noise, etc.) provide a solid empirical foundation for the study.\n\n**Suggested Revisions**\n\nWhile the underlying empirical results are sound, Reviewer Q9Xy makes a valid comment regarding the fact that there is a gap between the relatively strong and general claims the authors are making, and the empirical evidence. To address this feedback, the authors should consider addressing the following points:\n1. **Scope of Claims**: The current text frames the findings as a general \"practical diagnostic\" tool. This should be toned down to accurately reflect the empirical evaluation setup — restricted to a specific task (modular arithmetic) and a specific architecture (decoder-only transformer).\n2. **Claim regarding \"precise\" moment of grokking**: The precise moment of grokking is not fully supported by the granularity of the experiments, and the authors should adjust the language accordingly.\n3. **Clarifications and Typos** mentioned by Reviewer 8o3a.\n\nOverall, the paper presents an interesting perspective on grokking. With the aforementioned adjustments to the tone and scope of the claims, this should be a valuable addition to the workshop.",
+      "date": "2026-05-01T16:47:13.647000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T19:51:24.069000Z",
+      "updated_at": "2026-03-23T21:47:34.774000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "QgejrP6DkE",
+      "note_id": "QgejrP6DkE",
+      "number": 17
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper18",
+    "title": "Quit While You’re Ahead: Sequential Training Can Harm Simulation-Based Inference",
+    "authors": [
+      {
+        "id": "~Kai_Samaroo1",
+        "name": "Kai Samaroo",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Yunyi_Shen1",
+        "name": "Yunyi Shen",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Robin_J._Ryder1",
+        "name": "Robin J. Ryder",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Tamara_Broderick2",
+        "name": "Tamara Broderick",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Simulation-based inference (SBI) is widely used to infer parameters of simulators whose likelihood functions are intractable. Recent work has suggested that sequential, multi-round training can improve upon a single round. While these conclusions are supported by evaluations on benchmark tasks with at most 20 parameters, simulators of practical interest can exhibit parameter dimensions exceeding 100. In the present work, we systematically study the performance of both single-round and sequential SBI methods as parameter dimension increases to 100. We show empirically that sequential methods often perform worse than single-round methods in dimensions higher than 20.",
+    "keywords": [
+      "simulation-based inference",
+      "likelihood-free inference",
+      "neural posterior estimation",
+      "neural likelihood estimation",
+      "neural ratio estimation"
+    ],
+    "paper_url": "https://openreview.net/forum?id=2T0yUSGwFa",
+    "pdf_url": "https://openreview.net/pdf?id=2T0yUSGwFa",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:43:49.670000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "8pK4U9amIF",
+      "content": "The paper considers simulation-based inference for larger parameter dimensionality, up to 100. Reviewers found the findings to be interesting, but raised several issues regarding confounding variables when scaling up, clarity of the writing. As the work may be interesting to ProbML's wider audience, I recommend acceptance, but encourage the authors to address reviewers concerns for the final version/poster.",
+      "date": "2026-05-01T16:43:49.670000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T21:35:54.523000Z",
+      "updated_at": "2026-03-23T21:47:34.618000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "2T0yUSGwFa",
+      "note_id": "2T0yUSGwFa",
+      "number": 18
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper18",
+    "title": "Bayesian Belief Compression for Sequential Model Selection",
+    "authors": [
+      {
+        "id": "~Zhaohui_Geoffrey_Wang1",
+        "name": "Zhaohui Geoffrey Wang",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "We formulate sequential model selection as a probabilistic inference problem: given a stream of queries whose difficulty evolves according to latent states, how should a system select among models of varying capability and cost? We propose a Bayesian framework combining a Hidden Markov Model for latent state inference, Baum-Welch EM for parameter learning, and Thompson Sampling for exploration. Our main theoretical result is a belief compression principle: the HMM belief state is a sufficient statistic that reduces the effective context dimension from O(N + d) to O(N), yielding a regret bound O(N√T) that is information-theoretically tight up to √log K factors. Empirically, belief compression accounts for a 6.3× regret reduction versus raw features in controlled experiments. On real LLM routing benchmarks (280 real API queries; 15k with real API quality in appendix), HMM-Thompson Sampling matches LinUCB quality while providing principled uncertainty quantification without exploration-parameter tuning. Under session structure, where belief tracking is most valuable, HMM-TS significantly outperforms LinUCB (p < 0.01, d = 1.04).",
+    "keywords": [
+      "Bayesian bandits",
+      "contextual bandits",
+      "hidden Markov models",
+      "belief state",
+      "POMDP",
+      "Thompson sampling",
+      "regret analysis",
+      "model selection",
+      "uncertainty quantification",
+      "sequential decision making"
+    ],
+    "paper_url": "https://openreview.net/forum?id=n3YPIMmRzz",
+    "pdf_url": "https://openreview.net/pdf?id=n3YPIMmRzz",
+    "reviewers": [],
+    "decision": "Workshop",
+    "decision_date": "2026-05-01T15:30:50.317000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "UPeT0RR9HO",
+      "content": "The paper formulates sequential model selection / LLM routing as a latent-state problem, using an HMM to infer query difficulty and Thompson Sampling to choose models under cost constraints. Its main technical claim is a belief-compression result showing that the HMM belief state can reduce effective context dimension and improve regret when temporal structure is present.\n\nWhile the reviewers praise practical relevance of cost-aware model routing, the clean use of well-understood tools (HMMs + TS), the theoretical development, and the fact that experiments used real LLM-routing data, they also raise several concerns.\nSeveral reviewers found the paper hard to follow, with unclear notation, insufficient motivation around key equations and theorems, and weak discussion of baselines. Substantively, multiple reviewers felt the real LLM application was not strong enough, since gains over strong baselines were limited except in the sequential/session setting; one reviewer also questioned modeling choices such as Gaussian emissions / rewards and wanted more algorithmic detail.\n\nThe authors' rebuttals clarified Eq. (4) and the full pipeline in plain language, explained the theoretical assumptions and motivation more explicitly, gave more detail on HMM fitting and calibration, expanded baseline descriptions, and emphasized that the main empirical claim is about settings with temporal structure rather than i.i.d. routing benchmarks.\nHowever, the reviewers remain skeptical about the LLM application being strong enough and the fit of the theory to the practical application.\n\nTherefore, we have decided to reject the paper at this stage. We would recommend that the authors take the reviewers' feedback into account when reworking the paper for a potential resubmission.",
+      "date": "2026-05-01T15:30:50.317000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-20T21:01:33.292000Z",
+      "updated_at": "2026-03-23T21:47:24.323000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "n3YPIMmRzz",
+      "note_id": "n3YPIMmRzz",
+      "number": 18
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper19",
+    "title": "Leave No One Out: Mitigating Subpopulation Shift via Leave-One-Out Upsampling",
+    "authors": [
+      {
+        "id": "~Alice_ST_Cheng1",
+        "name": "Alice ST Cheng",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Brooks_Paige1",
+        "name": "Brooks Paige",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Empirical Risk Minimization (ERM) often fails on under-represented subpopulations. Weighted ERM with group labels mitigates this, but such annotations are often unavailable. We propose \\textit{Leave One-Out Influenced Sampling (LOUIS)}, a group-label-free framework that uses efficient LOO error approximations to identify difficult samples in \\textbf{very early training steps}. These scores generate instance-level upsampling weights for a second stage of weighted ERM. Unlike prior work, LOUIS does not require a fully converged identifier model. On Waterbirds and ColorMNIST, LOUIS achieves performance competitive with group-annotated oracles, offering a practical solution for robust learning when group attributes are missing.",
+    "keywords": [
+      "subpopulation shift",
+      "leave one out",
+      "group label free"
+    ],
+    "paper_url": "https://openreview.net/forum?id=cJDphjWgB8",
+    "pdf_url": "https://openreview.net/pdf?id=cJDphjWgB8",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:43:23.928000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "MRnwVFMacr",
+      "content": "The paper proposes a method to leverage influence estimates during training to address training with data containing underrepresented classes. Reviewers found the approach to be interesting and to address an important problem. The work is quite relevant to ProbML, as influence measures relate to uncertainty estimates (for instance, Laplace approximations). Overall, I recommend acceptance of the work.",
+      "date": "2026-05-01T16:43:23.928000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T00:34:53.727000Z",
+      "updated_at": "2026-03-23T21:47:34.932000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "cJDphjWgB8",
+      "note_id": "cJDphjWgB8",
+      "number": 19
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper20",
+    "title": "Diffusion-Driven State Space Models",
+    "authors": [
+      {
+        "id": "~Jack_Ruder1",
+        "name": "Jack Ruder",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Michael_Wojnowicz1",
+        "name": "Michael Wojnowicz",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "In many domains, practitioners seek models that produce accurate forecasts while faithfully\n      capturing latent system dynamics.\n    Existing approaches typically sacrifice one of these goals: deep state space models often assume\n      Gaussian latent transitions, limiting fit and forecasting, while diffusion models are highly\n      expressive but lack principled inference for the underlying dynamics.\n    To combine the strengths of both, we introduce the Diffusion-Driven State Space Model (DDSSM),\n      which replaces the conventional Gaussian transition distribution with a diffusion model.\n    Our DDSSM resolves the open problem of how to jointly train an autoencoder and a diffusion model on\n      sequential data, thereby extending the literature on latent diffusion models for time series.\n    Moreover, we find that the DDSSM empirically outperforms a state-of-the-art deep SSM at fitting and\n      forecasting a simulated time series with multimodal transitions.",
+    "keywords": [
+      "state",
+      "space",
+      "model",
+      "models",
+      "diffusion",
+      "prior",
+      "time",
+      "series",
+      "latent",
+      "dvae",
+      "dssm",
+      "ssm",
+      "dynamical"
+    ],
+    "paper_url": "https://openreview.net/forum?id=AvgLufppuW",
+    "pdf_url": "https://openreview.net/pdf?id=AvgLufppuW",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:41:58.854000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "FfrGPkksZZ",
+      "content": "**Summary**\n\nThis paper proposes a highly novel architecture that integrates diffusion models into state-space models (SSMs). Specifically, the authors replace standard transition distributions with individual diffusion models. The paper outlines the theoretical foundations of this approach, a candidate architecture, and results on a toy synthetic experiment.\n\n**Strengths**\n\nBoth reviewers agree that the core idea is novel and interesting. The mathematical derivations are detailed, and the concept of using diffusion processes to enable expressive, non-Gaussian transitions in SSMs is highly novel. \n\n**Weaknesses**\n\nWhile the theoretical setup is strong, the empirical results are not convincing. Reviewer XcAX points out that the experiments are performed on a simple 1D synthetic dataset where the heavy architecture proposed in the appendices is not even needed (due to the Gaussian emissions), and might indicate that the authors were not able to apply the method successfully on more practically-meaningful settings.\n\nAdditionally, the proposed approach requires running a full diffusion process for every transition, incurring prohibitive computational costs.\n\nTo address these two points, the authors are strongly encouraged to address the practical limitations of their approach in the main text:\n- **Computational Cost**: The authors should make the computational overhead of this approach clear from the beginning. A clear exposition of the wall-clock times for training and inference for the toy setting would also be encouraged.\n- **Scalability**:  Provide a clear discussion on the current limits of scaling this model to real-world, high-dimensional datasets. This should ideally come with some proposed solutions (i.e., distillation)\n\nOverall, despite the empirical limitations, the proposed idea is very interesting. By providing a transparent discussion of its computational costs and future scalability challenges, it should serve as a good contribution to the workshop.",
+      "date": "2026-05-01T16:41:58.854000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T03:17:03.521000Z",
+      "updated_at": "2026-03-23T21:47:34.890000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "AvgLufppuW",
+      "note_id": "AvgLufppuW",
+      "number": 20
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper21",
+    "title": "Accelerating Discrete Langevin Samplers via Continuous Intermediates",
+    "authors": [
+      {
+        "id": "~Guangyu_Li8",
+        "name": "Guangyu Li",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Ruqi_Zhang1",
+        "name": "Ruqi Zhang",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Sampling from discrete distributions remains a challenge in machine learning, with traditional Markov Chain Monte Carlo (MCMC) methods such as Gibbs sampling suffering from inefficiency due to single-coordinate updates. Recent gradient-based discrete samplers have improved performance but remain constrained by the original discrete structures, which potentially hinder the convergence. To address this issue, we propose a hybrid approach that enables more informed proposals by introducing a continuous exploratory intermediate before the discrete update. This method, called Discrete Langevin Samplers via Continuous intermediates (cDLS), bridges the gap between discrete and continuous sampling and significantly accelerates convergence while maintaining theoretical guarantees. We develop variants of cDLS to ensure broad applicability, including unadjusted and Metropolis-adjusted versions. Experiments on Ising models, restricted Boltzmann machines, deep energy-based models, and Bayesian binary neural networks validate the superior performance of cDLS compared to existing methods. Our results highlight the potential of hybrid continuous-discrete exploration for advancing general discrete sampling.",
+    "keywords": [
+      "Markov Chain Monte Carlo; Discrete Distribution Sampling; Machine Learning"
+    ],
+    "paper_url": "https://openreview.net/forum?id=Rgs15piXcl",
+    "pdf_url": "https://openreview.net/pdf?id=Rgs15piXcl",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:41:41.063000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "Yl3oV9pe4Z",
+      "content": "The authors present a method for improving Langevin sampling by performing a continuous  relaxation of the possible states. \n\n**Pros:**\n- The paper is well written and conceptually appealing \n- The authors provide very detailed experiments, including several interesting ones in the appendix\n- The authors provide seemingly sound theoretical guarantees \n\n**Cons:**\n- The proposed method does introduce additional hyper-parameters and more detail on how to set these could be provided",
+      "date": "2026-05-01T16:41:41.063000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T06:33:31.980000Z",
+      "updated_at": "2026-03-23T21:47:34.789000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "Rgs15piXcl",
+      "note_id": "Rgs15piXcl",
+      "number": 21
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper22",
+    "title": "Local Thompson Sampling via Prompting for Bayesian Optimization with LLM Generators",
+    "authors": [
+      {
+        "id": "~Shorya_Sharma1",
+        "name": "Shorya Sharma",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Raul_Astudillo1",
+        "name": "Raul Astudillo",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Steering generative models to propose candidates that optimize expensive black-box functions is a central problem with applications in scientific discovery. Recent approaches integrate Bayesian optimization (BO) with large language models (LLMs) to guide candidate generation, but often require complex architectures or tight coupling between surrogate models and generators. We propose $\\textit{Local Thompson Prompting}$ (LTP), a simple and modular alternative that leverages a Gaussian process (GP) surrogate to perform Thompson sampling over previously evaluated candidates, and uses the resulting samples to directly condition LLM prompts. This yields a lightweight mechanism for uncertainty-aware exploration without modifying the LLM or training additional components. We evaluate LTP on two domains—Semantle (word-guessing) and molecular optimization—and show that it consistently outperforms existing BO-LLM baselines while remaining architecturally minimal. These results suggest that effective BO-style exploration can be achieved through prompt-level interventions alone.",
+    "keywords": [
+      "Bayesian Optimisation",
+      "Large language models",
+      "Thompson Sampling",
+      "Adaptive experimental design"
+    ],
+    "paper_url": "https://openreview.net/forum?id=Lx60aD2vaH",
+    "pdf_url": "https://openreview.net/pdf?id=Lx60aD2vaH",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:40:14.892000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "qEPiwxJ3YU",
+      "content": "This work proposes Local Thompson Prompting (LTP), an algorithm that uses a Gaussian process surrogate together with Thompson sampling to select in-context exemplars that steer an LLM generator within a Bayesian optimization loop. They provide results of their method on semantle and molecular optimizations, demonstrating outperformance over baselines. \n\nReviewers were divided, with scores ranging from 4-7. The strongest concerns were as follows: \n* Whether the method is genuinely \"Thompson sampling\" given that the Thompson sample ranks exemplars rather than directly selecting candidates.\n\n* Underspecification of the algorithm and experimental setup (e.g., how ranking is performed, what \"fraction of runs solved\" means). \n\n* Absence of ablations isolating the contributions of Thompson sampling, the inner refinement loop, and exemplar selection. Reviewer 2 also flagged a missing comparison to LLINBO.\n\nOn balance, I would lean towards acceptance although it is borderline. I would encourage the authors to include more details on the experiments, ablations to demonstrate the important components of the algorithm, and a more detailed explanation on the relation to Thompson sampling.",
+      "date": "2026-05-01T16:40:14.892000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T06:52:17.168000Z",
+      "updated_at": "2026-03-23T21:47:34.785000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "Lx60aD2vaH",
+      "note_id": "Lx60aD2vaH",
+      "number": 22
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper23",
+    "title": "Hierarchical Bayesian Crowdsourcing with Item Difficulty",
+    "authors": [
+      {
+        "id": "~Seong_Woo_Han1",
+        "name": "Seong Woo Han",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Ozan_Adıgüzel1",
+        "name": "Ozan Adıgüzel",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Bob_Carpenter3",
+        "name": "Bob Carpenter",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "In applied statistics and machine learning, the gold standards used for training are often biased and almost always noisy. Dawid and Skene's justifiably popular crowdsourcing model adjusts for rater sensitivity and specificity, but fails to capture distributional properties of rating data gathered for training, which in turn biases training. In this study, we introduce a general purpose measurement-error model with which we can infer consensus categories by adding item-level effects for difficulty, discriminativeness, and guessability. We further show how to constrain the bimodal posterior of these models to avoid adversarial raters. We validate our model's goodness of fit with posterior predictive checks, the Bayesian analogue of $\\chi^2$ tests, and assess its predictive accuracy using leave-one-out cross-validation. We illustrate our new model with two well-studied data sets, binary rating data for caries in dental X-rays and implication in natural language.",
+    "keywords": [
+      "Hierarchical Bayesian model",
+      "Crowdsourcing",
+      "Item response theory"
+    ],
+    "paper_url": "https://openreview.net/forum?id=5c3dgCRzKY",
+    "pdf_url": "https://openreview.net/pdf?id=5c3dgCRzKY",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:39:59.498000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "GnnTKSEeUh",
+      "content": "The submission proposes a hierarchical Bayesian model building on Dawid and Skene’s crowdsourcing model with item response theory-style item-level effects, separate rater sensitivity and specificity, and a reparameterization of sensitivity to exclude adversarial behavior and ensure identifiability. The method is evaluated on two binary rating datasets. The reviews are mixed, criticizing incremental novelty and a limited empirical support. In my own assessment, I tend to agree with most of the criticism. On the other hand, the paper presents a clear and well-structured Bayesian formulation with worthwhile findings, constituting a coherent and potentially useful extension of established approaches. In light of the workshop setting and since the reservations do not concern clear technical flaws, I recommend acceptance.",
+      "date": "2026-05-01T16:39:59.498000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T07:19:19.758000Z",
+      "updated_at": "2026-03-23T21:47:34.784000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "5c3dgCRzKY",
+      "note_id": "5c3dgCRzKY",
+      "number": 23
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper23",
+    "title": "Clustering with Composite Weighted g-Bregman Divergences",
+    "authors": [
+      {
+        "id": "~Adel_Mohammadpour2",
+        "name": "Adel Mohammadpour",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Mina_Aminghafari3",
+        "name": "Mina Aminghafari",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "We introduce a composite weighted g-Bregman divergence for clustering, defined as a finite sum of weighted transformed Bregman terms. This framework unifies the weighted g-Bregman divergence and the separable weighted g-Bregman loss, while including the ordinary multivariate Bregman divergence as a special case. We establish its basic properties, characterize the associated cluster representatives under suitable conditions, and derive a composite information decomposition. We then develop a k-means-type-clustering algorithm based on the proposed divergence and show that it decreases the clustering objective at each iteration and terminates finitely under mild assumptions. The proposed approach extends the classical Bregman clustering framework to a broader class of transformed and weighted divergence measures.",
+    "keywords": [
+      "Clustering",
+      "Bregman divergences",
+      "Loss function",
+      "K-means"
+    ],
+    "paper_url": "https://openreview.net/forum?id=6SxzEsSSzB",
+    "pdf_url": "https://openreview.net/pdf?id=6SxzEsSSzB",
+    "reviewers": [],
+    "decision": "Workshop",
+    "decision_date": "2026-05-01T16:21:53.808000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "SKiyouHCh8",
+      "content": "The paper introduces a composite weighted g-Bregman divergence that unifies several transformed / weighted / separable Bregman-style losses, derives associated centroid and information-decomposition results, and gives a k-means-type algorithm with monotone descent and finite termination guarantees.\n\nWhile the reviewers found the theory careful, rigorous, and clearly written, appreciated the unified formal framework, and agreed the mathematical development appeared solid, they also raise several concerns.\nAll reviewers were concerned about weak practical motivation. The biggest issue was the lack of empirical validation in the original submission, but reviewers also wanted clearer interpretation of the roles of `w`, `phi`, and `g`, concrete use cases, and a better case that the theoretical contributions are more than incremental.\n\nThe authors' rebuttals added synthetic experiments, promised broader simulations plus a real-data study, clarified the motivation for transformed geometry / weighting / composite structure, explained the roles and possible non-uniqueness of `w`, `phi`, and `g`, and promised a stronger discussion of novelty and relation to known special cases.\nHowever, the reviewers remain skeptical about the real-world use case.\n\nTherefore, we have decided to reject the paper at this stage. We would recommend that the authors take the reviewers' feedback into account when reworking the paper for a potential resubmission.",
+      "date": "2026-05-01T16:21:53.808000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T03:57:45.975000Z",
+      "updated_at": "2026-03-23T21:47:24.301000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "6SxzEsSSzB",
+      "note_id": "6SxzEsSSzB",
+      "number": 23
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper24",
+    "title": "Probabilistic Inference for Boyant Model Weights",
+    "authors": [
+      {
+        "id": "~Aleksanteri_Sladek1",
+        "name": "Aleksanteri Sladek",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Martin_Trapp2",
+        "name": "Martin Trapp",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Arno_Solin1",
+        "name": "Arno Solin",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Floating-point bit-string representations of parameters are de facto building blocks of neural networks, and their quantization into lower precision formats is increasingly used to reduce their computational requirements. The information loss that quantization induces in the model is, however, not well studied, and its detection relies on heuristics. We propose an information-theoretic approach for measuring quantization-induced information loss. By modelling the probability distribution of the underlying floating-point bit-strings that parameters consist of, we can measure information loss as the change in differential entropy across quantization levels. We empirically demonstrate that our method accurately captures quantization-induced information loss in neural networks trained on small benchmark regression data sets by showing a strong correlation between our information loss metric and the observed performance degradation across quantization levels.",
+    "keywords": [
+      "approximate Bayesian inference",
+      "quantization",
+      "neural networks",
+      "probabilistic circuits"
+    ],
+    "paper_url": "https://openreview.net/forum?id=bgRs4hf5X5",
+    "pdf_url": "https://openreview.net/pdf?id=bgRs4hf5X5",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:39:22.952000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "1NmXtgofv5",
+      "content": "The submission proposes an information-theoretic measure of quantization-induced information loss for the parameters of a DNN by extending BitVI to floating-point bit-string representations and quantifying loss as the change in differential entropy across precision levels, evaluated on small UCI datasets. Two reviewers recommend rejection, and one recommends acceptance, with all three at high confidence. The accepting reviewer explicitly frames the contribution as a proof-of-concept with potential rather than current realized impact. While all reviewers acknowledge conceptual elegance and a good fit with the workshop, the rejecting reviewers raise substantive concerns regarding the RMSE comparisons, unclear implications of Figure 2, as well as a lack of theoretical justification for the proposed metric in Equation 3, leaving little confidence in the empirical support for the proposed method. Furthermore, there seems to be a typo or undefined term in the title (buoyant?). \n\nSince the contribution has conceptual appeal but the empirical and methodological foundations are not yet solid enough to support the central claims, I recommend rejection and encourage the authors to address these concerns in an improved version of their work.",
+      "date": "2026-05-01T16:39:22.952000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T07:37:44.724000Z",
+      "updated_at": "2026-03-23T21:47:34.954000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "bgRs4hf5X5",
+      "note_id": "bgRs4hf5X5",
+      "number": 24
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper24",
+    "title": "IDProbCover: Intrinsic-Dimension Adaptive Coverage for Pool-Based Active Learning",
+    "authors": [
+      {
+        "id": "~Poojith_thummala2",
+        "name": "Poojith thummala",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Mohamed_Abdelrazek1",
+        "name": "Mohamed Abdelrazek",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Pool-based active learning aims to improve predictive performance under limited annotation budgets by selecting unlabeled samples whose labels are most useful for training. In deep image classification, uncertainty-based methods can focus on ambiguous examples but often acquire locally redundant samples, while coverage-based methods promote diversity and representativeness yet typically rely on a single global neighborhood scale. This can be poorly matched to heterogeneous representation spaces. We propose IDProbCover, a coverage-based acquisition strategy that replaces the global coverage radius with a radius adapted to local intrinsic dimension. The method estimates pointwise intrinsic dimension, assigns each candidate a local coverage scale, and greedily selects samples that maximize uncovered neighborhood mass. This yields a simple, interpretable, and model-agnostic acquisition rule that is responsive to local geometric complexity. We evaluate IDProbCover on CIFAR-10, CIFAR-100, and TinyImageNet against uncertainty-based baselines and fixed-scale coverage methods. IDProbCover is competitive on CIFAR-10 and improves over fixed-scale coverage and standard uncertainty baselines on CIFAR-100 and TinyImageNet. These results suggest that local intrinsic dimension is a useful signal for adaptive coverage in active learning.",
+    "keywords": [
+      "Active Learning",
+      "Intrinsic Dimension",
+      "Representation-Based Sampling",
+      "Adaptive Coverage",
+      "Sample Selection",
+      "Local Geometry"
+    ],
+    "paper_url": "https://openreview.net/forum?id=JYL4Xrheev",
+    "pdf_url": "https://openreview.net/pdf?id=JYL4Xrheev",
+    "reviewers": [],
+    "decision": "Workshop",
+    "decision_date": "2026-05-01T22:19:55.928000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "UbHIm1mP9o",
+      "content": "The paper recieved mostly positive (borderline accept) reviews, with some exceptions. Several reviewers noted that they liked the paper's core idea and found it clear and well-motivated. The overall method was also highlighted as simple and interpretable, which I believe further strengthens the contribution. The empirical assessment was mentioned positively, and the paper was generally found to be theoretically & empirically solid. On the other hand, some reviewers expressed concerns about the limited novelty of the presented work and the method's potential marginal gains (on one CIFAR-10 dataset). Further, concerns about the computational complexity have been raised, which have been successfully addressed during the rebuttal.\n\nOverall, I am positive towards this submission and recommend acceptance.\n\n**Additional review**\n\nMinor comments:\n\n1. The paper appears to contain several citation formatting issues that should be easy to fix. For example, the phrase \"maximum-likelihood estimator of Levina and Bickel Levina and Bickel (2004)\" repeats the author names and should be corrected. Similar citation issues should be checked throughout the manuscript.\n\n2. The intrinsic-dimension estimates are computed after $\\ell_2$-normalizing the embeddings, as stated in the appendix: \"Before neighborhood construction, the embeddings are $\\ell_2$-normalized\" and all local intrinsic-dimension estimates are computed in this normalized feature space. This should be discussed more carefully. In general, estimating ID after projecting or normalizing data to the unit sphere does not necessarily recover the intrinsic dimension of the original data manifold. For example, projecting a Swiss roll onto the unit sphere may alter the geometry in a way that prevents recovery of the Swiss roll's original manifold dimension. This may not be fatal for the proposed method, since the paper seems primarily interested in using the estimate as a proxy for local geometric complexity rather than in recovering the true manifold dimension. However, the terminology should be clarified. Intrinsic dimension is usually understood as a structural or manifold-related property, whereas the paper often uses it as a measure of embedding geometry or local complexity. This distinction should be made explicit.\n\n3. Some notation is unnecessarily awkward or confusing. For instance, the notation $\\mathrm{kNN}_{\\mathrm{kNN}}(i)$ for the set of nearest neighbors is hard to read and should be simplified.\n\nMajor comment:\n\nMy main concern is with the construction and interpretation of the acquisition rule. The method selects points according to the uncovered coverage gain\n\n$$\ng(i) = |N(i) \\cap U_t^{\\mathrm{unc}}|.\n$$\n\nThus, an embedding $i$ is favored when its adaptive neighborhood $N(i)$ contains many currently uncovered points. However, the size of $N(i)$ depends on the adaptive radius $\\delta_i$, which is larger when the estimated local intrinsic dimension $\\hat d_i$ is smaller, since\n\n$$\n\\delta_i = \\delta_0 \\rho_i^{-\\alpha}.\n$$\n\nAt the same time, the local ID estimate itself is small when the nearest-neighbor distance profile suggests low local growth, for example when the first nearest neighbor is much closer than the second one, i.e., $r_1 \\ll r_2$.\n\nThis creates a somewhat circular mechanism that is not fully explained. The algorithm favors points with many neighbors within $\\delta_i$, but $\\delta_i$ becomes large precisely when the local ID estimate suggests a simpler or lower-growth neighborhood. These effects may counteract each other: points with low estimated ID receive larger radii, but the low ID estimate may also arise from sparse or uneven local neighbor structure. Depending on the local geometry, this could lead to unstable or weakly interpretable selection behavior, potentially making the selected points close to arbitrary in some regimes.\n\nI am not claiming that this necessarily invalidates the empirical results, but the paper should provide a clearer explanation of the intended mechanism. In particular, it would help to analyze how $g(i)$, $\\hat d_i$, and $\\delta_i$ interact in simple synthetic cases. An ablation against simpler adaptive-radius rules based only on local density or nearest-neighbor distances would also help determine whether the gains come from intrinsic dimension specifically or merely from introducing some form of local radius adaptation.",
+      "date": "2026-05-01T22:19:55.928000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T04:24:52.187000Z",
+      "updated_at": "2026-03-23T21:47:24.239000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "JYL4Xrheev",
+      "note_id": "JYL4Xrheev",
+      "number": 24
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper25",
+    "title": "Prediction-Powered Active Testing",
+    "authors": [
+      {
+        "id": "~Kianoosh_Ashouritaklimi1",
+        "name": "Kianoosh Ashouritaklimi",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Tom_Rainforth1",
+        "name": "Tom Rainforth",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Francois_Caron1",
+        "name": "Francois Caron",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Active testing estimates model risk from a large unlabelled test pool under a limited labelling budget by adaptively selecting which test points to label. We propose **Prediction--Powered Active Testing (PPAT)**, which combines the LURE estimator with a control variate built from cheap black--box predictions on the full pool, yielding an unbiased estimator with reduced variance. On real regression benchmarks, PPAT remains unbiased and consistently achieves lower variance than both LURE and random sampling.",
+    "keywords": [
+      "active testing",
+      "active learning"
+    ],
+    "paper_url": "https://openreview.net/forum?id=V6wIXluLmp",
+    "pdf_url": "https://openreview.net/pdf?id=V6wIXluLmp",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:35:19.950000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "P25xw0RkS8",
+      "content": "The work proposes a new heuristic approach for active testing, which is validated on some small regression problems. Reviewers overall liked the contribution but raised several serious concerns about lack of differentiation to other methods. I believe that these can be addressed by the authors and recommend acceptance.",
+      "date": "2026-05-01T16:35:19.950000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T08:57:45.342000Z",
+      "updated_at": "2026-03-23T21:47:34.767000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "V6wIXluLmp",
+      "note_id": "V6wIXluLmp",
+      "number": 25
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper26",
+    "title": "Probabilistic Circuit Networks",
+    "authors": [
+      {
+        "id": "~Florian_Peter_Busch1",
+        "name": "Florian Peter Busch",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Moritz_Willig1",
+        "name": "Moritz Willig",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Kristian_Kersting1",
+        "name": "Kristian Kersting",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Devendra_Singh_Dhami1",
+        "name": "Devendra Singh Dhami",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "As inference in Bayesian networks (BNs) can quickly become intractable, probabilistic circuits (PCs) have been established as the go-to choice for performing tractable inference.\nHowever, modeling with BNs remains popular as their graphical structure closely aligns with the semantics of the problem, making them modular and interpretable.\nAs this generally does not apply to PCs trained from data, we propose probabilistic circuit networks (PCNs).\nPCNs model variables using separate PCs each covering the variable and its parents, so that the marginal distributions can be updated in response to changes upstream.\nTo this end, an iterative proportional fitting (IPF) procedure can be employed, which remains tractable owing to the tractability properties of PCs.\nWhile the inference procedure of PCNs is only approximate and thus performs worse than BNs w.r.t. accuracy, we experimentally show that PCNs are more sample-efficient than full PCs and remain computationally tractable despite implementing the graphical structure directly.",
+    "keywords": [
+      "probabilistic circuit",
+      "approximate inference",
+      "iterative proportional fitting"
+    ],
+    "paper_url": "https://openreview.net/forum?id=FsZtEW2iH5",
+    "pdf_url": "https://openreview.net/pdf?id=FsZtEW2iH5",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:35:04.715000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "3P9GIoxvm3",
+      "content": "The present submission proposes Probabilistic Circuit Networks (PCNs), a hybrid model class that assigns local probabilistic circuits in a DAG and propagates updates via iterative proportional fitting (IPF), combining Bayesian networks (BNs) with the tractability of probabilistic circuits (PCs). Two reviewers recommend acceptance, and one is marginally below the threshold. All agree that the conceptual bridge between BNs and PCs is creative, and the approach demonstrates improved efficiency and scalability over simple PCs. One reviewer raises legitimate but moderately severe concerns about imprecise notation, the absence of convergence guarantees for IPF, and a somewhat underdeveloped/underexplained experimental setup, while the other reviewers additionally note the lack of comparisons to other approximate inference methods. Overall, the contribution is conceptually interesting and well-motivated for the workshop, and the raised concerns largely concern scope and clarity of the exposition rather than fundamental errors. I recommend acceptance, but strongly encourage the authors to polish their exposition in subsequent iterations of their work.",
+      "date": "2026-05-01T16:35:04.715000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T10:11:55.960000Z",
+      "updated_at": "2026-03-23T21:47:34.835000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "FsZtEW2iH5",
+      "note_id": "FsZtEW2iH5",
+      "number": 26
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper27",
+    "title": "Neural Discrete Controlled Monte Carlo Samplers",
+    "authors": [
+      {
+        "id": "~Sujong_Lee1",
+        "name": "Sujong Lee",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Pascal_Jutras_Dube1",
+        "name": "Pascal Jutras Dube",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Bihan_Wen2",
+        "name": "Bihan Wen",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Ruqi_Zhang1",
+        "name": "Ruqi Zhang",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Sampling from an unnormalized probability density is a core problem in statistical physics and probabilistic inference, yet most learning-based samplers are designed for continuous diffusions. We introduce the Discrete Controlled Monte Carlo (DCMC) sampler, a neural sampler based on controlled continuous-time Markov chains (CTMCs). DCMC transports samples from an easy prior to an intractable target by following a prescribed curve of intermediate time marginals and learning a control over CTMC jump rates. We study two complementary control parameterizations: an additive control that extends PINN-based generator learning, and a multiplicative (exponential-tilt) control that satisfies a discrete time-reversal relation. For the multiplicative case, we show that the optimal control solves an infinitesimal Schrodinger bridge problem for CTMCs with the prescribed marginals. Experiments on Ising models demonstrate substantial gains of DCMC over prior PINN methods and competitive or better performance compared to recent masked diffusion samplers.",
+    "keywords": [
+      "Monte Carlo Methods",
+      "Sampling",
+      "Continuous-time Markov Chain"
+    ],
+    "paper_url": "https://openreview.net/forum?id=aiCjKPATjy",
+    "pdf_url": "https://openreview.net/pdf?id=aiCjKPATjy",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:34:53.296000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "Mk2R2w59OY",
+      "content": "**Summary and Strengths**\nThis paper introduces an elegant and practically-effective neural sampling method (DCMC) for unnormalised discrete densities. As noted by Reviewer XrEY, the formulation of the multiplicative control and its formal connection to the infinitesimal Schrödinger bridge is a significant theoretical contribution, and the introduction of bounded Glauber dynamics is a good practical solution for numerical stability.\n\n**Mandatory Revision for Camera-Ready**: **Formatting**: The current submission appears to be using the wrong template. The authors **must** reformat the manuscript using the official ProbML conference template for the final camera-ready version.\n\n**Minor weaknesses**: The authors are encouraged to add a discussion about the minor empirical limitations noted by Reviewer XrEY.\n\nOverall, this is a strong submission and a valuable addition to the workshop.",
+      "date": "2026-05-01T16:34:53.296000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T10:42:09.842000Z",
+      "updated_at": "2026-03-23T21:47:34.533000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "aiCjKPATjy",
+      "note_id": "aiCjKPATjy",
+      "number": 27
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper28",
+    "title": "Self-Supervised Variational Priors for Robust Bayesian Inference",
+    "authors": [
+      {
+        "id": "~Erik_Englesson1",
+        "name": "Erik Englesson",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Iaroslav_Melekhov1",
+        "name": "Iaroslav Melekhov",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Juho_Kannala5",
+        "name": "Juho Kannala",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Hossein_Azizpour2",
+        "name": "Hossein Azizpour",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "The standard in Bayesian Deep Learning is to use zero-mean isotropic Gaussian priors over neural network weights. When the likelihood is reliable (e.g., with abundant clean labels), these priors matter little. However, when the likelihood is unreliable due to imperfect data, the weakness of standard priors becomes apparent, resulting in poor robustness and uncertainty estimates. To address this, we propose to replace the standard priors with self-supervised variational posteriors. Specifically, we propose a variational method based on instance discrimination. Our objective is derived from the evidence lower bound and made scalable through approximations. Empirically, our priors enhance data-efficiency, robustness to label noise, generalization and calibration on the CIFAR datasets.",
+    "keywords": [
+      "Bayesian Deep Learning; Variational Inference; Self-Supervised Learning"
+    ],
+    "paper_url": "https://openreview.net/forum?id=ss57sQK7gh",
+    "pdf_url": "https://openreview.net/pdf?id=ss57sQK7gh",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:33:28.468000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "GVTPCzIn4j",
+      "content": "The paper proposes Variational Instance Discrimination (VID), replacing standard isotropic Gaussian priors commonly employed in Bayesian deep learning (BDL) with self-supervised variational priors learned from unlabeled data by treating augmentations as latent variables, yielding a scalable ELBO objective that purportedly recovers a SimCLR-like form as a limiting case. The reviewers consistently emphasize a clear narrative, the principled probabilistic reinterpretation of contrastive self-supervised learning, and the methodological improvement over prior work. Their main reservations concern an under-investigated calibration degradation under variational inference, the unanalyzed bias of the batched softmax procedure, and limited experimental evaluations. Since the submission constitutes an elegant contribution that is well-aligned with the workshop and these issues mainly pertain to underanalyzed aspects of the proposed method and the scope of validation rather than fundamental flaws, I recommend acceptance.",
+      "date": "2026-05-01T16:33:28.468000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T10:58:35.795000Z",
+      "updated_at": "2026-03-23T21:47:34.140000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "ss57sQK7gh",
+      "note_id": "ss57sQK7gh",
+      "number": 28
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper29",
+    "title": "Data-Driven Priors for Uncertainty-Aware Deterioration Risk Prediction with Multimodal Data",
+    "authors": [
+      {
+        "id": "~Leopoldo_Julian_Lechuga_Lopez1",
+        "name": "Leopoldo Julian Lechuga Lopez",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Tim_G._J._Rudner2",
+        "name": "Tim G. J. Rudner",
+        "email": "",
+        "affiliation": ""
+      },
+      {
+        "id": "~Farah_E._Shamout1",
+        "name": "Farah E. Shamout",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Safe predictions are essential for deploying machine learning models in clinical decision support systems, requiring reliable uncertainty estimation. However, current models often lack well-calibrated uncertainty, particularly in multimodal settings where effective information fusion is needed. We propose $\\texttt{MedCertAIn}$, a predictive uncertainty framework for multimodal in-hospital risk prediction. \nOur approach introduces data-driven priors over neural network parameters using a hybrid strategy based on cross-modal similarity in self-supervised latent representations and modality-specific data corruptions. We evaluate our method on clinical time-series and chest X-ray data from MIMIC-IV and MIMIC-CXR.  $\\texttt{MedCertAIn}$ improves both predictive performance and uncertainty estimation compared to deterministic and Bayesian baselines. These results highlight the potential of data-driven priors for reliable, uncertainty-aware clinical AI.",
+    "keywords": [
+      "uncertainty quantification",
+      "multimodal learning",
+      "clinical AI"
+    ],
+    "paper_url": "https://openreview.net/forum?id=N8v2gm7XFC",
+    "pdf_url": "https://openreview.net/pdf?id=N8v2gm7XFC",
+    "reviewers": [],
+    "decision": "Accept",
+    "decision_date": "2026-05-01T16:33:04.471000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "f2ZyInCjeL",
+      "content": "The submission proposes data-driven priors over DNN parameters constructed from cross-modal similarity in self-supervised representations and modality-specific corruptions, applied to uncertainty-aware multimodal clinical risk prediction on two MIMIC datasets. The reviewers are split, with two briefly justified marginal acceptances and one elaborate rejection, although the major concerns of the rejecting reviewer are, in part, echoed also by the other reviewers. The clinical multimodal setting and the conceptual appeal of constructing context sets via cross-modal similarity and corruptions are relevant and interesting, and the exposition is clear and well-written. Reservations concern a misalignment between the central claim of \"well-calibrated uncertainty'' and the evaluation, which reports only AUROC/AUPRC, but not calibration metrics such as ECE. Further criticisms include the framing as a Bayesian prior rather than a regularization term, and marginal gains over uninformative-prior baselines and simpler corruption variants in the absence of comparisons to standard UQ baselines such as deep ensembles. \n\nThese concerns legitimately weaken the empirical support for the central claim and should be addressed in a full paper version. However, they do not clearly invalidate the conceptual contribution, which is interesting and topically relevant to the venue. In light of the workshop setting encouraging exploratory ideas, I therefore recommend acceptance with strong reservations and suggest the authors address the concerns regarding calibration evaluation, baseline comparisons, and the conceptual framing in future iterations of the work.",
+      "date": "2026-05-01T16:33:04.471000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T11:58:44.759000Z",
+      "updated_at": "2026-03-23T21:47:34.872000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "N8v2gm7XFC",
+      "note_id": "N8v2gm7XFC",
+      "number": 29
+    },
+    "citations": [],
+    "comments": []
+  },
+  {
+    "id": "paper30",
+    "title": "Uncertainty-Aware Modeling of Continuous-Time Interacting Systems via Relational Flows",
+    "authors": [
+      {
+        "id": "~YongKyung_Oh1",
+        "name": "YongKyung Oh",
+        "email": "",
+        "affiliation": ""
+      }
+    ],
+    "venue": {
+      "id": "ProbML.cc/2026",
+      "name": "ProbML 2026",
+      "year": 2026
+    },
+    "status": "Accepted",
+    "abstract": "Modeling continuous-time dynamics in large-scale sensor networks is computationally demanding, especially when quantifying predictive uncertainty. Neural ODEs provide a continuous formulation, but their reliance on iterative numerical solvers leads to prohibitive inference costs in high-dimensional settings. Many spatio-temporal forecasters rely on predefined graph topologies that fail to capture dynamic, data-driven dependencies. We propose TC-GNN-Flow, a solver-free continuous-time framework for multivariate forecasting. The model integrates a dynamic graph encoder that infers time-varying variable dependencies with a Coupling Flow module that parameterizes temporal evolution using invertible transformations. This architecture enables efficient inference and provides a mechanism for uncertainty estimation via latent space sampling. Experiments on four large-scale traffic benchmarks show competitive accuracy with lower computational overhead than existing continuous-time methods. Quantitative evaluations using proper scoring rules (CRPS) show that flow-based latent sampling produces sharp predictive distributions with reasonable calibration that capture heteroscedastic volatility.",
+    "keywords": [
+      "Continuous-Time Models",
+      "Spatio-Temporal Forecasting",
+      "Graph Neural Networks"
+    ],
+    "paper_url": "https://openreview.net/forum?id=Mw6xBhLepA",
+    "pdf_url": "https://openreview.net/pdf?id=Mw6xBhLepA",
+    "reviewers": [],
+    "decision": "Workshop",
+    "decision_date": "2026-05-01T20:38:26.323000Z",
+    "revisions": [],
+    "acceptance_letter": {
+      "id": "mwDUyEE1pd",
+      "content": "The paper proposes a method for multi-output time series forecasting based on an GNN-encoder and coupling flows, with particular emphasis on transportation modeling problems. \n\n\n**Pros**\n- The paper is well-written, the approach clearly motivated, and the problem relevant to the ProbML community.\n- The specific combination of architectural components appears new.\n- The method outperforms a large number of baselines from a recent benchmark study and provides significant speedups over NeuralODE solvers.\n\n**Cons**\n- One of central claims of the original submission, uncertainty awareness, was questioned by several reviewers. The authors conceded this and proposed to change the title and framing of the paper.\n- The method can be seen as a heuristic that mixes several well-established and partially outdated architectural components. Several choices such as the use of Pearson correlations for dependence modeling feel ad-hoc and are likely to fail in different scenarios.\n\n**Recommendation**\n\nOverall, this is a borderline paper, which is also reflected in the reviewers’ assessments. Before publication, several steps *must* be taken:\n* Remove the uncertainty-aware framing and claims from the title and paper;\n* Include the benchmarks and ablations provided during the rebuttal phase.\n\nIn addition, I feel like the paper and method would benefit from further consideration and ablations of some architectural choices, as well as incorporating an alternative benchmarking task.\n\nGiven this, I am leaning towards rejecting the paper in its current form.",
+      "date": "2026-05-01T20:38:26.323000Z"
+    },
+    "metadata": {
+      "created_at": "2026-03-21T11:35:05.110000Z",
+      "updated_at": "2026-03-23T21:47:24.162000Z",
+      "submission_type": "Workshop Paper",
+      "conference_url": "https://openreview.net/group?id=ProbML.cc/2026/Workshop_Track",
+      "track_group_id": "ProbML.cc/2026/Workshop_Track",
+      "forum_id": "Mw6xBhLepA",
+      "note_id": "Mw6xBhLepA",
+      "number": 30
+    },
+    "citations": [],
+    "comments": []
+  }
+]

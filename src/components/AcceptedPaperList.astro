@@ -1,0 +1,67 @@
+---
+interface AcceptedPaper {
+  title: string;
+  authors: Array<string | { name?: string; fullname?: string; id?: string }> | string;
+  metadata?: {
+    number?: number;
+  };
+}
+
+interface Props {
+  papers: AcceptedPaper[];
+  paperType: string;
+}
+
+const { papers, paperType } = Astro.props as Props;
+
+const formatAuthor = (author: string | { name?: string; fullname?: string; id?: string }) => {
+  if (typeof author === "string") {
+    return author;
+  }
+
+  return author.name ?? author.fullname ?? author.id ?? "";
+};
+
+const formatAuthors = (authors: AcceptedPaper["authors"]) => {
+  if (typeof authors === "string") {
+    return authors;
+  }
+
+  if (!authors || authors.length === 0) {
+    return "TBA";
+  }
+
+  const names = authors.map((author) => formatAuthor(author)).filter(Boolean);
+
+  return names.length > 0 ? names.join(", ") : "TBA";
+};
+---
+
+<div class='overflow-x-auto'>
+  <table class='w-full min-w-full table-auto'>
+    <thead>
+      <tr>
+        <th><strong>No.</strong></th>
+        <th><strong>Remark</strong></th>
+        <th><strong>Paper</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        papers.map((paper: AcceptedPaper, idx: number) => (
+          <tr>
+            <td>{paper.metadata?.number ?? idx + 1}</td>
+            <td>{paperType}</td>
+            <td>
+              <div>
+                <strong>{paper.title}</strong>
+              </div>
+              <div>{formatAuthors(paper.authors)}</div>
+            </td>
+          </tr>
+        ))
+      }
+      <tr></tr>
+    </tbody>
+  </table>
+</div>

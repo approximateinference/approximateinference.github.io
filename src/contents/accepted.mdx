@@ -10,21 +10,22 @@ Accepted papers will be announced after the acceptance notification date (8 May 
 Please check back after these dates for the full list of accepted papers.
 
 import PaperList from "@/components/PaperList.astro";
-// import accepted_papers_proceedings from "../assets/accepted_proceedings_papers.json";
-// import accepted_papers_workshop from "../assets/accepted_workshop_papers.json";
+import AcceptedPaperList from "@/components/AcceptedPaperList.astro";
+import accepted_papers_proceedings from "../assets/accepted_proceedings_papers.json";
+import accepted_papers_workshop from "../assets/accepted_workshop_papers.json";
 import accepted_papers_fasttrack from "../assets/accepted_fasttrack_papers.json";
 
 # List of Papers
 
 Note that only papers in the proceedings track are archived.
-Links to the PDFs to follow.
 
 ## Proceedings Track
+<AcceptedPaperList papers={accepted_papers_proceedings} paperType='Poster' />
 
-Coming Soon. 
 ## Workshop Track
 
-Coming Soon. 
+<AcceptedPaperList papers={accepted_papers_workshop} paperType='Poster' />
+
 ## Fast Track
 
 Not archived.
