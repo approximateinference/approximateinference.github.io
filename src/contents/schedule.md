@@ -86,11 +86,11 @@ ProbML 2026 will be hosted in the [KAIST Auditorium](https://maps.app.goo.gl/e8B
 | 09:12 -- 09:15 | Sponsor Remarks | |
 | | | <br /> **Session 1** --- Chair: TBD |
 | 09:15 -- 10:00 | **Invited Talk 1** | _TBA_ <br /> TBA |
-| 10:00 -- 10:15 | **Contributed Talk 1** | [_An Isotropic Approach to Efficient Uncertainty Quantification with Gradient Norms_](https://openreview.net/forum?id=UwhU8weZf2&referrer=%5BProgram%20Chair%20Console%5D(%2Fgroup%3Fid%3DProbML.cc%2F2026%2FProceedings_Track%2FProgram_Chairs%23submission-status)) <br /> Nils Grünefeld, Jes Frellsen, Christian Hardmeier |
+| 10:00 -- 10:15 | **Contributed Talk 1** | _An Isotropic Approach to Efficient Uncertainty Quantification with Gradient Norms_ <br /> Nils Grünefeld, Jes Frellsen, Christian Hardmeier |
 | 10:15 -- 10:45 | Coffee Break | |
 | | | <br /> **Session 2** --- Chair: TBD |
 | 10:45 -- 11:30 | **Invited Talk 2** | _TBA_ <br /> TBA |
-| 11:30 -- 11:45 | **Contributed Talk 2** | [_CogFormer: Learn All Your Models Once_](https://openreview.net/forum?id=MBomiANMWl&referrer=%5BProgram%20Chair%20Console%5D(%2Fgroup%3Fid%3DProbML.cc%2F2026%2FProceedings_Track%2FProgram_Chairs%23submission-status)) <br /> Jerry M. Huang, Lukas Schumacher, Niek Stevenson, Stefan T. Radev |
+| 11:30 -- 11:45 | **Contributed Talk 2** | _CogFormer: Learn All Your Models Once_ <br /> Jerry M. Huang, Lukas Schumacher, Niek Stevenson, Stefan T. Radev |
 | 11:45 -- 12:00 | **Invited Position Talk** | _TBA_ <br /> TBA |
 | 12:00 -- 14:00 | Lunch | |
 | | | <br /> **Session 3** --- Chair: TBD |
