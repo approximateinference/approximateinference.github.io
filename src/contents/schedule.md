@@ -1,107 +1,77 @@
 ---
 layout: ../layouts/ContentLayout.astro
-title: "Schedule"
+title: "Attending"
 ---
 
 # Attendance Information
 
-## Registration
 
-Please check back later for registration information and updates!
+## Registration 
 
-<!--
-## Registration -->
-<!---->
-<!-- AABI 2025 is a free event. Spots are limited! -->
-<!---->
-<!-- <a href="https://lu.ma/event/evt-a43Ub7unw7DznzM" -->
-<!-- class="luma-checkout--button" -->
-<!-- data-luma-action="checkout" -->
-<!-- data-luma-event-id="evt-a43Ub7unw7DznzM">Register for AABI 2025</a> -->
-<!---->
-<!-- <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script> -->
-<!---->
-<!-- <mark>We have limited space, please cancel your registration if you are unable to attend! This will allow others to register.</mark> -->
-<!---->
-<!-- <br /> -->
-<!---->
-<!-- <iframe -->
-<!--   src="https://lu.ma/embed/calendar/cal-JtIkTVGMG0J8eGF/events" -->
-<!--   width="100%" -->
-<!--   height="275" -->
-<!--   frameborder="0" -->
-<!--   style="border: 0px solid #bfcbda88; border-radius: 4px;" -->
-<!--   allowfullscreen="" -->
-<!--   aria-hidden="false" -->
-<!--   tabindex="0" -->
-<!-- ></iframe> -->
-<!---->
-<!-- <br /> -->
-<!---->
-<!-- In case the spots are all taken, you can add yourself to [the waiting list](https://forms.gle/Xzm1a8XNheGDHCZPA). -->
-<!-- We will contact you if new spots opened up. -->
+ProbML 2026 is a free event, but spots are limited! Make sure you register as soon as possible.
 
-<!--
-AABI 2025 has been concluded.
-See you at AABI 2026 next year!
--->
+<a href="https://luma.com/event/evt-ozylK0Cu5a9umSc"
+  class="luma-checkout--button"
+  data-luma-action="checkout"
+  data-luma-event-id="evt-ozylK0Cu5a9umSc">Register for ProbML 2026</a>
+
+<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+
+
+*We have limited space, please cancel your registration if you are unable to attend! This will allow others to register.*
 
 
 ## Venue
 
-To be announced!
+ProbML 2026 will be hosted in the [KAIST Auditorium](https://maps.app.goo.gl/e8Bh8zWcaprTo1sR7) at the Korea Institute for Advanced Study (KAIST) in Seoul.
 
-<!-- ProbML 2026 will be hosted at Seoul Trade Exhibition & Convention (SETEC).
 
-    3104 Nambusunhwan-ro
-    Gangnam District
+    KAIST College of Business
+    85 Hoegi-ro, Dongdaemun District
     Seoul, South Korea
 <br />
 
-<div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.514211315813!2d127.06922057793386!3d37.49578857205689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca43aa91ed44f%3A0xdaf43f8f343e18f9!2sSETEC%20(Seoul%20Trade%20Exhibition%20%26%20Convention)!5e0!3m2!1sen!2sus!4v1770068438507!5m2!1sen!2sus"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div> -->
+<div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4064.4750382847137!2d127.046273769571!3d37.59246387017314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbb644204398b%3A0xf00723351f96d8c8!2sKAIST%20College%20of%20Business!5e0!3m2!1sen!2sus!4v1780931995739!5m2!1sen!2sus"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
 
-## Schedule
 
-Please check back later for the full schedule and updates!
 
-<!--
 ## Schedule
 
 <style>
-  .colorized tbody tr:nth-child(1),
+  /* .colorized tbody tr:nth-child(1),
   .colorized tr:nth-child(8),
   .colorized tr:nth-child(17) { 
     background: #efefef; 
-  }
+  } */
 
-  .colorized tr:nth-child(5),
+  /* .colorized tr:nth-child(5),
   .colorized tr:nth-child(10),
   .colorized tr:nth-child(15),
   .colorized tr:nth-child(21) { 
     background: #c0e8ff; 
-  }
+  } */
 
-  .colorized tr:nth-child(13),
+  /* .colorized tr:nth-child(13),
   .colorized tr:nth-child(20) { 
     background: #b0e0e6; 
-  }
+  } */
 
   @media (prefers-color-scheme: dark) {
   .colorized tbody tr:nth-child(1),
-  .colorized tr:nth-child(8),
-  .colorized tr:nth-child(17) { 
+  .colorized tr:nth-child(7),
+  .colorized tr:nth-child(12),
+  .colorized tr:nth-child(16) { 
       background: #111; 
     }
 
   .colorized tr:nth-child(5),
-  .colorized tr:nth-child(10),
-  .colorized tr:nth-child(15),
-  .colorized tr:nth-child(21) { 
+  .colorized tr:nth-child(9),
+  .colorized tr:nth-child(11),
+  .colorized tr:nth-child(14) { 
       background: #2b6cb0; 
     }
 
-  .colorized tr:nth-child(13),
-  .colorized tr:nth-child(20) { 
+  .colorized tr:nth-child(17) { 
       background: #3a5f66; 
     }
   }
@@ -109,30 +79,26 @@ Please check back later for the full schedule and updates!
 
 <div class="colorized">
 
-| **Time**       | **Event**                | **Note**                                                                                                                                                                                |
-| -------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 08:00 -- 09:00 | Check-In                 |                                                                                                                                                                                         |
-| 09:00 -- 09:13 | Opening Remarks          | Tim G. J. Rudner and Vincent Fortuin                                                                                                                                                    |
-| 09:13 -- 09:15 | Sponsor Remarks          | BASIS                                                                                                                                                                                   |
-|                |                          | <br /> **Session 1** --- Chair: Christian Naesseth                                                                                                                                      |
-| 09:15 -- 10:00 | **Invited Talk 1**       | _Adaptive Bayesian Intelligence (ABI)_ <br /> Mohammad Emtiyaz Khan                                                                                                                     |
-| 10:00 -- 10:15 | **Contributed Talk 1**   | _Sparse Gaussian Neural Processes_ <br /> Tommy Rochussen, Vincent Fortuin                                                                                                              |
-| 10:15 -- 10:30 | **Contributed Talk 2**   | _From predictions to confidence intervals: an empirical study of conformal prediction methods for in-context learning_ <br /> Zhe Huang, Simone Rossi, Rui Yuan, Thomas Hannagan        |
-| 10:30 -- 11:00 | Break                    | Refreshments provided                                                                                                                                                                   |
-|                |                          | <br /> **Session 2** --- Chair: Agustinus Kristiadi                                                                                                                                     |
-| 11:00 -- 11:45 | **Invited Talk 2**       | _Bayesian Inference for Invariant Feature Discovery from Multi-Environment Data_ <br /> Luhuan Wu                                                                                       |
-| 11:45 -- 12:00 | **Contributed Talk 3**   | _Deep Q-Exponential Processes_ <br /> Zhi Chang, Chukwudi Paul Obite, Shuang Zhou, Shiwei Lan                                                                                           |
-| 12:00 -- 12:15 | **Contributed Talk 4**   | _Normalizing Flow Regression for Bayesian Inference with Offline Likelihood Evaluations_ <br /> Chengkun LI, Bobby Huggins, Petrus Mikkola, Luigi Acerbi                                |
-| 12:15 -- 14:00 | Lunch & Poster Session 1 | Lunch provided <br /> **Proceedings:** All papers <br /> **Workshop:** Papers 17--33 <br /> **Fast track:** Papers 12--24 <br /> Refer to [the accepted papers list](/accepted)         |
-|                |                          | <br /> **Session 3** --- Chair: James Allingham                                                                                                                                         |
-| 14:00 -- 14:45 | **Invited Talk 3**       | _LLM Predictive Distributions Over Functions_ <br /> James Requeima                                                                                                                     |
-| 14:45 -- 15:00 | **Contributed Talk 5**   | _Divide, Conquer, Combine Bayesian Decision Tree Sampling_ <br /> Jodie Anne Cochrane, Adrian Wills, Sarah J Johnson                                                                    |
-| 15:00 -- 15:30 | Break                    | Refreshments provided                                                                                                                                                                   |
-| 15:30 -- 15:45 | **Contributed Talk 6**   | _U-ensembles: Improved diversity in the small data regime using unlabeled data_ <br /> Konstantinos Pitas, Hani Anouar Bourrous, Julyan Arbel                                           |
-| 15:45 -- 16:00 | **Contributed Talk 7**   | _Massively Parallel Expectation Maximization For Approximate Posteriors_ <br /> Thomas Heap, Sam Bowyer, Laurence Aitchison                                                             |
-| 16:00 -- 17:00 | Poster Session 2         | **Proceedings:** All papers <br /> **Workshop:** Papers 1--16 <br /> **Fast track:** Papers 1--11 <br /> Refer to [the accepted papers list](/accepted)                                 |
-| 17:00 -- 17:45 | **Panel Discussion**     | _The Role of Probabilistic Machine Learning in the Age of Foundation Models and Agentic AI_ <br /> Mohammad Emtiyaz Khan, Luhuan Wu, James Requeima <br /> Moderator: Siddharth Swaroop |
-| 17:45 -- 18:00 | Closing Remarks          | Vincent Fortuin                                                                                                                                                                         |
-
+| **Time** | **Event** | **Note** |
+| --- | --- | --- |
+| 08:00 -- 09:00 | Check-In | |
+| 09:00 -- 09:12 | Opening Remarks | |
+| 09:12 -- 09:15 | Sponsor Remarks | |
+| | | <br /> **Session 1** --- Chair: TBD |
+| 09:15 -- 10:00 | **Invited Talk 1** | _TBA_ <br /> TBA |
+| 10:00 -- 10:15 | **Contributed Talk 1** | [_An Isotropic Approach to Efficient Uncertainty Quantification with Gradient Norms_](https://openreview.net/forum?id=UwhU8weZf2&referrer=%5BProgram%20Chair%20Console%5D(%2Fgroup%3Fid%3DProbML.cc%2F2026%2FProceedings_Track%2FProgram_Chairs%23submission-status)) <br /> Nils Grünefeld, Jes Frellsen, Christian Hardmeier |
+| 10:15 -- 10:45 | Coffee Break | |
+| | | <br /> **Session 2** --- Chair: TBD |
+| 10:45 -- 11:30 | **Invited Talk 2** | _TBA_ <br /> TBA |
+| 11:30 -- 11:45 | **Contributed Talk 2** | [_CogFormer: Learn All Your Models Once_](https://openreview.net/forum?id=MBomiANMWl&referrer=%5BProgram%20Chair%20Console%5D(%2Fgroup%3Fid%3DProbML.cc%2F2026%2FProceedings_Track%2FProgram_Chairs%23submission-status)) <br /> Jerry M. Huang, Lukas Schumacher, Niek Stevenson, Stefan T. Radev |
+| 11:45 -- 12:00 | **Invited Position Talk** | _TBA_ <br /> TBA |
+| 12:00 -- 14:00 | Lunch | |
+| | | <br /> **Session 3** --- Chair: TBD |
+| 14:00 -- 14:45 | **Invited Talk 3** | _TBA_ <br /> TBA |
+| 14:00 -- 14:45 | **Invited Position Talk 2** | _TBA_ <br /> TBA |
+| 15:00 -- 15:15 | Coffee Break | |
+| 15:15 -- 17:15 | **Poster Session** | Refer to [the accepted papers list](/accepted) for poster numbers. |
+| 17:15 -- 17:55 | **Panel Discussion** | Panelists: TBA |
+| 17:55 -- 18:00 | Closing Remarks | |
+| 18:00 -- open end | Town Hall Discussion | |
 </div>
--->
