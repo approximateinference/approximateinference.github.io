@@ -59,19 +59,20 @@ ProbML 2026 will be hosted in the [KAIST Auditorium](https://maps.app.goo.gl/e8B
   @media (prefers-color-scheme: dark) {
   .colorized tbody tr:nth-child(1),
   .colorized tr:nth-child(7),
-  .colorized tr:nth-child(12),
-  .colorized tr:nth-child(16) { 
+  .colorized tr:nth-child(11),
+  .colorized tr:nth-child(15) { 
       background: #111; 
     }
 
   .colorized tr:nth-child(5),
   .colorized tr:nth-child(9),
-  .colorized tr:nth-child(11),
-  .colorized tr:nth-child(14) { 
+  .colorized tr:nth-child(13),
+  .colorized tr:nth-child(16),
+  .colorized tr:nth-child(17) { 
       background: #2b6cb0; 
     }
 
-  .colorized tr:nth-child(17) { 
+  .colorized tr:nth-child(14) { 
       background: #3a5f66; 
     }
   }
@@ -85,20 +86,20 @@ ProbML 2026 will be hosted in the [KAIST Auditorium](https://maps.app.goo.gl/e8B
 | 09:00 -- 09:12 | Opening Remarks | |
 | 09:12 -- 09:15 | Sponsor Remarks | |
 | | | <br /> **Session 1** --- Chair: TBD |
-| 09:15 -- 10:00 | **Invited Talk 1** | _TBA_ <br /> TBA |
+| 09:15 -- 10:00 | **Invited Talk 1** | _A Bayesian Nonparametric Approach to Adapting Model Size During Training_ <br /> Guiomar Pescador-Barrios |
 | 10:00 -- 10:15 | **Contributed Talk 1** | _An Isotropic Approach to Efficient Uncertainty Quantification with Gradient Norms_ <br /> Nils Grünefeld, Jes Frellsen, Christian Hardmeier |
 | 10:15 -- 10:45 | Coffee Break | |
 | | | <br /> **Session 2** --- Chair: TBD |
-| 10:45 -- 11:30 | **Invited Talk 2** | _TBA_ <br /> TBA |
+| 10:45 -- 11:30 | **Invited Talk 2** | _From Drift to Coherence: Stabilizing Beliefs in LLMs_ <br /> Juho Lee |
 | 11:30 -- 11:45 | **Contributed Talk 2** | _CogFormer: Learn All Your Models Once_ <br /> Jerry M. Huang, Lukas Schumacher, Niek Stevenson, Stefan T. Radev |
-| 11:45 -- 12:00 | **Invited Position Talk** | _TBA_ <br /> TBA |
-| 12:00 -- 14:00 | Lunch | |
+| 11:45 -- 14:00 | Lunch | |
 | | | <br /> **Session 3** --- Chair: TBD |
 | 14:00 -- 14:45 | **Invited Talk 3** | _TBA_ <br /> TBA |
-| 14:00 -- 14:45 | **Invited Position Talk 2** | _TBA_ <br /> TBA |
-| 15:00 -- 15:15 | Coffee Break | |
-| 15:15 -- 17:15 | **Poster Session** | Refer to [the accepted papers list](/accepted) for poster numbers. |
-| 17:15 -- 17:55 | **Panel Discussion** | Panelists: TBA |
-| 17:55 -- 18:00 | Closing Remarks | |
+| 14:45 -- 16:45 | **Poster Session** | Refer to [the accepted papers list](/accepted) for poster numbers. |
+| 16:30 -- 16:45 | Coffee Break | |
+| 16:45 -- 16:55 | **Invited Position Talk 1** | _TBA_ <br /> TBA |
+| 16:55 -- 17:05 | **Invited Position Talk 2** | _TBA_ <br /> TBA |
+| 17:05 -- 17:45 | **Panel Discussion** | Panelists: TBA |
+| 17:45 -- 18:00 | Closing Remarks | |
 | 18:00 -- open end | Town Hall Discussion | |
 </div>
