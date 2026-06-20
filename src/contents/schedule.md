@@ -33,6 +33,14 @@ ProbML 2026 will be hosted in the [KAIST Auditorium](https://maps.app.goo.gl/e8B
 
 <div style="align='center';max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4064.4750382847137!2d127.046273769571!3d37.59246387017314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbb644204398b%3A0xf00723351f96d8c8!2sKAIST%20College%20of%20Business!5e0!3m2!1sen!2sus!4v1780931995739!5m2!1sen!2sus"></iframe></div><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
 
+Once at the main gate, follow the map below to get to the conference hall.
+<img
+  src="../../public/images/probml_2026_kaist_map.png"
+  alt="Map to conference hall"
+  width="400"
+  style="display: block; margin: 0 auto; max-width: 100%; height: auto;"
+/>
+
 
 
 ## Schedule
