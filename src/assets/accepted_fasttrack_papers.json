@@ -50,5 +50,25 @@
   {
     "title": "Extending Mean-Field Variational Inference via Entropic Regularization: Theory and Computation", 
     "authors": "Bohan Wu, David Blei"
+  },
+  {
+    "title": "Can Microcanonical Langevin Dynamics Leverage Mini-Batch Gradient Noise?", 
+    "authors": "Emanuel Sommer, Kangning Diao, Jakob Robnik, Uros Seljak, David Rügamer"
+  },
+  {
+    "title": "Position: The Time for Sampling Is Now! Charting a New Course for Bayesian Deep Learning", 
+    "authors": "Emanuel Sommer, David Rügamer"
+  }, 
+  {
+    "title": "Reinforced sequential Monte Carlo for amortised sampling", 
+    "authors": "Sanghyeok Choi, Sarthak Mittal, Víctor Elvira, Jinkyoo Park, Esmeralda S. Whitammer" 
+  },
+  {
+    "title": "Discrete diffusion samplers and bridges: Off-policy algorithms and applications in latent spaces", 
+    "authors": "Arran Carter, Sanghyeok Choi, Kirill Tamogashev, Víctor Elvira, Esmeralda S. Whitammer"
+  },
+  {
+    "title": "Conformal Cross-Modal Active Learning",
+    "authors": "Huy Hoang Nguyen, Cédric Jung, Shirin Salehi, Tobias Glück, Anke Schmeink, Andreas Kugi"
   }
 ]
