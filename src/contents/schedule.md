@@ -75,8 +75,7 @@ Once at the main gate, follow the map below to get to the conference hall.
   .colorized tr:nth-child(5),
   .colorized tr:nth-child(9),
   .colorized tr:nth-child(13),
-  .colorized tr:nth-child(16),
-  .colorized tr:nth-child(17) { 
+  .colorized tr:nth-child(16) { 
       background: #2b6cb0; 
     }
 
@@ -100,14 +99,12 @@ Once at the main gate, follow the map below to get to the conference hall.
 | | | <br/> **Session 2** --- Chair: TBD |
 | 10:45 -- 11:30 | **Invited Talk 2** | _From Drift to Coherence: Stabilizing Beliefs in LLMs_ <br/> [Juho Lee](https://juho-lee.github.io/) |
 | 11:30 -- 11:45 | **Contributed Talk 2** | _CogFormer: Learn All Your Models Once_ <br/> Jerry M. Huang, Lukas Schumacher, Niek Stevenson, Stefan T. Radev |
-| 11:45 -- 14:00 | Lunch | |
+| 11:45 -- 13:15 | Lunch | |
 | | | <br/> **Session 3** --- Chair: TBD |
-| 14:00 -- 14:45 | **Invited Talk 3** | _Bayesian approaches to causal reasoning and scientific discovery_ <br/>  [Anish Dhir](https://anish144.github.io/) |
-| 14:45 -- 16:45 | **Poster Session** | Refer to [the accepted papers list](/accepted) for poster numbers. |
-| 16:30 -- 16:45 | Coffee Break | |
-| 16:45 -- 16:55 | **Invited Position Talk 1** | _TBA_ <br/> TBA |
-| 16:55 -- 17:05 | **Invited Position Talk 2** | _TBA_ <br/> TBA |
-| 17:05 -- 17:45 | **Panel Discussion** | Panelists: TBA |
-| 17:45 -- 18:00 | Closing Remarks | |
-| 18:00 -- open end | Town Hall Discussion | |
+| 13:15 -- 14:00 | **Invited Talk 3** | _A Bayesian approach to causal reasoning and scientific discovery_ <br/>  [Anish Dhir](https://anish144.github.io/) |
+| 14:00 -- 16:00 | **Poster Session** | Refer to [the accepted papers list](/accepted) for poster numbers. |
+| 16:00 -- 16:30 | Coffee Break | |
+| 16:30 -- 17:15 | **Panel Discussion** | Panelists: TBA |
+| 17:15 -- 17:30 | Closing Remarks | |
+| 17:30 -- open end | Town Hall Discussion | |
 </div>
