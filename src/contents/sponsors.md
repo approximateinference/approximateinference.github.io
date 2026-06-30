@@ -13,12 +13,12 @@ We are grateful for the support from our sponsors.
 
 <div class='w-full flex flex-wrap items-center justify-center gap-12'>
   <a href='https://deepmind.google/' target='_blank'>
-    <img src='/images/Google_DeepMind_logo.svg' class='w-48' />
+    <img src='/images/Google_DeepMind_logo.svg' class='w-72' />
   </a>
   <a href='https://www.basis.ai/' target='_blank'>
     <img
       src='/images/basis-logo.svg'
-      class='w-32 dark:contrast-0 dark:grayscale dark:invert'
+      class='w-56 dark:contrast-0 dark:grayscale dark:invert'
     />
   </a>
 </div>
