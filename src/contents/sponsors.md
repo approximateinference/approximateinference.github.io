@@ -1,31 +1,26 @@
 ---
-# layout: ../layouts/ContentLayout.astro
+layout: ../layouts/ContentLayout.astro
 title: "Sponsors"
 ---
 
 ## Sponsors
 
-We are grateful for the supports from our sponsors.
+We are grateful for the support from our sponsors.
 
 <br />
 
 #### Platinum Sponsors
 
-<div class='w-full sm:flex sm:space-x-0 sm:space-y-12 md:flex-row md:space-x-28 md:space-y-0'>
-  <img src='/images/Google_DeepMind_logo.svg' class='mx-auto w-1/2' />
-  <img
-    src='/images/basis-logo.svg'
-    class='mx-auto w-1/3 dark:contrast-0 dark:grayscale dark:invert'
-  />
+<div class='w-full flex flex-wrap items-center justify-center gap-12'>
+  <a href='https://deepmind.google/' target='_blank'>
+    <img src='/images/Google_DeepMind_logo.svg' class='w-48' />
+  </a>
+  <a href='https://www.basis.ai/' target='_blank'>
+    <img
+      src='/images/basis-logo.svg'
+      class='w-32 dark:contrast-0 dark:grayscale dark:invert'
+    />
+  </a>
 </div>
 
 <br />
-
-#### Silver Sponsors
-
-<div class='w-full sm:flex sm:space-x-0 sm:space-y-12 md:flex-row md:space-x-28 md:space-y-0'>
-  <img
-    src='/images/morgan_stanley.svg'
-    class='mx-auto w-1/3 dark:contrast-0 dark:grayscale dark:invert'
-  />
-</div>

@@ -92,19 +92,19 @@ Once at the main gate, follow the map below to get to the conference hall.
 | 08:00 -- 09:00 | Check-In | |
 | 09:00 -- 09:12 | Opening Remarks | |
 | 09:12 -- 09:15 | Sponsor Remarks | |
-| | | <br /> **Session 1** --- Chair: TBD |
+| | | <br /> **Session 1** --- Chair: Agustinus Kristiadi |
 | 09:15 -- 10:00 | **Invited Talk 1** | _A Bayesian Nonparametric Approach to Adapting Model Size During Training_ <br/> [Guiomar Pescador-Barrios](https://guiomarpescador.github.io/) |
 | 10:00 -- 10:15 | **Contributed Talk 1** | _An Isotropic Approach to Efficient Uncertainty Quantification with Gradient Norms_ <br/> Nils Grünefeld, Jes Frellsen, Christian Hardmeier |
 | 10:15 -- 10:45 | Coffee Break | |
-| | | <br/> **Session 2** --- Chair: TBD |
+| | | <br/> **Session 2** --- Chair: James Odgers |
 | 10:45 -- 11:30 | **Invited Talk 2** | _From Drift to Coherence: Stabilizing Beliefs in LLMs_ <br/> [Juho Lee](https://juho-lee.github.io/) |
 | 11:30 -- 11:45 | **Contributed Talk 2** | _CogFormer: Learn All Your Models Once_ <br/> Jerry M. Huang, Lukas Schumacher, Niek Stevenson, Stefan T. Radev |
 | 11:45 -- 13:15 | Lunch | |
-| | | <br/> **Session 3** --- Chair: TBD |
+| | | <br/> **Session 3** --- Chair: Patrick Pynadath |
 | 13:15 -- 14:00 | **Invited Talk 3** | _A Bayesian approach to causal reasoning and scientific discovery_ <br/>  [Anish Dhir](https://anish144.github.io/) |
 | 14:00 -- 16:00 | **Poster Session** | Refer to [the accepted papers list](/accepted) for poster numbers. |
 | 16:00 -- 16:30 | Coffee Break | |
-| 16:30 -- 17:15 | **Panel Discussion** | Panelists: TBA |
+| 16:30 -- 17:15 | **Panel Discussion** | Moderator: [David Rügamer](https://davidruegamer.github.io/), Panelists: [Guiomar Pescador-Barrios](https://guiomarpescador.github.io/), [Juho Lee](https://juho-lee.github.io/), [Anish Dhir](https://anish144.github.io/),  [Vincent Fortuin](https://fortuin.github.io/) |
 | 17:15 -- 17:30 | Closing Remarks | |
-| 17:30 -- open end | Town Hall Discussion | |
+| 17:30 -- open end | Town Hall Discussion | Moderator: Siddharth Swaroop |
 </div>
