@@ -41,6 +41,10 @@ Once at the main gate, follow the map below to get to the conference hall.
   style="display: block; margin: 0 auto; max-width: 100%; height: auto;"
 />
 
+## Virtual Livestream
+
+We plan to share a Zoom link on the day of the symposium to livestreaming the talks.
+
 
 
 ## Schedule
