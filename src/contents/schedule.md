@@ -43,7 +43,7 @@ Once at the main gate, follow the map below to get to the conference hall.
 
 ## Virtual Livestream
 
-We plan to share a Zoom link on the day of the symposium to livestreaming the talks.
+Zoom link to attend online: https://kaist.zoom.us/j/88491526011?pwd=XbFKJTpRzQO9Vb6Ky8aEEUM91ezvG6.1
 
 
 
